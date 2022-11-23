@@ -17,14 +17,14 @@ import io.cucumber.java.Scenario;
 
 public class Hooks extends BaseClass {
 
-	public BaseClass base;
+	BaseClass base;
 
 	public Hooks(BaseClass base) {
 		this.base = base;
 	}
 
 	@Before
-	public void Invoke1(Scenario scenario) throws InterruptedException {
+	public void Invoke1(Scenario scenario) throws IOException,InterruptedException {
 
 		startAppiumServer(ipAddress, Integer.parseInt(port));
 		setAndroidCapabilities();
@@ -33,15 +33,17 @@ public class Hooks extends BaseClass {
 	}
 	
 	
-	@AfterStep
+	@After(order = 1)
 	public void TakeScreesnhotforReport(Scenario scenario) throws IOException {
 		
 		
+		System.out.println("Status of Scenario: " + scenario.getStatus());
+		System.out.println("failed Scenario: " + scenario.isFailed());
+		
 		if(scenario.isFailed()) {
-			//screenshot
-			File sourcePath= 	((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			byte[] fileContent = FileUtils.readFileToByteArray(sourcePath);
-			scenario.attach(fileContent, "image/png", "image");
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			byte[] src = ts.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(src, "image/png", "screenshot");
 		}
 	}
 

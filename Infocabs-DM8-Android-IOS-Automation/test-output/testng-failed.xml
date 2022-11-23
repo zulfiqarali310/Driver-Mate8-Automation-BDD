@@ -9,7 +9,7 @@
       <class name="com.DM8.Runnerfiles.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="3"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.DM8.Runnerfiles.TestRunner -->

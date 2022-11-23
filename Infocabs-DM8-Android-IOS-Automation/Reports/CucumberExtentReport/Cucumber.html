@@ -48,7 +48,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 22, 2022 03:35:02 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 23, 2022 02:09:03 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -63,7 +63,8 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -107,11 +108,11 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$50%'>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50%'>
                     1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
@@ -125,11 +126,11 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
+                    <span class='strong'>3</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
                     1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
@@ -145,14 +146,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='77%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='92%'>
+                    <span class='strong'>13</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='7%'>
                     1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
-                    1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -173,10 +174,66 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='2'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Login Secnarios</span>
-						<span class='test-time'>Nov 22, 2022 03:35:02 pm</span>
+						<span class='test-time'>Nov 23, 2022 02:09:03 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='3' status='pass'>
+
+	<span class='duration right label'>00 00 13.594</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with valid user name and password</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='4' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with valid user name and password</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='6' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.dm8_application_has_already_lunched()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given DM8 Application has already lunched</h6>
+
+				</li>
+				<li test-id='7' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.i_enter_username_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I enter username as "standard_user"</h6>
+
+				</li>
+				<li test-id='8' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.i_enter_password_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter password as "secret_sauce"</h6>
+
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.i_login()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I login</h6>
+
+				</li>
+				<li test-id='10' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.user_should_be_landed_on_dashboard_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should be landed on dashboard screen</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Splashes Sceen Device Permissions</span>
+						<span class='test-time'>Nov 23, 2022 02:09:17 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -187,77 +244,85 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario outline node' test-id='3' status='fail'>
+<div class='scenario node' test-id='14' status='pass'>
 
-	<span class='duration right label'>00 00 16.111</span>
+	<span class='duration right label'>00 00 10.501</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Login with valid user name and password</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Location permission</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='4' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Login with valid user name and password</div>
+		<li test-id='16' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.allow_location_permission_alert_comes_as_driver_mate8_lunched())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Allow location permission Alert comes as Driver Mate8 lunched</div>
 
 
-			<ul class='gc steps'>
-				<li test-id='6' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.dm8_application_has_already_lunched()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given DM8 Application has already lunched</h6>
+		</li>
+		<li test-id='17' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.i_click_on_allow_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on Allow button</div>
 
-				</li>
-				<li test-id='7' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">image</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded1.png' src='./screenshots/embedded1.png'>
-							</div>
-				</li>
-				<li test-id='8' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.i_enter_username_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I enter username as "standard_user"</h6>
+		</li>
+		<li test-id='18' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.user_should_grant_device_location_permission_to_driver_mate8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should grant Device location permission to Driver Mate8</div>
 
-				</li>
-				<li test-id='9' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">image</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded2.png' src='./screenshots/embedded2.png'>
-							</div>
-				</li>
-				<li test-id='10' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.i_enter_password_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I enter password as "secret_sauce"</h6>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='21' status='pass'>
 
-				</li>
-				<li test-id='11' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</h6>
+	<span class='duration right label'>00 00 08.202</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Phone Calls permission</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='23' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.allow_phone_call_permission_alert_comes_as_driver_mate8_lunched())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Allow Phone Call permission Alert comes as Driver Mate8 lunched</div>
 
-							<div class="node-step">image</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded3.png' src='./screenshots/embedded3.png'>
-							</div>
-				</li>
-				<li test-id='12' class='gc and Fail' status='Fail'>
-					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And I login</h6>
 
-							<div class="node-step">Step undefined</div>
-				</li>
-				<li test-id='13' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</h6>
+		</li>
+		<li test-id='24' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.i_click_on_allow_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on Allow button</div>
 
-							<div class="node-step">image</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded4.png' src='./screenshots/embedded4.png'>
-							</div>
-				</li>
-				<li test-id='14' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginPage_TestCases.user_should_be_landed_on_dashboard_screen()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then User should be landed on dashboard screen</h6>
 
-							<div class="node-step">Step skipped</div>
-				</li>
-			</ul>
+		</li>
+		<li test-id='25' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.user_should_grant_manage_phone_calls_permission())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should grant manage Phone Calls permission</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='28' status='fail'>
+
+	<span class='duration right label'>00 00 08.060</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Phone Media and files permission</div>
+	</div>
+	
+	
+	
+	<ul class='steps'>
+		<li test-id='30' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.allow_phone_media_and_files_permission_alert_comes_as_driver_mate8_lunched())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Allow Phone Media and files permission Alert comes as Driver Mate8 lunched</div>
+
+
+		</li>
+		<li test-id='31' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.i_click_on_allow_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When I click on Allow button</div>
+
+
+		</li>
+		<li test-id='32' class='node then Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then User should grant manage Phone Media and files permission</div>
+
+
+					<div class="node-step">Step undefined</div>
 		</li>
 	</ul>
 </div>
@@ -293,37 +358,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 22, 2022 03:35:02 pm</div>
+					<div class='panel-lead'>Nov 23, 2022 02:09:03 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 22, 2022 03:35:19 pm</div>
+			 		<div class='panel-lead'>Nov 23, 2022 02:09:44 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 16.913</div>
+					<div class='panel-lead'>00 00 41.493</div>
 				</div>
 			</div>
 		</div>
@@ -334,35 +399,35 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 0,
+                parentCount: 2,
+				passParent: 1,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 0,
+				childCount: 4,
+				passChild: 3,
 				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 9,
-				passGrandChild: 7,
+				grandChildCount: 14,
+				passGrandChild: 13,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Login Secnarios":16.112
+			        "Login Secnarios":13.594,"Splashes Sceen Device Permissions":26.808
 			};
 		</script>
 		

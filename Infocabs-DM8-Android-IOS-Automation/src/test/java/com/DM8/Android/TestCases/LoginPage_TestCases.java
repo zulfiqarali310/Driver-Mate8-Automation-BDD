@@ -42,7 +42,7 @@ public class LoginPage_TestCases extends BaseClass {
 
 	}
 
-	@And("^I login$ \\\"([^\\\"]*)\\\"$")
+	@And("^I login$")
 	public void i_login() throws Throwable {
 
 	}

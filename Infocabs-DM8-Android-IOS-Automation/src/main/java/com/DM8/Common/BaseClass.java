@@ -66,6 +66,8 @@ public class BaseClass {
 		options.setApp(ApplicationPath);
 		options.setAppPackage(prop.getProperty("App_package"));
 		options.setAppActivity(prop.getProperty("App_Activity"));
+		options.setAutoGrantPermissions(true);
+		options.setCapability("autoAcceptAlerts", "true");
 
 		try {
 
