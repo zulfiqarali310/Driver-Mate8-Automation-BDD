@@ -11,8 +11,10 @@ import org.testng.annotations.AfterTest;
 import com.DM8.Common.BaseClass;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 
 public class Hooks extends BaseClass {
@@ -24,33 +26,26 @@ public class Hooks extends BaseClass {
 	}
 
 	@Before
-	public void Invoke1(Scenario scenario) throws IOException,InterruptedException {
+	public void Invoke1(Scenario scenario) throws InterruptedException {
 
 		startAppiumServer(ipAddress, Integer.parseInt(port));
 		setAndroidCapabilities();
-		System.out.println("Driver from On capability started : " + driver);
-		
+
 	}
-	
-	
-	@After(order = 1)
+
+	@AfterStep
 	public void TakeScreesnhotforReport(Scenario scenario) throws IOException {
-		
-		
-		System.out.println("Status of Scenario: " + scenario.getStatus());
-		System.out.println("failed Scenario: " + scenario.isFailed());
-		
-		if(scenario.isFailed()) {
-			TakesScreenshot ts = (TakesScreenshot) driver;
-			byte[] src = ts.getScreenshotAs(OutputType.BYTES);
-			scenario.attach(src, "image/png", "screenshot");
+
+		if (scenario.isFailed()) {
+			// screenshot
+			File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			byte[] fileContent = FileUtils.readFileToByteArray(sourcePath);
+			scenario.attach(fileContent, "image/png", scenario.getName());
 		}
 	}
 
 	@AfterTest
 	public void teardown() {
-		System.out.println("Driver before quiting : " + driver);
-
 		stopappium();
 		closeAppium();
 	}

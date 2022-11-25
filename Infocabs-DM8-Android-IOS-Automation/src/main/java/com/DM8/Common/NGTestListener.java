@@ -7,7 +7,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.DM8.Common.ExtentReportsNG;
-import com.DM8.Common.UtilityClass;
+import com.DM8.Common.Utility;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -18,7 +18,9 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
-public class NGTestListener extends UtilityClass implements ITestListener {
+public class NGTestListener extends Utility implements ITestListener {
+
+	
 
 	ExtentTest test;
 	ExtentReports extent = ExtentReportsNG.geReporterObject();
@@ -45,7 +47,7 @@ public class NGTestListener extends UtilityClass implements ITestListener {
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + "- Test Case Failed", ExtentColor.RED));
 			//test.addScreenCaptureFromPath(getScreenshotPath(result.getMethod().getMethodName(), driver),
 					//result.getMethod().getMethodName());
-			String imagpath = UtilityClass.getScreenshotPath(result.getName(), BaseClass.driver);
+			String imagpath = Utility.getScreenshotPath(result.getName(), BaseClass.driver);
 			test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imagpath).build());
 			
 			

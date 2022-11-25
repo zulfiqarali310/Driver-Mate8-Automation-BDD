@@ -5,12 +5,16 @@ import static io.appium.java_client.touch.offset.PointOption.point;
 import static java.time.Duration.ofMillis;
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -25,8 +29,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 
-public class UtilityClass extends BaseClass {
+public class Utility extends BaseClass {
+
+	// public static final long WAIT = 20;
 
 	public static String getScreenshotPath(String testCaseName, AppiumDriver driver) throws IOException {
 
@@ -50,8 +57,18 @@ public class UtilityClass extends BaseClass {
 		return fileName;
 	}
 
+	public String dateTime() {
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+		Date date = new Date();
+		return dateFormat.format(date);
+	}
+
+	public Logger log() {
+		return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
+	}
+
 	public void waitForElementToAppear(WebElement ele, AppiumDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.attributeContains((ele), "text", "Cart"));
 	}
 
@@ -71,7 +88,7 @@ public class UtilityClass extends BaseClass {
 	}
 
 	// waitForElementToBeClickable(by.locator)
-	public static void waitForElementToBeClickable(WebElement element) {
+	public void waitForElementToBeClickable(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
@@ -109,5 +126,7 @@ public class UtilityClass extends BaseClass {
 		} catch (Exception e) {
 		}
 	}
+
+	
 
 }

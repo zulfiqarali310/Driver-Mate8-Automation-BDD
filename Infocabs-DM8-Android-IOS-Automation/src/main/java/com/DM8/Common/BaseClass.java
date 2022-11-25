@@ -20,7 +20,7 @@ public class BaseClass {
 	public static AppiumDriver driver;
 
 	static String UserDir = System.getProperty("user.dir");
-	static String ApplicationPath = UserDir + "//Apps//DM8.apk";
+	static String ApplicationPath = UserDir + "/Apps/DM8.apk";
 	static File file = new File(UserDir + "//src//main//resources//config.properties");
 	static FileInputStream fis = null;
 	static Properties prop = new Properties();
@@ -66,8 +66,8 @@ public class BaseClass {
 		options.setApp(ApplicationPath);
 		options.setAppPackage(prop.getProperty("App_package"));
 		options.setAppActivity(prop.getProperty("App_Activity"));
-		options.setAutoGrantPermissions(true);
-		options.setCapability("autoAcceptAlerts", "true");
+		// options.setAutoGrantPermissions(true);
+		// options.setCapability("autoAcceptAlerts", "true");
 
 		try {
 
