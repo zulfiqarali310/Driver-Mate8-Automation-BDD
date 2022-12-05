@@ -20,7 +20,7 @@ public class BaseClass {
 	public static AppiumDriver driver;
 
 	static String UserDir = System.getProperty("user.dir");
-	static String ApplicationPath = UserDir + "/Apps/DM8.apk";
+	static String ApplicationPath = UserDir + "/Apps/Stage1-DM8.apk";
 	static File file = new File(UserDir + "/src/main/resources/config.properties");
 	static FileInputStream fis = null;
 	public static Properties prop = new Properties();
@@ -41,11 +41,7 @@ public class BaseClass {
 
 		AppiumServiceBuilder builder = new AppiumServiceBuilder();
 		builder.usingAnyFreePort();
-		// Tell builder where node is installed. Or set this path in an environment
-		// variable named NODE_PATH
 		builder.usingDriverExecutable(new File("/usr/local/bin/node"));
-		// Tell builder where Appium is installed. Or set this path in an environment
-		// variable named APPIUM_PATH
 		builder.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"));
 		HashMap<String, String> environment = new HashMap();
 		environment.put("PATH", "/usr/local/bin:" + System.getenv("PATH"));

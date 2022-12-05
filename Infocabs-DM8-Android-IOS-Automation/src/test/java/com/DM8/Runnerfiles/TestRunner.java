@@ -35,8 +35,8 @@ public class TestRunner {
 
 	@AfterClass
 	public static void teardown() {
-		//BaseClass.stopappium();
-		//BaseClass.closeAppium();
+		BaseClass.stopappium();
+		BaseClass.closeAppium();
 	}
 
 }
