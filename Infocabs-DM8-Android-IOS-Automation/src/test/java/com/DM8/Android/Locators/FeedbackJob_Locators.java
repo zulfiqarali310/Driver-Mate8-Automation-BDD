@@ -24,17 +24,17 @@ public class FeedbackJob_Locators  extends ScreenActions  {
 	}
 	
 	
-	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_accept")
-	WebElement ButtonAccept;
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_submit")
+	WebElement ButtonSubmit;
 	
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/et_feedback")
 	WebElement EditFeedback;
 	
 	
 	
-	public void ClickOnAccept() {
+	public void ClickOnSubmit() {
 
-		click(ButtonAccept, "Click on Login Button");
+		click(ButtonSubmit, "Click on Login Button");
 
 	}
 	

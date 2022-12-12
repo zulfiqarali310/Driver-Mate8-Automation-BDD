@@ -24,7 +24,7 @@ public class STCJob_TestCases extends BaseClass {
 
 	@When("^Driver Click on Clear button$")
 	public void driver_click_on_clear_button() throws Throwable {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		log.info("Driver Click on Clear button");
 		STCjob.ClickOnAccept();
 	}

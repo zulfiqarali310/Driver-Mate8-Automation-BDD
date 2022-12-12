@@ -28,7 +28,7 @@ public class FeedbackJob_TestCases extends BaseClass {
     public void driver_click_on_submit_button() throws Throwable {
     	Thread.sleep(2000);
 		log.info("Driver Click on Submit button");
-		fd.ClickOnAccept();
+		fd.ClickOnSubmit();
     }
 
     @Then("^Feedback added$")

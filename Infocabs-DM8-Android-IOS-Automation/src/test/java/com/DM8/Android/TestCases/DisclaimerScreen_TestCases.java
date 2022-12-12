@@ -31,6 +31,7 @@ public class DisclaimerScreen_TestCases extends BaseClass {
 	@Then("^Driver Move to Driver Mate8 HomeScreen$")
 	public void driver_move_to_driver_mate8_homescreen() throws Throwable {
 		log.info("Driver Move to Driver Mate8 HomeScreen");
+		Thread.sleep(2000);
 
 	}
 
