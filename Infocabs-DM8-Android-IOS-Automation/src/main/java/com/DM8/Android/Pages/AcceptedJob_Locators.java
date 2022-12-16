@@ -1,4 +1,4 @@
-package com.DM8.Android.Locators;
+package com.DM8.Android.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,19 +10,16 @@ import com.DM8.Common.Utility;
 
 import io.appium.java_client.AppiumDriver;
 
-public class STCJob_Locators  extends ScreenActions  {
-	
-	
+public class AcceptedJob_Locators extends ScreenActions {
 	
 	AppiumDriver driver;
 	Utility util = new Utility();
 
-	public STCJob_Locators(AppiumDriver driver) {
+	public AcceptedJob_Locators(AppiumDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
-	
 	
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_accept")
 	WebElement ButtonAccept;
@@ -33,7 +30,6 @@ public class STCJob_Locators  extends ScreenActions  {
 		click(ButtonAccept, "Click on Login Button");
 
 	}
-	
 	
 	
 

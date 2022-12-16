@@ -3,8 +3,9 @@ package com.DM8.Android.TestCases;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.DM8.Android.Locators.WaitingJob_Locators;
+import com.DM8.Android.Pages.WaitingJob_Locators;
 import com.DM8.Common.BaseClass;
+import com.DM8.Common.Utility;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,19 +18,22 @@ public class WaitingJob_TestCases extends BaseClass {
 
 	 @Given("^Job are in waiting status$")
 	    public void job_are_in_waiting_status() throws Throwable {
+		 Utility.waitForPageLoaded();
 		 log.info("Job are in waiting status");
 	    }
 
 
 	@When("^Driver Click on POB button$")
 	public void driver_click_on_pob_button() throws Throwable {
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
+		Utility.waitForPageLoaded();
 		log.info("Driver Click on POB button");
 		Waitjob.ClickOnAccept();
 	}
 
 	@Then("^Job Status become POB$")
 	public void job_status_become_pob() throws Throwable {
+		Utility.waitForPageLoaded();
 		log.info("Job Status become POB");
 	}
 

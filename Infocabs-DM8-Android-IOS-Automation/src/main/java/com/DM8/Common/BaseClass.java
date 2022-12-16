@@ -43,7 +43,7 @@ public class BaseClass {
 		builder.usingAnyFreePort();
 		builder.usingDriverExecutable(new File("/usr/local/bin/node"));
 		builder.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"));
-		HashMap<String, String> environment = new HashMap();
+		HashMap<String, String> environment = new HashMap<String, String>();
 		environment.put("PATH", "/usr/local/bin:" + System.getenv("PATH"));
 		builder.withEnvironment(environment);
 		service = AppiumDriverLocalService.buildService(builder);
@@ -69,7 +69,8 @@ public class BaseClass {
 
 			driver = new AndroidDriver(service.getUrl(), options);
 			// driver = new AndroidDriver(new URL(prop.getProperty("ServerURL")),options);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
+			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
 
 		} catch (Exception e) {
 			e.printStackTrace();

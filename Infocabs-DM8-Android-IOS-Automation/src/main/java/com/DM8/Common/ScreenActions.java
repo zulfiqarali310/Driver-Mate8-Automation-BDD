@@ -10,36 +10,40 @@ public class ScreenActions {
 	Utility util = new Utility();
 
 	public void clear(WebElement e) {
-		util.waitForElementToBeVisible(e);
+		Utility.waitForElementToBeVisible(e);
 		e.clear();
 	}
 
 	public void click(WebElement e) {
-		util.waitForElementToBeVisible(e);
-
+		Utility.waitForElementToBeVisible(e);
 		e.click();
 	}
 
 	public void click(WebElement e, String msg) {
-		util.waitForElementToBeVisible(e);
+		Utility.waitForElementToBeVisible(e);
 		util.log().info(msg);
 		e.click();
 	}
 
 	public void sendKeys(WebElement e, String txt) {
-		util.waitForElementToBeVisible(e);
+		Utility.waitForElementToBeVisible(e);
 		e.sendKeys(txt);
 	}
 
 	public void sendKeys(WebElement e, String txt, String msg) {
-		util.waitForElementToBeVisible(e);
+		Utility.waitForElementToBeVisible(e);
 		util.log().info(msg);
 		e.sendKeys(txt);
 	}
 
 	public String getAttribute(WebElement e, String attribute) {
-		util.waitForElementToBeVisible(e);
+		Utility.waitForElementToBeVisible(e);
 		return e.getAttribute(attribute);
+	}
+	
+	public String getText(WebElement e) {
+		Utility.waitForElementToBeVisible(e);
+		return e.getText();
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.DM8.Android.Locators;
+package com.DM8.Android.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

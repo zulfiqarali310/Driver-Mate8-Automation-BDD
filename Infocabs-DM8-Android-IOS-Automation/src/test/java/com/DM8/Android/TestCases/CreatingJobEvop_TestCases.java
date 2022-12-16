@@ -2,29 +2,28 @@ package com.DM8.Android.TestCases;
 
 import java.time.Clock;
 import java.time.Instant;
-import java.time.LocalDateTime;
-import java.util.HashMap;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.DM8.Common.BaseClass;
+import com.DM8.Common.Utility;
 
 import static io.restassured.RestAssured.given;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import junit.framework.Assert;
 
 public class CreatingJobEvop_TestCases extends BaseClass {
 
+	Utility util = new Utility();
+
 	@Given("^The Valid API urls and request data are given and request are send to the server$")
-	public void the_valid_api_urls_and_request_data_are_given_and_request_are_send_to_the_server() throws InterruptedException {
-		Thread.sleep(2000);
+	public void the_valid_api_urls_and_request_data_are_given_and_request_are_send_to_the_server()
+			throws InterruptedException {
+		//Thread.sleep(2000);
+		Utility.waitForPageLoaded();
 
 		// Post Request Body Data
 		JSONObject BodyData = new JSONObject();
@@ -91,7 +90,7 @@ public class CreatingJobEvop_TestCases extends BaseClass {
 
 		// Put 4th Array Data
 		BodyData.put("Locations", LocationData);
-		//LocalDateTime time = java.time.LocalDateTime.now();
+		// LocalDateTime time = java.time.LocalDateTime.now();
 		Instant time = Clock.systemUTC().instant();
 		System.out.println(time);
 		BodyData.put("journeyDateTime", time);
@@ -102,19 +101,19 @@ public class CreatingJobEvop_TestCases extends BaseClass {
 		BodyData.put("jobType", 4);
 		BodyData.put("operatorID", 1033);
 		BodyData.put("isFeatureEnable", true);
-		
 
 		Response response = given().header("Content-type", "application/json").and().body(BodyData.toString()).log()
 				.all().when().post(prop.getProperty("JobCreatedAPI"));
 
-		JsonPath extractor = response.jsonPath();
+		// JsonPath extractor = response.jsonPath();
+		// System.out.println(extractor);
 		System.out.println("Access Token are this " + response.asString());
 
 	}
 
 	@Then("^new job has been created$")
 	public void new_job_has_been_created() throws Throwable {
-		
+		Utility.waitForPageLoaded();
 
 	}
 

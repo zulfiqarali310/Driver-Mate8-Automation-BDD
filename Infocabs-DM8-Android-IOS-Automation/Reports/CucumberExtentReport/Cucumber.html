@@ -39,6 +39,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -48,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 12, 2022 08:34:30 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 17, 2022 03:00:03 am</span>
 			</a>
 		</ul>
 	</div>
@@ -70,6 +71,16 @@
 			</div>
 			<!-- test toggle -->
 			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@Onboarding</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
 			<!-- category toggle -->
 			<!-- clear filters -->
 			<div class='chip transparent hide'>
@@ -108,7 +119,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>10</span> features passed</span>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -126,7 +137,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>11</span> scenarios passed</span>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -146,7 +157,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>41</span> steps passed</span>
+                    <span class='strong'>25</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -176,7 +187,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Splashes Screen Movements & Device Permissions Allocation</span>
-						<span class='test-time'>Dec 12, 2022 08:34:44 pm</span>
+						<span class='test-time'>Dec 17, 2022 03:00:15 am</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -187,491 +198,126 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 09.781</span>
+	<span class='duration right label'>00 00 54.674</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Location permission & Splashes Screens movement</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Location permission & Splashes Screens movement</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>welcome</td><td>details</td><td>sgn</td><td>skip</td><td>acceptdetails</td><td>alrdaccount</td><td>realtracking</td><td>alrdaccount2</td><td>growtxt</td><td>alrdaccount3</td><td>started</td><td>istruction</td></tr><tr><td>Welcome to</td><td>This app will quickly onboard you & allow you to work as a driver for us.</td><td>Sign in</td><td>Skip</td><td>Working as a driver for Company</td><td>As a driver for Company you will be able to accept and manage your work.</td><td>Real time tracking</td><td>With DriversM8 you will be able to track your work and your earnings.</td><td>Grow your earnings and work as a team</td><td>Alongside colleagues earn more money while making a contribution to society</td><td>Get Started</td><td>Please enter the code you received on your mobile number to register.</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='3' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.device_permission_alerts_and_splashes_screens_comes_as_driver_mate8_lunched())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Device permission Alerts and Splashes screens comes as Driver Mate8 lunched</div>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Location permission & Splashes Screens movement</div>
 
-
-		</li>
-		<li test-id='5' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.click_to_allow_device_location_permission())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click to Allow device Location permission</div>
-
-
-		</li>
-		<li test-id='7' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.click_to_allow_device_phone_calls_permission())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click to Allow device Phone Calls permission</div>
-
-
-		</li>
-		<li test-id='9' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.click_to_allow_device_storage_permission())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click to Allow device Storage permission</div>
-
-
-		</li>
-		<li test-id='11' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.tab_on_get_started_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Get Started button</div>
-
-
-		</li>
-		<li test-id='13' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.tab_on_next_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Next button</div>
-
-
-		</li>
-		<li test-id='15' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.tab_on_next_button_second_time())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Next button second time</div>
-
-
-		</li>
-		<li test-id='17' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.tab_on_next_button_thrid_time())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Next button Thrid time</div>
-
-
-		</li>
-		<li test-id='19' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.SplashesPermission_Screen_TestCases.user_should_grant_device_permission_user_should_move_to_the_register_screen_after_splashes_screen_movement_driver_mate8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should grant Device permission & User should move to the Register screen after Splashes screen movement Driver Mate8</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='21'>
-					<div class='test-heading'>
-						<span class='test-name'>Write Driver Code & Login to Driver Mate8</span>
-						<span class='test-time'>Dec 12, 2022 08:34:54 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario outline node' test-id='22' status='pass'>
-
-	<span class='duration right label'>00 00 03.359</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write Driver code to move to Login Screen</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>DriverCode</td></tr><tr><td>6a4a753d</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='23' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Write Driver code to move to Login Screen</div>
-
+				<div class='category-list'>
+						<span class='category label'>@Onboarding</span>
+				</div>
 
 			<ul class='gc steps'>
-				<li test-id='24' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.user_is_on_get_started_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on Get Started Screen</h6>
+				<li test-id='4' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.device_permission_alerts_and_splashes_screens_comes_as_driver_mate8_lunched()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Device permission Alerts and Splashes screens comes as Driver Mate8 lunched</h6>
 
 				</li>
-				<li test-id='26' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.click_to_enter_driver_code_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click to Enter Driver Code as "6a4a753d"</h6>
+				<li test-id='6' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.click_to_allow_device_location_permission()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click to Allow device Location permission</h6>
+
+				</li>
+				<li test-id='8' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.click_to_allow_device_phone_calls_permission()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click to Allow device Phone Calls permission</h6>
+
+				</li>
+				<li test-id='10' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.click_to_allow_device_storage_permission()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click to Allow device Storage permission</h6>
+
+				</li>
+				<li test-id='12' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_dm8_logo()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify DM8 logo</h6>
+
+				</li>
+				<li test-id='14' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_dm8_onboarding_image()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify DM8 onboarding image</h6>
+
+				</li>
+				<li test-id='16' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_something_text1(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify welcome "Welcome to" text</h6>
+
+				</li>
+				<li test-id='18' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_something_text2(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify details "This app will quickly onboard you & allow you to work as a driver for us." text</h6>
+
+				</li>
+				<li test-id='20' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_sigin_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify sign "Sign in" text</h6>
+
+				</li>
+				<li test-id='22' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.tab_on_get_started_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Get Started button</h6>
+
+				</li>
+				<li test-id='24' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_skip_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify skip "Skip" text</h6>
+
+				</li>
+				<li test-id='26' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_acceptdetails_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify acceptdetails "Working as a driver for Company" text</h6>
 
 				</li>
 				<li test-id='28' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.click_on_register_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click On Register button</h6>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_alreadyhaveaccount_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify Alreadyhaveaccount "As a driver for Company you will be able to accept and manage your work." text</h6>
 
 				</li>
-				<li test-id='30' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.user_move_to_login_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User Move to login screen</h6>
+				<li test-id='30' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.tab_on_next_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Next button</h6>
 
 				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='32' status='pass'>
-
-	<span class='duration right label'>00 00 04.985</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with Valid Username and Password to DM8</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>Username</td><td>Password</td></tr><tr><td>zulfiqartest79</td><td>1234</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='33' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Login with Valid Username and Password to DM8</div>
-
-
-			<ul class='gc steps'>
-				<li test-id='34' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.user_is_on_login_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User is on Login Screen</h6>
+				<li test-id='32' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_skip2_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify skip2 "Skip" text</h6>
 
 				</li>
-				<li test-id='36' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.click_to_enter_username_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click to Enter Username as "zulfiqartest79"</h6>
+				<li test-id='34' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_realtimetracking_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify realtimetracking "Real time tracking" text</h6>
+
+				</li>
+				<li test-id='36' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_alreadyhaveaccount2_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify Alreadyhaveaccount2 "With DriversM8 you will be able to track your work and your earnings." text</h6>
 
 				</li>
 				<li test-id='38' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.click_to_enter_password_as_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click to Enter Password as "1234"</h6>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.tab_on_next_button_second_time()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Next button second time</h6>
 
 				</li>
 				<li test-id='40' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.click_on_login_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click On Login button</h6>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_skip3_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify skip3 "Skip" text</h6>
 
 				</li>
-				<li test-id='42' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.LoginScreen_TestCases.user_login_into_the_driver_mate8_application()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User Login into the Driver Mate8 Application</h6>
+				<li test-id='42' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_growearningtxt_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify growearningtxt "Grow your earnings and work as a team" text</h6>
+
+				</li>
+				<li test-id='44' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_alongsidetxt_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify Alongsidetxt "Alongside colleagues earn more money while making a contribution to society" text</h6>
+
+				</li>
+				<li test-id='46' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.tab_on_next_button_thrid_time()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Tab on Next button Thrid time</h6>
+
+				</li>
+				<li test-id='48' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_getstarted_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify Getstarted "Get Started" text</h6>
+
+				</li>
+				<li test-id='50' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.verify_instructiontxt_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify Instructiontxt "Please enter the code you received on your mobile number to register." text</h6>
+
+				</li>
+				<li test-id='52' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SplashesAndAnimation_TestCases.user_should_grant_device_permission_user_should_move_to_the_register_screen_after_splashes_screen_movement_driver_mate8()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should grant Device permission & User should move to the Register screen after Splashes screen movement Driver Mate8</h6>
 
 				</li>
 			</ul>
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='44'>
-					<div class='test-heading'>
-						<span class='test-name'>Disclaimer Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:03 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='45' status='pass'>
-
-	<span class='duration right label'>00 00 11.946</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Disclaimer Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='46' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.DisclaimerScreen_TestCases.disclaimer_screen_comes_as_driver_login_to_driver_mate8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Disclaimer Screen comes as Driver login to Driver Mate8</div>
-
-
-		</li>
-		<li test-id='48' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.DisclaimerScreen_TestCases.click_on_accept_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click on Accept button</div>
-
-
-		</li>
-		<li test-id='50' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.DisclaimerScreen_TestCases.driver_move_to_driver_mate8_homescreen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Driver Move to Driver Mate8 HomeScreen</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='52'>
-					<div class='test-heading'>
-						<span class='test-name'>Job creation From Evop</span>
-						<span class='test-time'>Dec 12, 2022 08:35:15 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='53' status='pass'>
-
-	<span class='duration right label'>00 00 05.422</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job Creation from Evop</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='54' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.CreatingJobEvop_TestCases.the_valid_api_urls_and_request_data_are_given_and_request_are_send_to_the_server())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The Valid API urls and request data are given and request are send to the server</div>
-
-
-		</li>
-		<li test-id='56' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.CreatingJobEvop_TestCases.new_job_has_been_created())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='58'>
-					<div class='test-heading'>
-						<span class='test-name'>Incoming Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:20 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='59' status='pass'>
-
-	<span class='duration right label'>00 00 02.207</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Incoming job Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='60' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.IncomingJob_TestCases.incoming_job_screens_comes_as_job_assigned_to_the_driver())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Incoming job screens comes as job assigned to the driver</div>
-
-
-		</li>
-		<li test-id='62' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.IncomingJob_TestCases.driver_click_on_accept_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on Accept button</div>
-
-
-		</li>
-		<li test-id='64' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.IncomingJob_TestCases.job_status_become_accepted())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become Accepted</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='66'>
-					<div class='test-heading'>
-						<span class='test-name'>Accepted Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:22 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='67' status='pass'>
-
-	<span class='duration right label'>00 00 06.321</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Accepted job Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='68' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.AcceptedJob_TestCases.accepted_job_screens_comes_as_driver_accept_the_job())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Accepted job screens comes as Driver accept the Job</div>
-
-
-		</li>
-		<li test-id='70' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.AcceptedJob_TestCases.driver_click_on_waiting_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on Waiting button</div>
-
-
-		</li>
-		<li test-id='72' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.AcceptedJob_TestCases.job_status_become_waiting())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become Waiting</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='74'>
-					<div class='test-heading'>
-						<span class='test-name'>Waiting Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:29 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='75' status='pass'>
-
-	<span class='duration right label'>00 00 02.404</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Waiting job Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='76' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.WaitingJob_TestCases.job_are_in_waiting_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in waiting status</div>
-
-
-		</li>
-		<li test-id='78' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.WaitingJob_TestCases.driver_click_on_pob_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on POB button</div>
-
-
-		</li>
-		<li test-id='80' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.WaitingJob_TestCases.job_status_become_pob())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become POB</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='82'>
-					<div class='test-heading'>
-						<span class='test-name'>POB Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:31 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='83' status='pass'>
-
-	<span class='duration right label'>00 00 03.614</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: POB job Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='84' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.POBJob_TestCases.job_are_in_pob_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in POB status</div>
-
-
-		</li>
-		<li test-id='86' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.POBJob_TestCases.driver_click_on_stc_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on STC button</div>
-
-
-		</li>
-		<li test-id='88' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.POBJob_TestCases.job_status_become_stc())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become STC</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='90'>
-					<div class='test-heading'>
-						<span class='test-name'>STC Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:35 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='91' status='pass'>
-
-	<span class='duration right label'>00 00 03.245</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: STC job Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='92' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.STCJob_TestCases.job_are_in_stc_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in STC status</div>
-
-
-		</li>
-		<li test-id='94' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.STCJob_TestCases.driver_click_on_clear_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on Clear button</div>
-
-
-		</li>
-		<li test-id='96' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.STCJob_TestCases.job_status_become_clear_and_complete())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become clear and complete</div>
-
-
-		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='98'>
-					<div class='test-heading'>
-						<span class='test-name'>FeedBack Screen verification</span>
-						<span class='test-time'>Dec 12, 2022 08:35:38 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario node' test-id='99' status='pass'>
-
-	<span class='duration right label'>00 00 02.302</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Feedback Screen verification</div>
-	</div>
-	
-	
-	
-	<ul class='steps'>
-		<li test-id='100' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.FeedbackJob_TestCases.feedback_screen_comes_as_job_cleared())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Feedback screen comes as job cleared</div>
-
-
-		</li>
-		<li test-id='102' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.FeedbackJob_TestCases.driver_click_on_submit_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on Submit button</div>
-
-
-		</li>
-		<li test-id='104' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.FeedbackJob_TestCases.feedback_added())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Feedback added</div>
-
-
 		</li>
 	</ul>
 </div>
@@ -699,7 +345,67 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Onboarding</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 17, 2022 03:00:15 am</td>
+										<td class='linked' test-id='3'>Location permission & Splashes Screens movement</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -707,37 +413,61 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>41</div>
+					<div class='panel-lead'>25</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 12, 2022 08:34:30 pm</div>
+					<div class='panel-lead'>Dec 17, 2022 03:00:03 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 12, 2022 08:35:40 pm</div>
+			 		<div class='panel-lead'>Dec 17, 2022 03:01:10 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 09.930</div>
+					<div class='panel-lead'>00 01 07.259</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@Onboarding</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
 		</div>
@@ -748,23 +478,23 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 10,
-				passParent: 10,
+                parentCount: 1,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 11,
-				passChild: 11,
+				childCount: 1,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 41,
-				passGrandChild: 41,
+				grandChildCount: 25,
+				passGrandChild: 25,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -776,7 +506,7 @@
 		
 		<script>
 			var timeline = {
-			        "Splashes Screen Movements & Device Permissions Allocation":9.784,"Write Driver Code & Login to Driver Mate8":8.357,"Disclaimer Screen verification":11.946,"Job creation From Evop":5.423,"Incoming Screen verification":2.207,"Accepted Screen verification":6.321,"Waiting Screen verification":2.404,"POB Screen verification":3.614,"STC Screen verification":3.245,"FeedBack Screen verification":2.302
+			        "Splashes Screen Movements & Device Permissions Allocation":54.676
 			};
 		</script>
 		

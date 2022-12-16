@@ -1,4 +1,4 @@
-package com.DM8.Android.Locators;
+package com.DM8.Android.Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,27 +10,31 @@ import com.DM8.Common.Utility;
 
 import io.appium.java_client.AppiumDriver;
 
-public class WaitingJob_Locators  extends ScreenActions  {
+public class FeedbackJob_Locators  extends ScreenActions  {
 	
 	
 	
 	AppiumDriver driver;
 	Utility util = new Utility();
 
-	public WaitingJob_Locators(AppiumDriver driver) {
+	public FeedbackJob_Locators(AppiumDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
 	
 	
-	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_accept")
-	WebElement ButtonAccept;
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_submit")
+	WebElement ButtonSubmit;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/et_feedback")
+	WebElement EditFeedback;
 	
 	
-	public void ClickOnAccept() {
+	
+	public void ClickOnSubmit() {
 
-		click(ButtonAccept, "Click on Login Button");
+		click(ButtonSubmit, "Click on Login Button");
 
 	}
 	
