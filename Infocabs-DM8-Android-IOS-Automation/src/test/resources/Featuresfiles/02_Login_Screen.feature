@@ -1,5 +1,6 @@
 Feature: Write Driver Code & Login to Driver Mate8
 
+  @Onboarding
   Scenario Outline: Write Driver code to move to Login Screen
     Given User is on Get Started Screen
     When Click to Enter Driver Code as "<DriverCode>"
@@ -10,6 +11,20 @@ Feature: Write Driver Code & Login to Driver Mate8
       | DriverCode |
       | 6a4a753d   |
 
+  @Onboarding
+  Scenario Outline: Verify Login Screen all Text and button fields
+    Given User is on login Screen to verify login elements
+    When check to verify "<login>" text
+    And check to verify login details "<loginDetails>" text
+    And check to verify rememberme "<rememberme>" text
+    And Check to verify App version
+    Then Login screen screen text and datafields are available and verified
+
+    Examples: 
+      | login  | loginDetails                                                   | rememberme  |
+      | Log in | Please enter your credentials to Log into the Driver Dashboard | Remember me |
+
+  @Onboarding
   Scenario Outline: Login with Valid Username and Password to DM8
     Given User is on Login Screen
     When Click to Enter Username as "<Username>"

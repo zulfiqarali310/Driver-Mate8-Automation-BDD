@@ -62,6 +62,7 @@ public class BaseClass {
 		options.setApp(ApplicationPath);
 		options.setAppPackage(prop.getProperty("App_package"));
 		options.setAppActivity(prop.getProperty("App_Activity"));
+		//options.headless();
 		// options.setAutoGrantPermissions(true);
 		// options.setCapability("autoAcceptAlerts", "true");
 
@@ -70,7 +71,7 @@ public class BaseClass {
 			driver = new AndroidDriver(service.getUrl(), options);
 			// driver = new AndroidDriver(new URL(prop.getProperty("ServerURL")),options);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
+			//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
 
 		} catch (Exception e) {
 			e.printStackTrace();

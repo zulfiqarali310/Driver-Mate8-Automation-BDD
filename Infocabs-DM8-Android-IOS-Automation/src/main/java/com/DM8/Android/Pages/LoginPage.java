@@ -10,16 +10,19 @@ import com.DM8.Common.Utility;
 
 import io.appium.java_client.AppiumDriver;
 
-public class LoginPage_Locators extends ScreenActions {
+public class LoginPage extends ScreenActions {
 
 	AppiumDriver driver;
 	Utility util = new Utility();
 
-	public LoginPage_Locators(AppiumDriver driver) {
+	public LoginPage(AppiumDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/iv_more")
+	WebElement MoreButton;
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_started")
 	WebElement TextStarted;
@@ -41,6 +44,18 @@ public class LoginPage_Locators extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_login")
 	WebElement LoginButton;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/cbRememberMe")
+	WebElement Rememberme;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_version")
+	WebElement AppVersion;
+
+	public void ClickOnMoreButton() {
+
+		click(MoreButton, "Click on Login Button");
+
+	}
 
 	public void WriteCode(String code) {
 
@@ -67,6 +82,21 @@ public class LoginPage_Locators extends ScreenActions {
 
 		click(LoginButton, "Click on Login Button");
 
+	}
+
+	public String GetStartedText() {
+
+		return getText(TextStarted);
+	}
+
+	public String GetInstructionText() {
+
+		return getText(TextInstruction);
+	}
+
+	public String GetRemembermeText() {
+
+		return getText(Rememberme);
 	}
 
 }

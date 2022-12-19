@@ -20,7 +20,7 @@ import io.cucumber.junit.CucumberOptions;
 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
 
-		monochrome = true, dryRun = false, tags = "@Onboarding"
+		monochrome = true, dryRun = false /*tags = "@Onboarding"*/
 
 )
 public class TestRunner {
