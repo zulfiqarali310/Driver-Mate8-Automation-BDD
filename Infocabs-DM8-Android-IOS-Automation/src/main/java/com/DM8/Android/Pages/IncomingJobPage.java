@@ -10,12 +10,12 @@ import com.DM8.Common.Utility;
 
 import io.appium.java_client.AppiumDriver;
 
-public class IncomingJob_Locators extends ScreenActions {
+public class IncomingJobPage extends ScreenActions {
 	
 	AppiumDriver driver;
 	Utility util = new Utility();
 
-	public IncomingJob_Locators(AppiumDriver driver) {
+	public IncomingJobPage(AppiumDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 

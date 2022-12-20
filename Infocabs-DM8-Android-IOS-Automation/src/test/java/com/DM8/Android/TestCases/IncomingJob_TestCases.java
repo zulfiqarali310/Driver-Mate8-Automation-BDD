@@ -3,7 +3,7 @@ package com.DM8.Android.TestCases;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.DM8.Android.Pages.IncomingJob_Locators;
+import com.DM8.Android.Pages.IncomingJobPage;
 import com.DM8.Common.BaseClass;
 import com.DM8.Common.Utility;
 
@@ -14,7 +14,7 @@ import io.cucumber.java.en.When;
 public class IncomingJob_TestCases extends BaseClass {
 
 	private static Logger log = LogManager.getLogger(IncomingJob_TestCases.class);
-	IncomingJob_Locators Injob = new IncomingJob_Locators(driver);
+	IncomingJobPage Injob = new IncomingJobPage(driver);
 	
 
 	@Given("^Incoming job screens comes as job assigned to the driver$")
