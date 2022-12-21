@@ -37,7 +37,7 @@ public class BaseClass {
 		}
 	}
 
-	public static void startAppiumServer() {
+	public static  void startAppiumServer() {
 
 		AppiumServiceBuilder builder = new AppiumServiceBuilder();
 		builder.usingAnyFreePort();
