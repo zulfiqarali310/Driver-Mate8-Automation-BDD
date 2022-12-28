@@ -31,13 +31,18 @@ public class AcceptedJob_TestCases extends BaseClass {
 	@Given("^Accepted job screens comes as job accepted by the driver$")
 	public void accepted_job_screens_comes_as_job_accepted_by_the_driver() throws Throwable {
 		log.info("Accepted job screens comes as job accepted by the driver");
+	
+	}
+	
+	@When("^move scroll up so that pick and drop address and screen UI are visible$")
+	public void move_scroll_up_pick_and_drop() throws Throwable {
 		Utility.waitForPageLoaded();
 		Thread.sleep(2000);
-		touch.press(point(529, 1462)).waitAction(waitOptions(ofMillis(3000))).moveTo(point(529, 700)).release()
+		touch.press(point(529, 1750)).waitAction(waitOptions(ofMillis(3000))).moveTo(point(529, 700)).release()
 				.perform();
 	}
 
-	@When("^Verify customer image$")
+	@And("^Verify customer image$")
 	public void verify_customer_image() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.CheckPersonimageicon();
@@ -109,7 +114,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^Check waiting screen pickup zone text$")
+	@And("^Check accepted screen pickup zone text$")
 	public void check_pickup_zone_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetPickupZonetext();
@@ -117,7 +122,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^Check waiting screen pickup address text$")
+	@And("^Check accepted screen pickup address text$")
 	public void check_pickup_address_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetPickupAddresstext();
@@ -125,7 +130,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^check waiting screen dropoff zone text$")
+	@And("^check accepted screen dropoff zone text$")
 	public void check_dropoff_zone_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetDropoffZonetext();
@@ -133,7 +138,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^check waiting screen dropoff Address text$")
+	@And("^check accepted screen dropoff Address text$")
 	public void check_dropoff_address_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetDropoffAddresstext();
@@ -141,7 +146,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^check waiting screen jobtype text$")
+	@And("^check accepted screen jobtype text$")
 	public void check_jobtype_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetJobTypetext();
@@ -149,7 +154,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^check waiting screen payment text$")
+	@And("^check accepted screen payment text$")
 	public void check_payment_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetJobPaymenttext();
@@ -157,7 +162,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^check waiting screen Booking text$")
+	@And("^check accepted screen Booking text$")
 	public void check_booking_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetJobBookingtext();
@@ -165,7 +170,7 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 	}
 
-	@And("^check waiting screen tariff text$")
+	@And("^check accepted screen tariff text$")
 	public void check_tariff_text() throws Throwable {
 		Utility.waitForPageLoaded();
 		boolean Actualtext = Acpjob.GetJobTarifftext();
@@ -186,6 +191,15 @@ public class AcceptedJob_TestCases extends BaseClass {
 		Utility.waitForPageLoaded();
 		String Actualtext = Acpjob.GetWaitingbuttontext();
 		Assert.assertEquals(Actualtext, waiting);
+
+	}
+	
+	@And("^move scroll down so that pick and drop address and screen UI are not visible$")
+	public void scroll_down_pick_and_dropoff() throws Throwable {
+		Utility.waitForPageLoaded();
+		touch.press(point(529, 700)).waitAction(waitOptions(ofMillis(3000))).moveTo(point(529, 1750)).release()
+				.perform();
+		Thread.sleep(2000);
 
 	}
 

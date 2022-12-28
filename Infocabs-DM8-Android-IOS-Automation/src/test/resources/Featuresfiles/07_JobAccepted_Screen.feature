@@ -3,7 +3,8 @@ Feature: Accepted Screen verification
   @Onboarding
   Scenario Outline: Accepted job Screen UI elements verification
     Given Accepted job screens comes as job accepted by the driver
-    When Verify customer image
+    When move scroll up so that pick and drop address and screen UI are visible
+    And Verify customer image
     And verify customer name
     And getting late icon
     And message chat icon
@@ -12,16 +13,17 @@ Feature: Accepted Screen verification
     And verify start navigation icon
     And check pickup whole box
     And check dropoff whole box
-    And Check waiting screen pickup zone text
-    And Check waiting screen pickup address text
-    And check waiting screen dropoff zone text
-    And check waiting screen dropoff Address text
-    And check waiting screen jobtype text
-    And check waiting screen payment text
-    And check waiting screen Booking text
-    And check waiting screen tariff text
+    And Check accepted screen pickup zone text
+    And Check accepted screen pickup address text
+    And check accepted screen dropoff zone text
+    And check accepted screen dropoff Address text
+    And check accepted screen jobtype text
+    And check accepted screen payment text
+    And check accepted screen Booking text
+    And check accepted screen tariff text
     And check driver notes text
     And check waiting button "<waiting>" text
+    And move scroll down so that pick and drop address and screen UI are not visible
     Then Accepted Job screen UI elements are verified
 
     Examples: 
