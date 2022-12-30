@@ -33,6 +33,12 @@ public class POBJob_Locators extends ScreenActions {
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_menu_extraCharges")
 	WebElement ButtonAddExtraCharges;
 
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/rl_change_dropoff")
+	WebElement ButtonChangeDropoffAddress;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_change_dropoff")
+	WebElement DropoffAdresstext;
+
 	public void ClickOnAccept() {
 
 		click(ButtonAccept, "Click on Login Button");
@@ -72,6 +78,18 @@ public class POBJob_Locators extends ScreenActions {
 	public String GetExtraButtontext() {
 
 		return getText(ButtonAddExtraCharges);
+
+	}
+
+	public void ClickOnChangeDropoffAddress() {
+
+		click(ButtonChangeDropoffAddress, "Click on Change Dropoff Address button button");
+
+	}
+
+	public String GetDrooffAddresstext() {
+
+		return getText(DropoffAdresstext);
 
 	}
 

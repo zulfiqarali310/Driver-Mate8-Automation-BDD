@@ -213,6 +213,14 @@ public class WaitingJob_TestCases extends BaseClass {
 		boolean expected = true;
 		Assert.assertEquals(Actualtext, expected);
 	}
+	
+	 @And("^click again on Meter expand button to close meter details on waiting screen$")
+	    public void click_again_on_meter_expand_button_to_close_meter_details_on_waiting_screen() throws Throwable {
+		 Utility.waitForPageLoaded();
+			Waitjob.ClickOnMeterExpandButton();
+			Thread.sleep(2000);
+	    }
+
 
 	@Then("^Meter UI texts and buttons clicks are verified$")
 	public void meter_ui_texts_and_buttons_clicks_are_verified() throws Throwable {

@@ -27,6 +27,7 @@ Feature: Waiting Screen verification
     And Verify Send SMS Ring back button icon
     And getting late icon on Waiting screen
     And message chat icon on Waiting screen
+    And click again on Meter expand button to close meter details on waiting screen
     Then Meter UI texts and buttons clicks are verified
 
     Examples: 
