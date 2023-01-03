@@ -76,7 +76,7 @@ public class IncomingJobPage extends ScreenActions {
 
 	public void ClickOnRejected() {
 
-		click(TextRejectedAndButton, "Click on Login Button");
+		click(TextRejectedAndButton, "Click on Rejected Button");
 
 	}
 	
