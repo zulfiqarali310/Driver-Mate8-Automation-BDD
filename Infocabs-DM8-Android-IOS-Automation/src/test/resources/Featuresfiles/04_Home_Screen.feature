@@ -1,6 +1,6 @@
 Feature: DM8 Home Screen verification
 
-  @Onboarding
+  @OnboardingVerification
   Scenario Outline: DM8 Home Screen verification
     Given Driver is on Home screen as logged
     When check and verify Zone name text

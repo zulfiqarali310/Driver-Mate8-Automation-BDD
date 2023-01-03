@@ -1,6 +1,6 @@
 Feature: Waiting Screen verification
 
-  @Onboarding
+  @OnboardingVerification
   Scenario Outline: Meter UI and button clicks verifications on Waiting screen
     Given Meter Alerts comes as Driver move to the Waiting screen
     When Verify Cost value and text

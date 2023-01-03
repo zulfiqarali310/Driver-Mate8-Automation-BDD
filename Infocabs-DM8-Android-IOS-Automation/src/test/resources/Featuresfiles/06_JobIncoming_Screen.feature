@@ -1,6 +1,6 @@
 Feature: Incoming Job Screen Verification
 
-  @Onboarding
+  @OnboardingVerification
   Scenario Outline: Incoming job Screen texts verification
     Given Incoming job screens comes as job assigned to the driver
     When Verify Job offer text

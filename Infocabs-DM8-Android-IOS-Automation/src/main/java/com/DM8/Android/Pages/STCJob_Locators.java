@@ -10,10 +10,8 @@ import com.DM8.Common.Utility;
 
 import io.appium.java_client.AppiumDriver;
 
-public class STCJob_Locators  extends ScreenActions  {
-	
-	
-	
+public class STCJob_Locators extends ScreenActions {
+
 	AppiumDriver driver;
 	Utility util = new Utility();
 
@@ -22,38 +20,40 @@ public class STCJob_Locators  extends ScreenActions  {
 		PageFactory.initElements(driver, this);
 
 	}
-	
-	
+
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_accept")
 	WebElement ButtonAccept;
-	
+
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/rl_sumup_card_payment")
 	WebElement ButtonCardPayment;
-	
+
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/icon_credit_card")
 	WebElement ButtonQRCodepayment;
-	
-	
-	
-	
+
 	public void ClickOnAccept() {
 
 		click(ButtonAccept, "Click on Login Button");
 
 	}
-	
+
 	public void ClickOnCardPayment() {
 
 		click(ButtonCardPayment, "Click Card Payment Button");
 
 	}
-	
+
 	public void ClickOnQRCodeButton() {
 
 		click(ButtonQRCodepayment, "Click on Card QR Code payment Button");
 
 	}
-	
-	
+
+	public boolean CheckCardIconbutton() {
+		return ButtonCardPayment.isDisplayed();
+	}
+
+	public boolean CheckQRCodeIconbutton() {
+		return ButtonQRCodepayment.isDisplayed();
+	}
 
 }

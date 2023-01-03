@@ -1,6 +1,6 @@
 Feature: Accepted Screen verification
 
-  @Onboarding
+  @OnboardingVerification
   Scenario Outline: Accepted job Screen UI elements verification
     Given Accepted job screens comes as job accepted by the driver
     When move scroll up so that pick and drop address and screen UI are visible

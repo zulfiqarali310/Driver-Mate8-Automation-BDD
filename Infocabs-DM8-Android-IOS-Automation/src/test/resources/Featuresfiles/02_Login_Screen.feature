@@ -11,7 +11,7 @@ Feature: Write Driver Code & Login to Driver Mate8
       | DriverCode |
       | 6a4a753d   |
 
-  @Onboarding
+  @OnboardingVerification
   Scenario Outline: Verify Login Screen all Text and button fields
     Given User is on login Screen to verify login elements
     When check to verify "<login>" text
