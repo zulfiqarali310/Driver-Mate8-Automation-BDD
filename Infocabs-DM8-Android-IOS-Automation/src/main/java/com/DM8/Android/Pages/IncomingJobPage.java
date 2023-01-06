@@ -44,7 +44,14 @@ public class IncomingJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_show_on_map")
 	WebElement TextAndButtonShowonMape;
+	
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/map")
+	WebElement CheckMap;
+	
 
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_back")
+	WebElement ClickonCrossBackButton;
 	
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_job_type")
 	WebElement TextJobType;
@@ -73,6 +80,8 @@ public class IncomingJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_customer_rating")
 	WebElement TextCustomerRating;
+	
+	
 
 	public void ClickOnRejected() {
 
@@ -137,6 +146,17 @@ public class IncomingJobPage extends ScreenActions {
 		click(TextAndButtonShowonMape, "Click on Login Button");
 
 	}
+	
+	public boolean CheckShowonMapbox() {
+		return CheckMap.isDisplayed();
+	}
+	
+	public void ClickOnCrossBackButton() {
+
+		click(ClickonCrossBackButton, "Click on cross and back show on map Button");
+
+	}
+	
 	
 	public String GetJobTypetext() {
 
