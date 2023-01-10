@@ -1,5 +1,7 @@
 package com.DM8.Android.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -80,6 +82,25 @@ public class AcceptedJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/icon_chat")
 	WebElement GettingchaticonButton;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/parentPanel")
+	WebElement CheckforChatWholeAlert;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/alertTitle")
+	WebElement Checkformessagetitle;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/contentPanel")
+	WebElement Checkmessagearea;
+	
+	@FindBy(how = How.ID, using = "android:id/button2")
+	WebElement CheckforCanclebutton;
+	@FindBy(how = How.ID, using = "android:id/button1")
+	WebElement CheckforSendButton;
+	
+	
+	@FindBy(how = How.ID, using = "android:id/text1")
+	WebElement ClickOnMessagebutton;
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/icon_re_route")
 	WebElement Gettingreouticon;
@@ -122,6 +143,10 @@ public class AcceptedJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_tariffName")
 	WebElement TextTariff;
+	
+	@FindBy(how = How.ID, using =  "android:id/text1")
+	WebElement list;
+	
 
 	public void ClickOnAccept() {
 
@@ -130,6 +155,8 @@ public class AcceptedJobPage extends ScreenActions {
 	}
 
 	public void ClickOnReturnJob() {
+		
+
 
 		click(ReturnJobButton, "Click on Return job Button");
 
@@ -306,6 +333,54 @@ public class AcceptedJobPage extends ScreenActions {
 		click(ButtonContinue, "Click on continue Button");
 
 	}
+	
+	public void ClickOnGettingLateChatButton() {
 
+		click(GettingchaticonButton, "Click on Chat icon Button");
 
+	}
+	
+	public boolean checkforwholechatAlert() {
+
+		return CheckforChatWholeAlert.isDisplayed();
+
+	}
+	
+	public String GetforMessagetext() {
+
+		return getText(Checkformessagetitle);
+
+	}
+	
+	
+	public boolean checkformessageare() {
+
+		return Checkmessagearea.isDisplayed();
+
+	}
+	
+	public String Getforcanclebuttontext() {
+
+		return getText(CheckforCanclebutton);
+
+	}
+	
+	public String GetforSendbuttontext() {
+
+		return getText(CheckforSendButton);
+
+	}
+	
+	public void ClickOnSendButtob() {
+
+		click(CheckforSendButton, "Click on Send Button");
+
+	}
+	
+
+	public void ClickOnAnyMessageButton() {
+
+		click(ClickOnMessagebutton, "Click on any message Button");
+
+	}
 }

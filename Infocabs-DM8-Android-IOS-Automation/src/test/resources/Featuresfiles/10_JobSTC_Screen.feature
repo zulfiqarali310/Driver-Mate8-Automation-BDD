@@ -36,7 +36,7 @@ Feature: STC Screen UI verification and Complete Testing
 
     Examples: 
       | distance | waiting | tariff | tariffvalue | waitlabel | extra | discountper         | stopwaiting   | startwaiting | stopmeter  | startmeter | addextracharges   |
-      | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Start Waiting | Stop Waiting | Start Meter | Start Meter | Add extra charges |
+      | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Stop Waiting | Start Waiting | Start Meter | Start Meter | Add extra charges |
 
   @OnboardingVerification
   Scenario Outline: STC Screens UI and buttons clicks verifications

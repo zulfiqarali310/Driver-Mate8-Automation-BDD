@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import org.junit.Assert;
 
 import com.DM8.Android.Pages.AcceptedJobPage;
+import com.DM8.Android.Pages.FeedbackJob_Locators;
 import com.DM8.Android.Pages.IncomingJobPage;
 import com.DM8.Android.Pages.WaitingJob_Locators;
 import com.DM8.Common.BaseClass;
@@ -25,6 +26,7 @@ public class GettingLateAlert_TestCases extends BaseClass {
 	IncomingJobPage Injob = new IncomingJobPage(driver);
 	AcceptedJobPage Acpjob = new AcceptedJobPage(driver);
 	WaitingJob_Locators Waitjob = new WaitingJob_Locators(driver);
+	FeedbackJob_Locators fd = new FeedbackJob_Locators(driver);
 	TouchAction touch = new TouchAction((PerformsTouchActions) driver);
 
 	@Given("^Job request are given to for Getting late alert verification$")
@@ -295,6 +297,19 @@ public class GettingLateAlert_TestCases extends BaseClass {
 		Assert.assertEquals(Actualtext, expected);
 		Acpjob.ClickOnContinueButton();
 	}
+	
+	@And("^make complete the job once verified with Getting late feature$")
+    public void make_complete_the_job_once_verified_with_getting_late_feature() throws Throwable {
+        Thread.sleep(3000);        
+        Waitjob.ClickOnAccept();
+        Thread.sleep(2000);  
+        Waitjob.ClickOnAccept();
+        Thread.sleep(2000);  
+        Waitjob.ClickOnAccept();
+        Thread.sleep(2000); 
+        fd.ClickOnSubmit();
+        Thread.sleep(2000);
+    }
 
 	@Then("^Getting late feature are verified on Waiting screen$")
 	public void getting_late_feature_are_verified_on_waiting_screen() throws Throwable {

@@ -29,7 +29,7 @@ Feature: Verify Getting late Alert functionality on Accepted and Waiting screen
     Then Getting late feature are verified on Accepted screen
 
     Examples: 
-      | headingtext                         | details1                        | details2                                         |
+      | headingtext                       | details1                        | details2                                         |
       | You’re getting late for this job! | How long will it take to get to | BRADLEY PARK GOLF COURSEBRADLEY ROADHUDDERSFIELD |
 
   @OnboardingGettinglate
@@ -52,8 +52,9 @@ Feature: Verify Getting late Alert functionality on Accepted and Waiting screen
     And click on 20mins wait box on Waiting screen
     And click again late button for continue button verification on Waiting screen
     And check that continue button are available on Waiting screen
+    And make complete the job once verified with Getting late feature
     Then Getting late feature are verified on Waiting screen
 
     Examples: 
-      | headingtext                         | details1                        | details2                                         |
+      | headingtext                       | details1                        | details2                                         |
       | You’re getting late for this job! | How long will it take to get to | BRADLEY PARK GOLF COURSEBRADLEY ROADHUDDERSFIELD |
