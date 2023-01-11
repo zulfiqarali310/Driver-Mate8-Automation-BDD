@@ -110,6 +110,10 @@ public class AcceptedJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/icon_start_navigation_map")
 	WebElement Gettingnavigationicon;
+	
+	
+	
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/ll_pickup")
 	WebElement VerifyPickUpwholeblock;
@@ -210,9 +214,9 @@ public class AcceptedJobPage extends ScreenActions {
 		return Gettingcurrentlocationicon.isDisplayed();
 	}
 
-	public boolean CheckGetNavigationicon() {
-		return Gettingnavigationicon.isDisplayed();
-	}
+
+	
+	
 
 	public boolean CheckPickUpwholeblock() {
 		return VerifyPickUpwholeblock.isDisplayed();
@@ -383,4 +387,15 @@ public class AcceptedJobPage extends ScreenActions {
 		click(ClickOnMessagebutton, "Click on any message Button");
 
 	}
+	
+	public boolean CheckGetNavigationicon() {
+		return Gettingnavigationicon.isDisplayed();
+	}
+	
+	public void ClickOnStartNvaigationButton() {
+
+		click(Gettingnavigationicon, "Click on Start Navigation Button");
+
+	}
+	
 }

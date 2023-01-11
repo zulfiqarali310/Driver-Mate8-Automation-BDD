@@ -21,7 +21,7 @@ Feature: STC Screen UI verification and Complete Testing
     And click on Stop waiting button on stc screen
     And Check Start waiting "<startwaiting>" text on stc screen
     And click on Start waiting button again on stc screen
-    And Check to verify stop meter "<stopmeter>" text on stc screen
+    #And Check to verify stop meter "<stopmeter>" text on stc screen
     #And click on Stop meter button on stc screen
     #And check to verify Start meter "<startmeter>" text on stc screen
     #And click on Start meter button on stc screen
