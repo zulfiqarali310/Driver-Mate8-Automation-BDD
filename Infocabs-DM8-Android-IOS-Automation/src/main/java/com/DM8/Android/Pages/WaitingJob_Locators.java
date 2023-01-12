@@ -86,6 +86,14 @@ public class WaitingJob_Locators extends ScreenActions {
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/button_waitingSMS")
 	WebElement SendSMSAlertRindbackbutton;
 
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/dialog_title")
+	WebElement SendSMSAlerttitile;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/dialog_message")
+	WebElement SendSMSAlertDetailstext;
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_negative")
+	WebElement SendSMSAlertOkButtonAndText;
+
 	// Waiting Screen Other Locators
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/icon_re_route")
@@ -132,6 +140,21 @@ public class WaitingJob_Locators extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_tariffName")
 	WebElement TextTariff;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/ll_send_no_show")
+	WebElement ClickOnSendNoShowButton;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/alertTitle")
+	WebElement SendNoShowAlertTitile;
+
+	@FindBy(how = How.ID, using = "android:id/message")
+	WebElement SendNoShowDetailstext;
+
+	@FindBy(how = How.ID, using = "android:id/button2")
+	WebElement SendNotext;
+
+	@FindBy(how = How.ID, using = "android:id/button1")
+	WebElement SendYesButtontext;
 
 	public void ClickOnAccept() {
 
@@ -245,6 +268,80 @@ public class WaitingJob_Locators extends ScreenActions {
 
 	public boolean CheckSendSMSRingbackicon() {
 		return SendSMSAlertRindbackbutton.isDisplayed();
+	}
+
+	public void ClickOnSendSMSRingBackButton() {
+
+		click(SendSMSAlertRindbackbutton, "Click on Send SMS Ring Button");
+
+	}
+
+	public String GetSendSMSRingBackAlerttext() {
+
+		return getText(SendSMSAlerttitile);
+
+	}
+
+	public String GetSendSMSRingDetailstext() {
+
+		return getText(SendSMSAlertDetailstext);
+
+	}
+
+	public String GetSendSMSRingBacOktext() {
+
+		return getText(SendSMSAlertOkButtonAndText);
+
+	}
+
+	public void ClickOnSendSMSOKButton() {
+
+		click(SendSMSAlertOkButtonAndText, "Click on Send SMS Ring back OK Button");
+
+	}
+
+	public void ClickOnSendNoShowutton() {
+
+		click(ClickOnSendNoShowButton, "Click on Send No show Button");
+
+	}
+
+	public String GetSendSNoShowAlerttext() {
+
+		return getText(SendNoShowAlertTitile);
+
+	}
+
+	public String GetSendSNoShowDetailstext() {
+
+		return getText(SendNoShowDetailstext);
+
+	}
+
+	public String GetSendSNotext() {
+
+		return getText(SendNotext);
+
+	}
+
+	public String GetSendShowYestext() {
+
+		return getText(SendYesButtontext);
+
+	}
+
+	public void ClickOnSendNoShowYesButton() {
+
+		click(SendYesButtontext, "Click on Send Show Yes Button text");
+
+	}
+
+	public boolean CheckNoShowAlerttext() {
+		return SendSMSAlerttitile.isDisplayed();
+	}
+
+	public boolean CheckSMSAlertDetailstext() {
+		return SendSMSAlertDetailstext.isDisplayed();
 	}
 
 }

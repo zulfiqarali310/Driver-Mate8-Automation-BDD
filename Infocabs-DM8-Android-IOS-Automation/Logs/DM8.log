@@ -14270,3 +14270,591 @@
 2023-01-11 20:44:05,105 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
 2023-01-11 20:44:18,047 INFO c.D.C.ScreenActions [main] Click on Login Button
 2023-01-11 20:44:22,341 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:02:06,793 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-01-12 17:02:06,805 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-01-12 17:02:06,805 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-01-12 17:02:06,815 DEBUG i.n.u.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3a2b2322
+2023-01-12 17:02:06,846 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-01-12 17:02:06,846 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 18
+2023-01-12 17:02:06,849 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-01-12 17:02:06,850 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-01-12 17:02:06,851 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-01-12 17:02:06,852 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-01-12 17:02:06,854 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-01-12 17:02:06,855 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-01-12 17:02:06,856 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @346c1a55
+2023-01-12 17:02:06,859 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-01-12 17:02:06,859 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2023-01-12 17:02:06,860 DEBUG i.n.u.i.PlatformDependent [main] maxDirectMemory: 4294967296 bytes (maybe)
+2023-01-12 17:02:06,860 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: /var/folders/qq/0lf4cs110y9f2_nb3rytsbrr0000gn/T (java.io.tmpdir)
+2023-01-12 17:02:06,861 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-01-12 17:02:06,861 DEBUG i.n.u.i.PlatformDependent [main] Platform: MacOS
+2023-01-12 17:02:06,862 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-01-12 17:02:06,863 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-01-12 17:02:06,866 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-01-12 17:02:06,867 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-01-12 17:02:06,877 DEBUG i.n.u.i.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-01-12 17:02:06,901 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-01-12 17:02:06,901 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-01-12 17:02:07,115 DEBUG i.n.h.s.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-01-12 17:02:07,116 DEBUG i.n.h.s.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-01-12 17:02:07,141 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 24
+2023-01-12 17:02:07,155 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-01-12 17:02:07,155 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-01-12 17:02:07,216 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 24
+2023-01-12 17:02:07,217 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 24
+2023-01-12 17:02:07,217 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-01-12 17:02:07,217 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-01-12 17:02:07,217 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-01-12 17:02:07,217 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-01-12 17:02:07,217 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-01-12 17:02:07,218 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-01-12 17:02:07,218 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-01-12 17:02:07,218 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-01-12 17:02:07,218 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-01-12 17:02:07,218 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-01-12 17:02:07,234 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-01-12 17:02:07,234 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-01-12 17:02:07,234 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-01-12 17:02:07,515 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 4209 (auto-detected)
+2023-01-12 17:02:07,520 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-01-12 17:02:07,520 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-01-12 17:02:07,526 DEBUG i.n.u.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2023-01-12 17:02:07,527 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2023-01-12 17:02:07,530 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2023-01-12 17:02:07,606 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-01-12 17:02:07,607 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-01-12 17:02:07,607 DEBUG i.n.u.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@32756776
+2023-01-12 17:02:07,638 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-01-12 17:02:07,638 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-01-12 17:02:07,638 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-01-12 17:02:07,638 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-01-12 17:02:22,563 DEBUG i.n.h.c.c.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-01-12 17:03:43,841 INFO c.D.C.ScreenActions [main] Login with Driver Code6a4a753d
+2023-01-12 17:03:46,490 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:03:57,583 INFO c.D.C.ScreenActions [main] Enter Usernamezulfiqartest79
+2023-01-12 17:03:59,676 INFO c.D.C.ScreenActions [main] Enter Password1234
+2023-01-12 17:04:02,260 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:04:21,222 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:05:07,980 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 17:05:14,250 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 17:05:42,375 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:06:42,344 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:07:03,585 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:07:26,947 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:07:33,177 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:07:49,195 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:08:50,553 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:09:14,495 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:09:42,761 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:09:49,035 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:09:55,914 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 17:10:02,118 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 17:10:16,610 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:13:57,433 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-01-12 17:13:57,438 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-01-12 17:13:57,439 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-01-12 17:13:57,442 DEBUG i.n.u.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3a2b2322
+2023-01-12 17:13:57,457 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-01-12 17:13:57,457 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 18
+2023-01-12 17:13:57,459 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-01-12 17:13:57,460 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-01-12 17:13:57,460 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-01-12 17:13:57,460 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-01-12 17:13:57,461 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-01-12 17:13:57,461 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-01-12 17:13:57,462 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @346c1a55
+2023-01-12 17:13:57,463 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-01-12 17:13:57,464 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2023-01-12 17:13:57,464 DEBUG i.n.u.i.PlatformDependent [main] maxDirectMemory: 4294967296 bytes (maybe)
+2023-01-12 17:13:57,464 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: /var/folders/qq/0lf4cs110y9f2_nb3rytsbrr0000gn/T (java.io.tmpdir)
+2023-01-12 17:13:57,465 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-01-12 17:13:57,465 DEBUG i.n.u.i.PlatformDependent [main] Platform: MacOS
+2023-01-12 17:13:57,465 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-01-12 17:13:57,466 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-01-12 17:13:57,467 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-01-12 17:13:57,467 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-01-12 17:13:57,473 DEBUG i.n.u.i.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-01-12 17:13:57,493 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-01-12 17:13:57,494 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-01-12 17:13:57,629 DEBUG i.n.h.s.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-01-12 17:13:57,630 DEBUG i.n.h.s.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-01-12 17:13:57,653 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 24
+2023-01-12 17:13:57,661 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-01-12 17:13:57,661 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-01-12 17:13:57,694 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 24
+2023-01-12 17:13:57,694 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 24
+2023-01-12 17:13:57,694 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-01-12 17:13:57,694 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-01-12 17:13:57,695 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-01-12 17:13:57,696 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-01-12 17:13:57,706 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-01-12 17:13:57,706 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-01-12 17:13:57,706 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-01-12 17:13:57,883 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 4352 (auto-detected)
+2023-01-12 17:13:57,885 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-01-12 17:13:57,885 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-01-12 17:13:57,890 DEBUG i.n.u.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2023-01-12 17:13:57,891 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2023-01-12 17:13:57,893 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2023-01-12 17:13:57,933 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-01-12 17:13:57,933 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-01-12 17:13:57,933 DEBUG i.n.u.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@60a9d70e
+2023-01-12 17:13:57,951 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-01-12 17:13:57,951 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-01-12 17:13:57,951 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-01-12 17:13:57,951 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-01-12 17:14:07,577 DEBUG i.n.h.c.c.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-01-12 17:15:06,646 INFO c.D.C.ScreenActions [main] Login with Driver Code6a4a753d
+2023-01-12 17:15:09,267 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:15:27,668 INFO c.D.C.ScreenActions [main] Enter Usernamezulfiqartest79
+2023-01-12 17:15:30,248 INFO c.D.C.ScreenActions [main] Enter Password1234
+2023-01-12 17:15:32,329 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:15:51,249 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:16:34,563 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 17:16:40,885 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 17:17:09,109 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:18:08,693 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:18:30,208 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:18:53,746 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:19:00,575 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:19:15,096 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:20:13,860 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:20:34,403 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:20:59,691 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:21:05,974 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:21:12,839 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 17:21:19,046 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 17:21:31,404 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:22:30,960 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:22:50,389 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:23:14,956 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:23:21,731 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:23:38,257 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:24:37,780 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:25:12,347 INFO c.D.C.ScreenActions [main] Click Feed back stars button
+2023-01-12 17:25:14,456 INFO c.D.C.ScreenActions [main] Login with Driver CodeCustomer is amazing he pay extra tip for the rid so he need 5 stars
+2023-01-12 17:25:17,048 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:25:31,330 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:25:36,502 INFO c.D.C.ScreenActions [main] Click on cross and back show on map Button
+2023-01-12 17:25:44,640 INFO c.D.C.ScreenActions [main] Click on Rejected Button
+2023-01-12 17:25:58,811 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:26:06,886 INFO c.D.C.ScreenActions [main] Click on Return job Button
+2023-01-12 17:26:14,173 INFO c.D.C.ScreenActions [main] Click on Yes Button
+2023-01-12 17:26:28,453 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:26:32,617 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:26:40,621 INFO c.D.C.ScreenActions [main] Click on Return job Button
+2023-01-12 17:26:43,730 INFO c.D.C.ScreenActions [main] Click on Yes Button
+2023-01-12 17:26:57,989 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:27:03,106 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:09,984 INFO c.D.C.ScreenActions [main] Click on Back cross Button
+2023-01-12 17:27:12,072 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:22,971 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:25,044 INFO c.D.C.ScreenActions [main] Click on 5 mins wait Button
+2023-01-12 17:27:28,021 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:30,105 INFO c.D.C.ScreenActions [main] Click on 10 mins wait Button
+2023-01-12 17:27:32,198 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:35,334 INFO c.D.C.ScreenActions [main] Click on 15 mins wait Button
+2023-01-12 17:27:37,461 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:40,691 INFO c.D.C.ScreenActions [main] Click on 20 mins wait Button
+2023-01-12 17:27:43,372 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:27:45,480 INFO c.D.C.ScreenActions [main] Click on continue Button
+2023-01-12 17:27:53,401 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:27:56,428 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:02,572 INFO c.D.C.ScreenActions [main] Click on Back cross Button
+2023-01-12 17:28:05,593 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:16,844 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:18,955 INFO c.D.C.ScreenActions [main] Click on 5 mins wait Button
+2023-01-12 17:28:21,892 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:24,029 INFO c.D.C.ScreenActions [main] Click on 10 mins wait Button
+2023-01-12 17:28:26,127 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:29,454 INFO c.D.C.ScreenActions [main] Click on 15 mins wait Button
+2023-01-12 17:28:32,125 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:34,258 INFO c.D.C.ScreenActions [main] Click on 20 mins wait Button
+2023-01-12 17:28:36,459 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:28:39,177 INFO c.D.C.ScreenActions [main] Click on continue Button
+2023-01-12 17:28:42,307 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:28:45,290 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:28:48,314 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:28:50,431 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:29:06,424 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:29:11,747 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:29:22,946 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:29:34,258 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:29:36,445 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:29:42,222 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:29:46,333 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:29:57,475 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:30:08,656 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:30:20,013 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:30:22,165 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:30:28,047 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:30:32,209 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:30:43,426 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:30:54,598 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:31:06,943 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:31:09,080 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:31:14,821 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:31:19,072 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:31:30,241 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:31:41,472 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:31:52,827 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:31:54,995 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:32:01,348 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:32:06,220 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:32:11,490 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:32:24,727 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:32:29,834 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 17:32:53,992 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:33:05,355 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 17:33:13,889 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:33:24,084 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 17:33:43,140 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:33:53,414 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 17:34:23,727 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:34:27,829 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:40:56,931 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-01-12 17:40:56,939 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-01-12 17:40:56,939 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-01-12 17:40:56,942 DEBUG i.n.u.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3a2b2322
+2023-01-12 17:40:56,960 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-01-12 17:40:56,960 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 18
+2023-01-12 17:40:56,962 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-01-12 17:40:56,963 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-01-12 17:40:56,963 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-01-12 17:40:56,963 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-01-12 17:40:56,964 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-01-12 17:40:56,965 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-01-12 17:40:56,966 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @346c1a55
+2023-01-12 17:40:56,967 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-01-12 17:40:56,967 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2023-01-12 17:40:56,967 DEBUG i.n.u.i.PlatformDependent [main] maxDirectMemory: 4294967296 bytes (maybe)
+2023-01-12 17:40:56,968 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: /var/folders/qq/0lf4cs110y9f2_nb3rytsbrr0000gn/T (java.io.tmpdir)
+2023-01-12 17:40:56,968 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-01-12 17:40:56,968 DEBUG i.n.u.i.PlatformDependent [main] Platform: MacOS
+2023-01-12 17:40:56,969 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-01-12 17:40:56,969 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-01-12 17:40:56,970 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-01-12 17:40:56,970 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-01-12 17:40:56,977 DEBUG i.n.u.i.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-01-12 17:40:57,002 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-01-12 17:40:57,002 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-01-12 17:40:57,134 DEBUG i.n.h.s.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-01-12 17:40:57,135 DEBUG i.n.h.s.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-01-12 17:40:57,160 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 24
+2023-01-12 17:40:57,169 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-01-12 17:40:57,169 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 24
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 24
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-01-12 17:40:57,201 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-01-12 17:40:57,202 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-01-12 17:40:57,202 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-01-12 17:40:57,202 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-01-12 17:40:57,202 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-01-12 17:40:57,202 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-01-12 17:40:57,213 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-01-12 17:40:57,213 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-01-12 17:40:57,213 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-01-12 17:40:57,394 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 4619 (auto-detected)
+2023-01-12 17:40:57,395 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-01-12 17:40:57,396 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-01-12 17:40:57,400 DEBUG i.n.u.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2023-01-12 17:40:57,401 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2023-01-12 17:40:57,403 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2023-01-12 17:40:57,446 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-01-12 17:40:57,447 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-01-12 17:40:57,447 DEBUG i.n.u.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@60a9d70e
+2023-01-12 17:40:57,463 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-01-12 17:40:57,463 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-01-12 17:40:57,464 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-01-12 17:40:57,464 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-01-12 17:41:06,749 DEBUG i.n.h.c.c.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-01-12 17:42:05,880 INFO c.D.C.ScreenActions [main] Login with Driver Code6a4a753d
+2023-01-12 17:42:08,506 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:42:26,917 INFO c.D.C.ScreenActions [main] Enter Usernamezulfiqartest79
+2023-01-12 17:42:29,501 INFO c.D.C.ScreenActions [main] Enter Password1234
+2023-01-12 17:42:32,082 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:42:51,005 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:43:34,585 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 17:43:40,854 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 17:44:09,199 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:45:08,529 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:45:29,053 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:45:51,503 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:45:59,300 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:46:14,675 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:47:12,465 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:47:33,954 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:47:59,169 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:48:05,488 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:48:12,388 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 17:48:19,542 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 17:48:31,919 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:49:30,066 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:49:48,525 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:50:13,933 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:50:20,143 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 17:50:37,216 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 17:51:38,034 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:52:13,073 INFO c.D.C.ScreenActions [main] Click Feed back stars button
+2023-01-12 17:52:15,169 INFO c.D.C.ScreenActions [main] Login with Driver CodeCustomer is amazing he pay extra tip for the rid so he need 5 stars
+2023-01-12 17:52:17,758 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:52:31,996 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:52:37,449 INFO c.D.C.ScreenActions [main] Click on cross and back show on map Button
+2023-01-12 17:52:45,583 INFO c.D.C.ScreenActions [main] Click on Rejected Button
+2023-01-12 17:52:59,818 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:53:08,182 INFO c.D.C.ScreenActions [main] Click on Return job Button
+2023-01-12 17:53:15,883 INFO c.D.C.ScreenActions [main] Click on Yes Button
+2023-01-12 17:53:29,135 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:53:33,128 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:53:41,028 INFO c.D.C.ScreenActions [main] Click on Return job Button
+2023-01-12 17:53:44,143 INFO c.D.C.ScreenActions [main] Click on Yes Button
+2023-01-12 17:53:57,404 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:54:02,520 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:08,695 INFO c.D.C.ScreenActions [main] Click on Back cross Button
+2023-01-12 17:54:10,781 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:21,735 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:23,813 INFO c.D.C.ScreenActions [main] Click on 5 mins wait Button
+2023-01-12 17:54:26,785 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:28,871 INFO c.D.C.ScreenActions [main] Click on 10 mins wait Button
+2023-01-12 17:54:30,952 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:34,081 INFO c.D.C.ScreenActions [main] Click on 15 mins wait Button
+2023-01-12 17:54:36,191 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:39,341 INFO c.D.C.ScreenActions [main] Click on 20 mins wait Button
+2023-01-12 17:54:42,037 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:54:44,155 INFO c.D.C.ScreenActions [main] Click on continue Button
+2023-01-12 17:54:51,271 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:54:54,435 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:00,816 INFO c.D.C.ScreenActions [main] Click on Back cross Button
+2023-01-12 17:55:03,377 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:14,591 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:16,706 INFO c.D.C.ScreenActions [main] Click on 5 mins wait Button
+2023-01-12 17:55:18,813 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:22,020 INFO c.D.C.ScreenActions [main] Click on 10 mins wait Button
+2023-01-12 17:55:24,806 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:26,931 INFO c.D.C.ScreenActions [main] Click on 15 mins wait Button
+2023-01-12 17:55:29,041 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:32,426 INFO c.D.C.ScreenActions [main] Click on 20 mins wait Button
+2023-01-12 17:55:34,974 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 17:55:37,211 INFO c.D.C.ScreenActions [main] Click on continue Button
+2023-01-12 17:55:40,360 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:55:43,272 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:55:46,347 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:55:48,456 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:56:05,981 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:56:11,615 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:56:22,729 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:56:34,010 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:56:36,182 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:56:41,915 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:56:46,045 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:56:57,227 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:57:08,438 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:57:19,848 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:57:22,136 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:57:28,016 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:57:32,132 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:57:43,397 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:57:54,531 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:58:05,936 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:58:08,112 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:58:13,987 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:58:18,129 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:58:28,309 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:58:39,453 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:58:50,829 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 17:58:52,982 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 17:58:58,742 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 17:59:02,882 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:59:07,003 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:59:20,454 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:59:25,732 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 17:59:37,048 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 17:59:48,339 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 18:00:02,674 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 18:00:13,172 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 18:00:24,783 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 18:00:36,719 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 18:00:47,450 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 18:00:51,595 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:04:22,781 DEBUG i.n.u.i.l.InternalLoggerFactory [main] Using Log4J2 as the default logging framework
+2023-01-12 21:04:22,790 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.level: simple
+2023-01-12 21:04:22,790 DEBUG i.n.u.ResourceLeakDetector [main] -Dio.netty.leakDetection.targetRecords: 4
+2023-01-12 21:04:22,796 DEBUG i.n.u.ResourceLeakDetectorFactory [main] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@66f659e6
+2023-01-12 21:04:22,819 DEBUG i.n.u.i.PlatformDependent0 [main] -Dio.netty.noUnsafe: false
+2023-01-12 21:04:22,819 DEBUG i.n.u.i.PlatformDependent0 [main] Java version: 18
+2023-01-12 21:04:22,821 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.theUnsafe: available
+2023-01-12 21:04:22,822 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.copyMemory: available
+2023-01-12 21:04:22,823 DEBUG i.n.u.i.PlatformDependent0 [main] sun.misc.Unsafe.storeFence: available
+2023-01-12 21:04:22,833 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Buffer.address: available
+2023-01-12 21:04:22,835 DEBUG i.n.u.i.PlatformDependent0 [main] direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2023-01-12 21:04:22,838 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.Bits.unaligned: available, true
+2023-01-12 21:04:22,840 DEBUG i.n.u.i.PlatformDependent0 [main] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @346c1a55
+2023-01-12 21:04:22,844 DEBUG i.n.u.i.PlatformDependent0 [main] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2023-01-12 21:04:22,844 DEBUG i.n.u.i.PlatformDependent [main] sun.misc.Unsafe: available
+2023-01-12 21:04:22,845 DEBUG i.n.u.i.PlatformDependent [main] maxDirectMemory: 4294967296 bytes (maybe)
+2023-01-12 21:04:22,846 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.tmpdir: /var/folders/qq/0lf4cs110y9f2_nb3rytsbrr0000gn/T (java.io.tmpdir)
+2023-01-12 21:04:22,846 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2023-01-12 21:04:22,847 DEBUG i.n.u.i.PlatformDependent [main] Platform: MacOS
+2023-01-12 21:04:22,848 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.maxDirectMemory: -1 bytes
+2023-01-12 21:04:22,849 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2023-01-12 21:04:22,852 DEBUG i.n.u.i.CleanerJava9 [main] java.nio.ByteBuffer.cleaner(): available
+2023-01-12 21:04:22,852 DEBUG i.n.u.i.PlatformDependent [main] -Dio.netty.noPreferDirect: false
+2023-01-12 21:04:22,867 DEBUG i.n.u.i.PlatformDependent [main] org.jctools-core.MpscChunkedArrayQueue: available
+2023-01-12 21:04:22,895 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2023-01-12 21:04:22,896 DEBUG i.n.u.i.InternalThreadLocalMap [main] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2023-01-12 21:04:23,071 DEBUG i.n.h.s.JdkSslContext [main] Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2023-01-12 21:04:23,071 DEBUG i.n.h.s.JdkSslContext [main] Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2023-01-12 21:04:23,100 DEBUG i.n.c.MultithreadEventLoopGroup [main] -Dio.netty.eventLoopThreads: 24
+2023-01-12 21:04:23,110 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.noKeySetOptimization: false
+2023-01-12 21:04:23,110 DEBUG i.n.c.n.NioEventLoop [main] -Dio.netty.selectorAutoRebuildThreshold: 512
+2023-01-12 21:04:23,148 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numHeapArenas: 24
+2023-01-12 21:04:23,148 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.numDirectArenas: 24
+2023-01-12 21:04:23,148 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.pageSize: 8192
+2023-01-12 21:04:23,148 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxOrder: 9
+2023-01-12 21:04:23,148 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.chunkSize: 4194304
+2023-01-12 21:04:23,148 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.smallCacheSize: 256
+2023-01-12 21:04:23,149 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.normalCacheSize: 64
+2023-01-12 21:04:23,149 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2023-01-12 21:04:23,149 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimInterval: 8192
+2023-01-12 21:04:23,149 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2023-01-12 21:04:23,149 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.useCacheForAllThreads: false
+2023-01-12 21:04:23,149 DEBUG i.n.b.PooledByteBufAllocator [main] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2023-01-12 21:04:23,163 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.allocator.type: pooled
+2023-01-12 21:04:23,163 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
+2023-01-12 21:04:23,163 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2023-01-12 21:04:23,414 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 6301 (auto-detected)
+2023-01-12 21:04:23,416 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+2023-01-12 21:04:23,416 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+2023-01-12 21:04:23,422 DEBUG i.n.u.NetUtilInitializations [Forwarding newSession on session null to remote] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2023-01-12 21:04:23,423 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2023-01-12 21:04:23,426 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+2023-01-12 21:04:23,483 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkAccessible: true
+2023-01-12 21:04:23,484 DEBUG i.n.b.AbstractByteBuf [AsyncHttpClient-1-2] -Dio.netty.buffer.checkBounds: true
+2023-01-12 21:04:23,484 DEBUG i.n.u.ResourceLeakDetectorFactory [AsyncHttpClient-1-2] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@74e5d90d
+2023-01-12 21:04:23,505 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2023-01-12 21:04:23,505 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.ratio: 8
+2023-01-12 21:04:23,506 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.chunkSize: 32
+2023-01-12 21:04:23,506 DEBUG i.n.u.Recycler [AsyncHttpClient-1-2] -Dio.netty.recycler.blocking: false
+2023-01-12 21:04:46,293 DEBUG i.n.h.c.c.Brotli [AsyncHttpClient-1-2] brotli4j not in the classpath; Brotli support will be unavailable.
+2023-01-12 21:05:46,701 INFO c.D.C.ScreenActions [main] Login with Driver Code6a4a753d
+2023-01-12 21:05:49,351 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:06:07,652 INFO c.D.C.ScreenActions [main] Enter Usernamezulfiqartest79
+2023-01-12 21:06:09,797 INFO c.D.C.ScreenActions [main] Enter Password1234
+2023-01-12 21:06:12,418 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:06:31,461 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:07:35,756 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 21:07:42,068 INFO c.D.C.ScreenActions [main] Click on On Off button
+2023-01-12 21:08:11,496 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:09:11,777 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:09:32,622 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 21:09:56,931 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 21:10:03,576 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 21:10:19,646 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 21:11:19,255 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:11:40,853 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 21:12:06,921 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 21:12:13,702 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 21:12:20,039 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 21:12:26,890 INFO c.D.C.ScreenActions [main] Click on Start and Stop Meter Button
+2023-01-12 21:12:39,594 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 21:13:43,107 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:14:02,611 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 21:14:27,721 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 21:14:34,633 INFO c.D.C.ScreenActions [main] Click on Start and stop Waiting Button
+2023-01-12 21:14:51,387 INFO c.D.C.ScreenActions [main] Click on Meter Expand Button
+2023-01-12 21:15:52,940 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:16:27,848 INFO c.D.C.ScreenActions [main] Click Feed back stars button
+2023-01-12 21:16:29,978 INFO c.D.C.ScreenActions [main] Login with Driver CodeCustomer is amazing he pay extra tip for the rid so he need 5 stars
+2023-01-12 21:16:32,586 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:16:46,860 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:16:52,171 INFO c.D.C.ScreenActions [main] Click on cross and back show on map Button
+2023-01-12 21:17:01,682 INFO c.D.C.ScreenActions [main] Click on Rejected Button
+2023-01-12 21:17:15,946 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:17:25,186 INFO c.D.C.ScreenActions [main] Click on Return job Button
+2023-01-12 21:17:32,501 INFO c.D.C.ScreenActions [main] Click on Yes Button
+2023-01-12 21:17:45,739 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:17:50,020 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:17:59,152 INFO c.D.C.ScreenActions [main] Click on Return job Button
+2023-01-12 21:18:02,302 INFO c.D.C.ScreenActions [main] Click on Yes Button
+2023-01-12 21:18:15,709 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:18:21,137 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:18:27,332 INFO c.D.C.ScreenActions [main] Click on Back cross Button
+2023-01-12 21:18:30,338 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:18:41,063 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:18:43,674 INFO c.D.C.ScreenActions [main] Click on 5 mins wait Button
+2023-01-12 21:18:45,773 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:18:48,968 INFO c.D.C.ScreenActions [main] Click on 10 mins wait Button
+2023-01-12 21:18:51,138 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:18:54,298 INFO c.D.C.ScreenActions [main] Click on 15 mins wait Button
+2023-01-12 21:18:56,895 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:18:59,044 INFO c.D.C.ScreenActions [main] Click on 20 mins wait Button
+2023-01-12 21:19:01,334 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:04,070 INFO c.D.C.ScreenActions [main] Click on continue Button
+2023-01-12 21:19:11,240 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:19:13,359 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:19,601 INFO c.D.C.ScreenActions [main] Click on Back cross Button
+2023-01-12 21:19:21,790 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:32,822 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:35,107 INFO c.D.C.ScreenActions [main] Click on 5 mins wait Button
+2023-01-12 21:19:38,089 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:41,189 INFO c.D.C.ScreenActions [main] Click on 10 mins wait Button
+2023-01-12 21:19:43,391 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:46,591 INFO c.D.C.ScreenActions [main] Click on 15 mins wait Button
+2023-01-12 21:19:49,314 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:51,565 INFO c.D.C.ScreenActions [main] Click on 20 mins wait Button
+2023-01-12 21:19:53,754 INFO c.D.C.ScreenActions [main] Click on Getting late Button
+2023-01-12 21:19:57,557 INFO c.D.C.ScreenActions [main] Click on continue Button
+2023-01-12 21:20:01,636 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:20:03,869 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:20:07,117 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:20:09,316 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:20:24,683 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:20:29,948 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:20:41,384 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:20:52,723 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:20:55,089 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 21:21:01,504 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 21:21:06,057 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:21:16,291 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:21:27,595 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:21:39,134 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:21:41,405 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 21:21:47,349 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 21:21:51,561 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:22:01,888 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:22:13,356 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:22:24,861 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:22:27,081 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 21:22:33,041 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 21:22:37,258 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:22:47,503 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:22:58,828 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:23:11,241 INFO c.D.C.ScreenActions [main] Click on Chat icon Button
+2023-01-12 21:23:13,481 INFO c.D.C.ScreenActions [main] Click on any message Button
+2023-01-12 21:23:19,428 INFO c.D.C.ScreenActions [main] Click on Send Button
+2023-01-12 21:23:23,631 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:23:27,757 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:23:41,035 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:23:46,185 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 21:23:58,830 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:24:09,050 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 21:24:21,778 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:24:33,172 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 21:25:11,115 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:25:21,905 INFO c.D.C.ScreenActions [main] Click on Start Navigation Button
+2023-01-12 21:25:33,856 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:25:38,136 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:25:51,451 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:25:56,088 INFO c.D.C.ScreenActions [main] Click on Login Button
+2023-01-12 21:25:59,127 INFO c.D.C.ScreenActions [main] Click on Send SMS Ring Button

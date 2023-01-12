@@ -32,7 +32,7 @@ Feature: Verify On Job Map Navigation functionality on All Job Status
     #And check to verify miles covered values and text for Map navigation on Waiting screen
     #And check waiting lable "<waiting>" text for Map navigation on Waiting screen
     #And Check waiting time value for Map navigation on Waiting screen
-    And click on Back button to bring App back on screen for Map navigation on Waiting screen
+    #And click on Back button to bring App back on screen for Map navigation on Waiting screen
     And click on POB button to move to pob status for Map navigation on Waiting screen
     Then Map Navigations all UI elments are verified on Waiting screen
 
