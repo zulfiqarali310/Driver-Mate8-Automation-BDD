@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 12, 2023 09:04:17 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 13, 2023 06:15:44 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -78,16 +76,17 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@OnboardingShowonMap</a></li>
-					<li><a href='#'>@OnboardingReturnJob</a></li>
-					<li><a href='#'>@OnboardingSendSMSRingBack</a></li>
 					<li><a href='#'>@Onboarding</a></li>
-					<li><a href='#'>@OnboardingJobCreation</a></li>
-					<li><a href='#'>@OnboardingSendSMSRingBackSendNoShow</a></li>
-					<li><a href='#'>@OnboardingGettinglate</a></li>
-					<li><a href='#'>@OnboardingRejection</a></li>
 					<li><a href='#'>@OnboardingDriversMessages</a></li>
 					<li><a href='#'>@OnboardingVerification</a></li>
+					<li><a href='#'>@OnboardingSendSMSRingBack</a></li>
+					<li><a href='#'>@OnboardingGobackChangeDropoffAddextra</a></li>
+					<li><a href='#'>@OnboardingJobCreation</a></li>
+					<li><a href='#'>@OnboardingGettinglate</a></li>
+					<li><a href='#'>@OnboardingSendSMSRingBackSendNoShow</a></li>
+					<li><a href='#'>@OnboardingShowonMap</a></li>
+					<li><a href='#'>@OnboardingReturnJob</a></li>
+					<li><a href='#'>@OnboardingRejection</a></li>
 					<li><a href='#'>@OnboardingCustomerNoShow</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -130,12 +129,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$94%'>
-                    <span class='strong'>16</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>18</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -148,12 +147,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='95%'>
-                    <span class='strong'>43</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>47</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
-                    2</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -168,14 +167,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='96%'>
-                    <span class='strong'>435</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>459</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    2</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='2%'>
-                    12</span> skipped, 
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -199,7 +198,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Splashes Screen Movements & Device Permissions Allocation</span>
-						<span class='test-time'>Jan 12, 2023 09:04:47 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:16:03 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -212,7 +211,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 55.456</span>
+	<span class='duration right label'>00 00 55.746</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Location permission & Splashes Screens movement</div>
 	</div>
@@ -338,7 +337,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='54'>
 					<div class='test-heading'>
 						<span class='test-name'>Write Driver Code & Login to Driver Mate8</span>
-						<span class='test-time'>Jan 12, 2023 09:05:42 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:16:59 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -351,7 +350,7 @@
 
 <div class='scenario outline node' test-id='55' status='pass'>
 
-	<span class='duration right label'>00 00 08.799</span>
+	<span class='duration right label'>00 00 08.288</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write Driver code to move to Login Screen</div>
 	</div>
@@ -390,7 +389,7 @@
 </div>
 <div class='scenario outline node' test-id='65' status='pass'>
 
-	<span class='duration right label'>00 00 12.119</span>
+	<span class='duration right label'>00 00 12.311</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Login Screen all Text and button fields</div>
 	</div>
@@ -437,7 +436,7 @@
 </div>
 <div class='scenario outline node' test-id='79' status='pass'>
 
-	<span class='duration right label'>00 00 12.921</span>
+	<span class='duration right label'>00 00 12.870</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with Valid Username and Password to DM8</div>
 	</div>
@@ -483,7 +482,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='91'>
 					<div class='test-heading'>
 						<span class='test-name'>Disclaimer Screen verification</span>
-						<span class='test-time'>Jan 12, 2023 09:06:16 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:17:33 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -496,7 +495,7 @@
 
 <div class='scenario outline node' test-id='92' status='pass'>
 
-	<span class='duration right label'>00 00 17.041</span>
+	<span class='duration right label'>00 00 17.078</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Disclaimer Screen verification</div>
 	</div>
@@ -550,7 +549,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='108'>
 					<div class='test-heading'>
 						<span class='test-name'>DM8 Home Screen verification</span>
-						<span class='test-time'>Jan 12, 2023 09:06:33 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:17:50 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -563,7 +562,7 @@
 
 <div class='scenario outline node' test-id='109' status='pass'>
 
-	<span class='duration right label'>00 01 08.552</span>
+	<span class='duration right label'>00 01 09.107</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: DM8 Home Screen verification</div>
 	</div>
@@ -685,7 +684,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='159'>
 					<div class='test-heading'>
 						<span class='test-name'>Job creation From Evop</span>
-						<span class='test-time'>Jan 12, 2023 09:07:42 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:18:59 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -698,7 +697,7 @@
 
 <div class='scenario node' test-id='160' status='pass'>
 
-	<span class='duration right label'>00 00 07.311</span>
+	<span class='duration right label'>00 00 06.405</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job Creation from Evop</div>
 	</div>
@@ -726,7 +725,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='165'>
 					<div class='test-heading'>
 						<span class='test-name'>Incoming Job Screen Verification</span>
-						<span class='test-time'>Jan 12, 2023 09:07:49 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:19:05 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -739,7 +738,7 @@
 
 <div class='scenario outline node' test-id='166' status='pass'>
 
-	<span class='duration right label'>00 00 19.923</span>
+	<span class='duration right label'>00 00 19.204</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Incoming job Screen texts verification</div>
 	</div>
@@ -798,7 +797,7 @@
 </div>
 <div class='scenario node' test-id='186' status='pass'>
 
-	<span class='duration right label'>00 00 04.157</span>
+	<span class='duration right label'>00 00 04.796</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Accept Incoming job as job assigned to driver</div>
 	</div>
@@ -826,7 +825,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='191'>
 					<div class='test-heading'>
 						<span class='test-name'>Accepted Screen verification</span>
-						<span class='test-time'>Jan 12, 2023 09:08:13 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:19:29 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -839,7 +838,7 @@
 
 <div class='scenario outline node' test-id='192' status='pass'>
 
-	<span class='duration right label'>00 00 55.820</span>
+	<span class='duration right label'>00 00 55.093</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Accepted job Screen UI elements verification</div>
 	</div>
@@ -954,7 +953,7 @@
 </div>
 <div class='scenario node' test-id='240' status='pass'>
 
-	<span class='duration right label'>00 00 04.430</span>
+	<span class='duration right label'>00 00 04.464</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Move job to the waiting status as driver tab on waiting button</div>
 	</div>
@@ -982,7 +981,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='245'>
 					<div class='test-heading'>
 						<span class='test-name'>Waiting Screen verification</span>
-						<span class='test-time'>Jan 12, 2023 09:09:13 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:20:29 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -995,7 +994,7 @@
 
 <div class='scenario outline node' test-id='246' status='pass'>
 
-	<span class='duration right label'>00 01 11.621</span>
+	<span class='duration right label'>00 01 14.925</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Meter UI and button clicks verifications on Waiting screen</div>
 	</div>
@@ -1126,7 +1125,7 @@
 </div>
 <div class='scenario outline node' test-id='302' status='pass'>
 
-	<span class='duration right label'>00 00 51.598</span>
+	<span class='duration right label'>00 00 50.725</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Waiting Screens UI and buttons clicks verifications</div>
 	</div>
@@ -1225,7 +1224,7 @@
 </div>
 <div class='scenario node' test-id='342' status='pass'>
 
-	<span class='duration right label'>00 00 04.261</span>
+	<span class='duration right label'>00 00 04.602</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Move job to the POB status as driver tab on pob button when driver is on board</div>
 	</div>
@@ -1253,7 +1252,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='347'>
 					<div class='test-heading'>
 						<span class='test-name'>POB Screen UI verification and Complete Testing</span>
-						<span class='test-time'>Jan 12, 2023 09:11:21 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:22:39 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -1266,7 +1265,7 @@
 
 <div class='scenario outline node' test-id='348' status='pass'>
 
-	<span class='duration right label'>00 01 23.922</span>
+	<span class='duration right label'>00 01 24.230</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Meter UI and button clicks verifications on POB Screen</div>
 	</div>
@@ -1409,7 +1408,7 @@
 </div>
 <div class='scenario outline node' test-id='410' status='pass'>
 
-	<span class='duration right label'>00 00 55.278</span>
+	<span class='duration right label'>00 00 53.890</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: POB Screens UI and buttons clicks verifications</div>
 	</div>
@@ -1508,7 +1507,7 @@
 </div>
 <div class='scenario node' test-id='450' status='pass'>
 
-	<span class='duration right label'>00 00 04.612</span>
+	<span class='duration right label'>00 00 04.429</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Move job to the STC status as driver tab on stc button when driver is on board</div>
 	</div>
@@ -1536,7 +1535,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='455'>
 					<div class='test-heading'>
 						<span class='test-name'>STC Screen UI verification and Complete Testing</span>
-						<span class='test-time'>Jan 12, 2023 09:13:45 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:25:02 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -1549,7 +1548,7 @@
 
 <div class='scenario outline node' test-id='456' status='pass'>
 
-	<span class='duration right label'>00 01 11.837</span>
+	<span class='duration right label'>00 01 18.620</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Meter UI and button clicks verifications on STC Screen</div>
 	</div>
@@ -1680,7 +1679,7 @@
 </div>
 <div class='scenario outline node' test-id='512' status='pass'>
 
-	<span class='duration right label'>00 00 53.648</span>
+	<span class='duration right label'>00 00 53.855</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: STC Screens UI and buttons clicks verifications</div>
 	</div>
@@ -1779,7 +1778,7 @@
 </div>
 <div class='scenario node' test-id='552' status='pass'>
 
-	<span class='duration right label'>00 00 04.226</span>
+	<span class='duration right label'>00 00 04.714</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To move Job to Feedback screen and Job status become completed as driver click on clear button</div>
 	</div>
@@ -1807,7 +1806,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='557'>
 					<div class='test-heading'>
 						<span class='test-name'>Feedback Screen UI verification and Complete Testing</span>
-						<span class='test-time'>Jan 12, 2023 09:15:55 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:27:19 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -1820,7 +1819,7 @@
 
 <div class='scenario outline node' test-id='558' status='pass'>
 
-	<span class='duration right label'>00 00 28.717</span>
+	<span class='duration right label'>00 00 28.195</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Feedback Screens UI and buttons clicks verifications</div>
 	</div>
@@ -1899,7 +1898,7 @@
 </div>
 <div class='scenario outline node' test-id='588' status='pass'>
 
-	<span class='duration right label'>00 00 10.860</span>
+	<span class='duration right label'>00 00 11.371</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write and submit a feedback for customer</div>
 	</div>
@@ -1945,7 +1944,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='600'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Show on Map and Job Rejection on Incoming job screen</span>
-						<span class='test-time'>Jan 12, 2023 09:16:34 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:27:59 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -1958,7 +1957,7 @@
 
 <div class='scenario node' test-id='601' status='pass'>
 
-	<span class='duration right label'>00 00 08.116</span>
+	<span class='duration right label'>00 00 08.084</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job has been created from Evop so that driver can receive it</div>
 	</div>
@@ -1988,7 +1987,7 @@
 </div>
 <div class='scenario node' test-id='608' status='pass'>
 
-	<span class='duration right label'>00 00 12.494</span>
+	<span class='duration right label'>00 00 12.548</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Show on map feature verification on Incoming job</div>
 	</div>
@@ -2028,7 +2027,7 @@
 </div>
 <div class='scenario node' test-id='619' status='pass'>
 
-	<span class='duration right label'>00 00 09.484</span>
+	<span class='duration right label'>00 00 08.289</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job rejection from DM8</div>
 	</div>
@@ -2061,7 +2060,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='626'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Return Job functionality on Accepted and Waiting screen</span>
-						<span class='test-time'>Jan 12, 2023 09:17:04 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:28:27 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -2074,7 +2073,7 @@
 
 <div class='scenario node' test-id='627' status='pass'>
 
-	<span class='duration right label'>00 00 08.079</span>
+	<span class='duration right label'>00 00 08.072</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job has been created from so that driver can recive and Return it on Accepted screen</div>
 	</div>
@@ -2104,7 +2103,7 @@
 </div>
 <div class='scenario outline node' test-id='634' status='pass'>
 
-	<span class='duration right label'>00 00 21.720</span>
+	<span class='duration right label'>00 00 59.569</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Return job verification on Accepted screen</div>
 	</div>
@@ -2155,7 +2154,7 @@
 </div>
 <div class='scenario node' test-id='650' status='pass'>
 
-	<span class='duration right label'>00 00 08.065</span>
+	<span class='duration right label'>00 00 08.329</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job has been created from so that driver can recive and Return it on waiting screen</div>
 	</div>
@@ -2185,7 +2184,7 @@
 </div>
 <div class='scenario node' test-id='657' status='pass'>
 
-	<span class='duration right label'>00 00 21.740</span>
+	<span class='duration right label'>00 00 22.934</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Return job verification on waiting screen</div>
 	</div>
@@ -2228,7 +2227,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='668'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Getting late Alert functionality on Accepted and Waiting screen</span>
-						<span class='test-time'>Jan 12, 2023 09:18:04 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:30:06 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -2241,7 +2240,7 @@
 
 <div class='scenario node' test-id='669' status='pass'>
 
-	<span class='duration right label'>00 00 08.209</span>
+	<span class='duration right label'>00 00 08.036</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job creation from Evop for getting late verification on Accepted and waiting screen</div>
 	</div>
@@ -2271,7 +2270,7 @@
 </div>
 <div class='scenario outline node' test-id='676' status='pass'>
 
-	<span class='duration right label'>00 00 53.522</span>
+	<span class='duration right label'>00 00 49.658</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Getting late verification on Accepted screen</div>
 	</div>
@@ -2370,7 +2369,7 @@
 </div>
 <div class='scenario outline node' test-id='716' status='pass'>
 
-	<span class='duration right label'>00 01 07.292</span>
+	<span class='duration right label'>00 01 06.121</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Getting late verification on Waiting screen</div>
 	</div>
@@ -2476,7 +2475,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='758'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Drivers Messages Alert functionality on All Job Status</span>
-						<span class='test-time'>Jan 12, 2023 09:20:13 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:32:10 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -2489,7 +2488,7 @@
 
 <div class='scenario node' test-id='759' status='pass'>
 
-	<span class='duration right label'>00 00 08.135</span>
+	<span class='duration right label'>00 00 08.105</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job creation from Evop for Drivers messages verification on All Job Status</div>
 	</div>
@@ -2519,7 +2518,7 @@
 </div>
 <div class='scenario outline node' test-id='766' status='pass'>
 
-	<span class='duration right label'>00 00 46.530</span>
+	<span class='duration right label'>00 00 53.630</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Drivers Messages verification on Accepted screen</div>
 	</div>
@@ -2594,7 +2593,7 @@
 </div>
 <div class='scenario outline node' test-id='794' status='pass'>
 
-	<span class='duration right label'>00 00 45.539</span>
+	<span class='duration right label'>00 00 46.153</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Drivers Messages verification on Waiting screen</div>
 	</div>
@@ -2669,7 +2668,7 @@
 </div>
 <div class='scenario outline node' test-id='822' status='pass'>
 
-	<span class='duration right label'>00 00 45.694</span>
+	<span class='duration right label'>00 00 46.126</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Drivers Messages verification on POB screen</div>
 	</div>
@@ -2744,7 +2743,7 @@
 </div>
 <div class='scenario outline node' test-id='850' status='pass'>
 
-	<span class='duration right label'>00 00 50.410</span>
+	<span class='duration right label'>00 00 51.024</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Drivers Messages verification on STC screen</div>
 	</div>
@@ -2822,7 +2821,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='878'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify On Job Map Navigation functionality on All Job Status</span>
-						<span class='test-time'>Jan 12, 2023 09:23:29 pm</span>
+						<span class='test-time'>Jan 13, 2023 06:35:35 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -2835,7 +2834,7 @@
 
 <div class='scenario node' test-id='879' status='pass'>
 
-	<span class='duration right label'>00 00 08.118</span>
+	<span class='duration right label'>00 00 08.102</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job creation from Evop for Map Navigation verification on All Job Status</div>
 	</div>
@@ -2865,7 +2864,7 @@
 </div>
 <div class='scenario outline node' test-id='886' status='pass'>
 
-	<span class='duration right label'>00 00 22.970</span>
+	<span class='duration right label'>00 00 51.832</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Map Navigation verification on Accepted screen</div>
 	</div>
@@ -2908,7 +2907,7 @@
 </div>
 <div class='scenario outline node' test-id='898' status='pass'>
 
-	<span class='duration right label'>00 00 23.605</span>
+	<span class='duration right label'>00 00 16.225</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Map Navigation verification on Waiting screen</div>
 	</div>
@@ -2934,14 +2933,10 @@
 
 				</li>
 				<li test-id='904' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_back_button_to_bring_app_back_on_screen_for_map_navigation_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Back button to bring App back on screen for Map navigation on Waiting screen</h6>
-
-				</li>
-				<li test-id='906' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_pob_button_to_move_to_pob_status_for_map_navigation_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on POB button to move to pob status for Map navigation on Waiting screen</h6>
 
 				</li>
-				<li test-id='908' class='gc then Pass' status='Pass'>
+				<li test-id='906' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.map_navigations_all_ui_elments_are_verified_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Map Navigations all UI elments are verified on Waiting screen</h6>
 
 				</li>
@@ -2949,9 +2944,9 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='910' status='pass'>
+<div class='scenario outline node' test-id='908' status='pass'>
 
-	<span class='duration right label'>00 00 48.750</span>
+	<span class='duration right label'>00 00 30.178</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Map Navigation verification on POB screen</div>
 	</div>
@@ -2960,7 +2955,7 @@
 	
 	
 	<ul class='steps'>
-		<li test-id='911' class='node scenario Pass' status='Pass'>
+		<li test-id='909' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Map Navigation verification on POB screen</div>
 
 				<div class='category-list'>
@@ -2968,23 +2963,23 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='912' class='gc given Pass' status='Pass'>
+				<li test-id='910' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.job_are_in_pob_status_for_map_navigation_verifications()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in pob status for Map Navigation verifications</h6>
 
 				</li>
-				<li test-id='914' class='gc when Pass' status='Pass'>
+				<li test-id='912' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_map_navigation_button_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When click on Map navigation button on POB screen</h6>
 
 				</li>
-				<li test-id='916' class='gc and Pass' status='Pass'>
+				<li test-id='914' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_back_button_to_bring_app_back_on_screen_for_map_navigation_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Back button to bring App back on screen for Map navigation on POB screen</h6>
 
 				</li>
-				<li test-id='918' class='gc and Pass' status='Pass'>
+				<li test-id='916' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_stc_button_to_move_to_stc_status_for_map_navigation_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on STC button to move to stc status for Map navigation on POB screen</h6>
 
 				</li>
-				<li test-id='920' class='gc then Pass' status='Pass'>
+				<li test-id='918' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.map_navigations_all_ui_elments_are_verified_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Map Navigations all UI elments are verified on POB screen</h6>
 
 				</li>
@@ -2992,9 +2987,9 @@
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='922' status='pass'>
+<div class='scenario outline node' test-id='920' status='pass'>
 
-	<span class='duration right label'>00 00 26.915</span>
+	<span class='duration right label'>00 00 31.355</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Map Navigation verification on STC screen</div>
 	</div>
@@ -3003,7 +2998,7 @@
 	
 	
 	<ul class='steps'>
-		<li test-id='923' class='node scenario Pass' status='Pass'>
+		<li test-id='921' class='node scenario Pass' status='Pass'>
 			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Map Navigation verification on STC screen</div>
 
 				<div class='category-list'>
@@ -3011,23 +3006,23 @@
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='924' class='gc given Pass' status='Pass'>
+				<li test-id='922' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.job_are_in_stc_status_for_map_navigation_verifications()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in STC status for Map Navigation verifications</h6>
 
 				</li>
-				<li test-id='926' class='gc when Pass' status='Pass'>
+				<li test-id='924' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_map_navigation_button_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When click on Map navigation button on STC screen</h6>
 
 				</li>
-				<li test-id='928' class='gc and Pass' status='Pass'>
+				<li test-id='926' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_back_button_to_bring_app_back_on_screen_for_map_navigation_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Back button to bring App back on screen for Map navigation on STC screen</h6>
 
 				</li>
-				<li test-id='930' class='gc and Pass' status='Pass'>
+				<li test-id='928' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.click_on_clear_button_to_move_to_feedback_screen_so_that_all_status_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Clear button to move to Feedback screen so that all status are verified</h6>
 
 				</li>
-				<li test-id='932' class='gc then Pass' status='Pass'>
+				<li test-id='930' class='gc then Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.StartNavigation_TestCases.map_navigations_all_ui_elments_are_verified_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Map Navigations all UI elments are verified on STC screen</h6>
 
 				</li>
@@ -3037,11 +3032,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='934'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='932'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify On Send SMS Ring back and Send No Show on Job Waiting status</span>
-						<span class='test-time'>Jan 12, 2023 09:25:40 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Jan 13, 2023 06:37:53 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -3051,9 +3046,9 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='935' status='pass'>
+<div class='scenario node' test-id='933' status='pass'>
 
-	<span class='duration right label'>00 00 08.158</span>
+	<span class='duration right label'>00 00 08.662</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job creation from Evop for verification of Send SMS Ring back and Send No Show on Job Waiting status</div>
 	</div>
@@ -3064,272 +3059,253 @@
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='936' class='node given Pass' status='Pass'>
+		<li test-id='934' class='node given Pass' status='Pass'>
 			<div class="step-name" title="(com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.job_request_are_given_for_send_sms_ring_back_and_send_no_show_on_job_waiting_status_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job request are given for Send SMS Ring back and Send No Show on Job Waiting status verification</div>
 
 
 		</li>
-		<li test-id='938' class='node when Pass' status='Pass'>
+		<li test-id='936' class='node when Pass' status='Pass'>
 			<div class="step-name" title="(com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.job_request_are_send_to_the_server_for_send_sms_ring_back_and_send_no_show_on_job_waiting_status_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Job request are send to the server for Send SMS Ring back and Send No Show on Job Waiting status verification</div>
 
 
 		</li>
-		<li test-id='940' class='node then Pass' status='Pass'>
+		<li test-id='938' class='node then Pass' status='Pass'>
 			<div class="step-name" title="(com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.new_job_has_been_created_in_order_to_check_and_verify_send_sms_ring_back_and_send_no_show_on_job_waiting_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created in order to check and verify Send SMS Ring back and Send No Show on Job Waiting status</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='942' status='fail'>
+<div class='scenario outline node' test-id='940' status='pass'>
 
-	<span class='duration right label'>00 00 16.668</span>
+	<span class='duration right label'>00 00 23.547</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Send SMS Ring back verification on Waiting screen</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Send SMS Ring back verification on Waiting screen</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>alert</td><td>sendsmsring</td><td>ok</td></tr><tr><td>Alert</td><td>SMS/Ringback Already Sent</td><td>Ok</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>alert</td><td>sendsmsring</td><td>ok</td></tr><tr><td>Alert</td><td>SMS/Ringback Sent</td><td>Ok</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='943' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Send SMS Ring back verification on Waiting screen</div>
+		<li test-id='941' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Send SMS Ring back verification on Waiting screen</div>
 
 				<div class='category-list'>
 						<span class='category label'>@OnboardingSendSMSRingBack</span>
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='944' class='gc given Pass' status='Pass'>
+				<li test-id='942' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.job_has_been_received_on_dm8_and_accept_and_move_to_waiting_status_for_map_send_sms_ring_back_verifications()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job has been received on DM8 and Accept and move to waiting status for Map Send SMS Ring Back verifications</h6>
 
 				</li>
-				<li test-id='946' class='gc when Pass' status='Pass'>
+				<li test-id='944' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_sms_ring_back_button_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When click on Send SMS Ring Back button on Waiting screen</h6>
 
 				</li>
-				<li test-id='948' class='gc and Pass' status='Pass'>
+				<li test-id='946' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_verify_alert_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check verify alert "Alert" text</h6>
 
 				</li>
-				<li test-id='950' class='gc and Fail' status='Fail'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_details_sendsms_something_text(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And check to verify details sendsms "SMS/Ringback Already Sent" text</h6>
+				<li test-id='948' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_details_sendsms_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify details sendsms "SMS/Ringback Sent" text</h6>
 
-							<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<SMS/Ringback []Sent> but was:<SMS/Ringback [Already ]Sent>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_details_sendsms_something_text(SendSMSRingBackSendNoShow_TestCases.java:90)
-	at ✽.check to verify details sendsms "SMS/Ringback Already Sent" text(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/17_SendSMSRingBackSendNoShow.feature:14)
-</textarea>
 				</li>
-				<li test-id='951' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</h6>
+				<li test-id='950' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_ok_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify ok "Ok" text</h6>
 
-							<div class="node-step">Send SMS Ring back verification on Waiting screen</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded1.png' src='./screenshots/embedded1.png'>
-							</div>
 				</li>
-				<li test-id='952' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_ok_something_text(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check to verify ok "Ok" text</h6>
+				<li test-id='952' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_ok_button_on_send_sms_ringback_alert()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on OK button on Send SMS ringback alert</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='954' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_ok_button_on_send_sms_ringback_alert()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on OK button on Send SMS ringback alert</h6>
+				<li test-id='954' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.send_sms_alert_are_verified_and_message_are_send()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Send SmS alert are verified and message are send</h6>
 
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='956' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.send_sms_alert_are_verified_and_message_are_send()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Send SmS alert are verified and message are send</h6>
-
-							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='958' status='fail'>
+<div class='scenario outline node' test-id='956' status='pass'>
 
-	<span class='duration right label'>00 02 33.619</span>
+	<span class='duration right label'>00 01 27.095</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Customer send no show verification on Waiting screen</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Customer send no show verification on Waiting screen</div>
 	</div>
 	
 		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>alert1</td><td>details</td><td>no</td><td>yes</td></tr><tr><td>No Show</td><td>Do you really want to send No-Show and clear the job?</td><td>NO</td><td>YES</td></tr></table></div>
 	
 	
 	<ul class='steps'>
-		<li test-id='959' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Customer send no show verification on Waiting screen</div>
+		<li test-id='957' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Customer send no show verification on Waiting screen</div>
 
 				<div class='category-list'>
 						<span class='category label'>@OnboardingCustomerNoShow</span>
 				</div>
 
 			<ul class='gc steps'>
-				<li test-id='960' class='gc given Pass' status='Pass'>
+				<li test-id='958' class='gc given Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.job_status_are_in_waiting_check_to_verify_customer_no_show()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job status are in waiting check to verify Customer no show</h6>
 
 				</li>
-				<li test-id='962' class='gc when Pass' status='Pass'>
+				<li test-id='960' class='gc when Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.scroll_up_the_screen_so_that_send_no_show_button_are_visible()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When scroll up the screen so that Send no show button are visible</h6>
 
 				</li>
-				<li test-id='964' class='gc and Pass' status='Pass'>
+				<li test-id='962' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.wait_so_that_send_no_show_time_complete()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And wait so that Send no show time complete</h6>
 
 				</li>
-				<li test-id='966' class='gc and Fail' status='Fail'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_no_show_button_on_waiting_screen()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And click on Send no show button on Waiting screen</h6>
+				<li test-id='964' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_no_show_button_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Send no show button on Waiting screen</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[AndroidDriver:  on ANDROID (e83b056c-284c-48a3-9f36-056bf34f3073)] -> id: com.infocabs.DM8:id/ll_send_no_show] (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.DM8.Common.Utility.waitForElementToBeVisible(Utility.java:95)
-	at com.DM8.Common.ScreenActions.click(ScreenActions.java:36)
-	at com.DM8.Android.Pages.WaitingJob_Locators.ClickOnSendNoShowutton(WaitingJob_Locators.java:305)
-	at com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_no_show_button_on_waiting_screen(SendSMSRingBackSendNoShow_TestCases.java:133)
-	at ✽.click on Send no show button on Waiting screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/17_SendSMSRingBackSendNoShow.feature:28)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '18.0.2.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [e83b056c-284c-48a3-9f36-056bf34f3073, findElement {using=id, value=com.infocabs.DM8:id/ll_send_no_show}]
-Capabilities {appium:app: /Users/mac/git/DM8_Automati..., appium:appActivity: com.infosun.infocabs.activi..., appium:appPackage: com.infocabs.DM8, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/mac/git/DM8_Automati..., appActivity: com.infosun.infocabs.activi..., appPackage: com.infocabs.DM8, automationName: UIAutomator2, platformName: android, platformVersion: 11, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.DM8.Common.Utility.waitForElementToBeVisible(Utility.java:95)
-	at com.DM8.Common.ScreenActions.click(ScreenActions.java:36)
-	at com.DM8.Android.Pages.WaitingJob_Locators.ClickOnSendNoShowutton(WaitingJob_Locators.java:305)
-	at com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_no_show_button_on_waiting_screen(SendSMSRingBackSendNoShow_TestCases.java:133)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</textarea>
 				</li>
-				<li test-id='967' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</h6>
+				<li test-id='966' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_verify_no_show_alert_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check verify no show alert "No Show" text</h6>
 
-							<div class="node-step">Customer send no show verification on Waiting screen</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded2.png' src='./screenshots/embedded2.png'>
-							</div>
 				</li>
-				<li test-id='968' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_verify_no_show_alert_something_text(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check verify no show alert "No Show" text</h6>
+				<li test-id='968' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_send_no_show_details_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify send no show details "Do you really want to send No-Show and clear the job?" text</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='970' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_send_no_show_details_something_text(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check to verify send no show details "Do you really want to send No-Show and clear the job?" text</h6>
+				<li test-id='970' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_no_something_button_on_no_show_alert(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check no "NO" button on no show alert</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='972' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_no_something_button_on_no_show_alert(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check no "NO" button on no show alert</h6>
+				<li test-id='972' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_yes_something_text_on_no_show_alert(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check yes "YES" text on no show alert</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='974' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_yes_something_text_on_no_show_alert(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check yes "YES" text on no show alert</h6>
+				<li test-id='974' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_yes_button_on_no_show_alert()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Yes button on No show alert</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='976' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_yes_button_on_no_show_alert()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on Yes button on No show alert</h6>
+				<li test-id='976' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_the_alert_title_on_send_no_show()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify the Alert title on send no show</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='978' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_the_alert_title_on_send_no_show()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check to verify the Alert title on send no show</h6>
+				<li test-id='978' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_details_send_no_show_alert_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify details send no show alert text</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='980' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_details_send_no_show_alert_text()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And check to verify details send no show alert text</h6>
+				<li test-id='980' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_ok_button_on_send_no_show_alert()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on ok button on Send no show alert</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='982' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_ok_button_on_send_no_show_alert()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on ok button on Send no show alert</h6>
+				<li test-id='982' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.job_has_been_reported_no_show_on_driver_navigate_back_to_to_home_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job has been reported No show on driver navigate back to to home screen</h6>
 
-							<div class="node-step">Step skipped</div>
 				</li>
-				<li test-id='984' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.job_has_been_reported_no_show_on_driver_navigate_back_to_to_home_screen()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Job has been reported No show on driver navigate back to to home screen</h6>
+			</ul>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='984'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Go back and Change dropoff address and Add Extra charges verification on Job flow</span>
+						<span class='test-time'>Jan 13, 2023 06:39:52 pm</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
 
-							<div class="node-step">Step skipped</div>
+<div class='scenario node' test-id='985' status='pass'>
+
+	<span class='duration right label'>00 00 07.267</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Create a job from evop to verify Goback and change dropoff address and Add extra charges</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@OnboardingGobackChangeDropoffAddextra</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='986' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.job_request_are_given_for_goback_and_change_dropoff_address_and_add_extra_charges_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job request are given for Goback and change dropoff address and Add extra charges verification</div>
+
+
+		</li>
+		<li test-id='988' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.job_request_are_send_to_the_server_for_goback_and_change_dropoff_address_and_add_extra_charges_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Job request are send to the server for Goback and change dropoff address and Add extra charges verification</div>
+
+
+		</li>
+		<li test-id='990' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.new_job_has_been_created_in_order_to_check_and_verify_goback_and_change_dropoff_and_extra_charges())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created in order to check and verify Goback and Change dropoff and extra charges</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario outline node' test-id='992' status='pass'>
+
+	<span class='duration right label'>00 00 47.497</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Go back button functionality verification on Job status</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>clr</td><td>stc</td><td>pob</td><td>wait</td></tr><tr><td>Clear</td><td>S.T.C</td><td>P.O.B</td><td>Waiting</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='993' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Go back button functionality verification on Job status</div>
+
+				<div class='category-list'>
+						<span class='category label'>@OnboardingGobackChangeDropoffAddextra</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='994' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.job_has_been_received_on_dm8_and_accept_and_move_to_stc_status_to_verify_go_back_in_all_job_status()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job has been received on DM8 and Accept and move to STC status to verify Go back in all job status</h6>
+
+				</li>
+				<li test-id='996' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.scroll_up_the_screen_so_that_go_back_button_are_visible()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When scroll up the screen so that Go back button are visible</h6>
+
+				</li>
+				<li test-id='998' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.check_that_driver_are_in_stc_status_by_verifying_clear_something_button_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check that Driver are in STC status by verifying clear "Clear" button text</h6>
+
+				</li>
+				<li test-id='1,000' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.click_on_back_button_on_stc_status()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on Back button on STC status</h6>
+
+				</li>
+				<li test-id='1,002' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.check_to_verify_driver_get_back_to_pob_status_by_verifying_stc_something_button_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify driver get back to POB status by verifying stc "S.T.C" button text</h6>
+
+				</li>
+				<li test-id='1,004' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.click_on_go_back_button_pob_status()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Go back button POB status</h6>
+
+				</li>
+				<li test-id='1,006' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.check_to_verify_driver_get_back_to_waiting_status_by_verifying_pob_something_button_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify driver get back to Waiting status by verifying pob "P.O.B" button text</h6>
+
+				</li>
+				<li test-id='1,008' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.click_on_back_button_on_waiting_status()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Back button on waiting status</h6>
+
+				</li>
+				<li test-id='1,010' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.check_to_verify_driver_get_back_to_accepted_status_by_verifying_waiting_something_button_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify driver get back to Accepted status by verifying waiting "Waiting" button text</h6>
+
+				</li>
+				<li test-id='1,012' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.BackChangeAndAddExtraCharges_TestCases.go_back_button_are_verified_in_all_job_status()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Go back button are verified in all job status</h6>
+
 				</li>
 			</ul>
 		</li>
@@ -3379,6 +3355,430 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
+						<span class='category-name'>@Onboarding</span>
+						<span class='category-status right'>
+						<span class='label pass'>12</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 12</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:16:03 pm</td>
+										<td class='linked' test-id='3'>Location permission & Splashes Screens movement</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:16:59 pm</td>
+										<td class='linked' test-id='56'>Write Driver code to move to Login Screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:17:20 pm</td>
+										<td class='linked' test-id='80'>Login with Valid Username and Password to DM8</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:17:33 pm</td>
+										<td class='linked' test-id='93'>Disclaimer Screen verification</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:18:59 pm</td>
+										<td class='linked' test-id='160'>Job Creation from Evop</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:19:24 pm</td>
+										<td class='linked' test-id='186'>To Accept Incoming job as job assigned to driver</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:20:24 pm</td>
+										<td class='linked' test-id='240'>To Move job to the waiting status as driver tab on waiting button</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:21:44 pm</td>
+										<td class='linked' test-id='303'>Waiting Screens UI and buttons clicks verifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:22:34 pm</td>
+										<td class='linked' test-id='342'>To Move job to the POB status as driver tab on pob button when driver is on board</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:24:57 pm</td>
+										<td class='linked' test-id='450'>To Move job to the STC status as driver tab on stc button when driver is on board</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:27:14 pm</td>
+										<td class='linked' test-id='552'>To move Job to Feedback screen and Job status become completed as driver click on clear button</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:27:47 pm</td>
+										<td class='linked' test-id='589'>Write and submit a feedback for customer</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingDriversMessages</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:32:10 pm</td>
+										<td class='linked' test-id='759'>Job creation from Evop for Drivers messages verification on All Job Status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:32:18 pm</td>
+										<td class='linked' test-id='767'>Drivers Messages verification on Accepted screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:33:12 pm</td>
+										<td class='linked' test-id='795'>Drivers Messages verification on Waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:33:58 pm</td>
+										<td class='linked' test-id='823'>Drivers Messages verification on POB screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:34:44 pm</td>
+										<td class='linked' test-id='851'>Drivers Messages verification on STC screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:35:35 pm</td>
+										<td class='linked' test-id='879'>Job creation from Evop for Map Navigation verification on All Job Status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:35:43 pm</td>
+										<td class='linked' test-id='887'>Map Navigation verification on Accepted screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:36:35 pm</td>
+										<td class='linked' test-id='899'>Map Navigation verification on Waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:36:52 pm</td>
+										<td class='linked' test-id='909'>Map Navigation verification on POB screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:37:22 pm</td>
+										<td class='linked' test-id='921'>Map Navigation verification on STC screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingVerification</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:17:07 pm</td>
+										<td class='linked' test-id='66'>Verify Login Screen all Text and button fields</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:17:50 pm</td>
+										<td class='linked' test-id='110'>DM8 Home Screen verification</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:19:05 pm</td>
+										<td class='linked' test-id='167'>Incoming job Screen texts verification</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:19:29 pm</td>
+										<td class='linked' test-id='193'>Accepted job Screen UI elements verification</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:20:29 pm</td>
+										<td class='linked' test-id='247'>Meter UI and button clicks verifications on Waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:22:39 pm</td>
+										<td class='linked' test-id='349'>Meter UI and button clicks verifications on POB Screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:24:03 pm</td>
+										<td class='linked' test-id='411'>POB Screens UI and buttons clicks verifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:25:02 pm</td>
+										<td class='linked' test-id='457'>Meter UI and button clicks verifications on STC Screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:26:20 pm</td>
+										<td class='linked' test-id='513'>STC Screens UI and buttons clicks verifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:27:19 pm</td>
+										<td class='linked' test-id='559'>Feedback Screens UI and buttons clicks verifications</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingSendSMSRingBack</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:38:02 pm</td>
+										<td class='linked' test-id='941'>Send SMS Ring back verification on Waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingGobackChangeDropoffAddextra</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:39:52 pm</td>
+										<td class='linked' test-id='985'>Create a job from evop to verify Goback and change dropoff address and Add extra charges</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:40:00 pm</td>
+										<td class='linked' test-id='993'>Go back button functionality verification on Job status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingJobCreation</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:27:59 pm</td>
+										<td class='linked' test-id='601'>Job has been created from Evop so that driver can receive it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingGettinglate</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:30:06 pm</td>
+										<td class='linked' test-id='669'>Job creation from Evop for getting late verification on Accepted and waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:30:14 pm</td>
+										<td class='linked' test-id='677'>Getting late verification on Accepted screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jan 13, 2023 06:31:04 pm</td>
+										<td class='linked' test-id='717'>Getting late verification on Waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@OnboardingSendSMSRingBackSendNoShow</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jan 13, 2023 06:37:53 pm</td>
+										<td class='linked' test-id='933'>Job creation from Evop for verification of Send SMS Ring back and Send No Show on Job Waiting status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
 						<span class='category-name'>@OnboardingShowonMap</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -3401,7 +3801,7 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2023 09:16:42 pm</td>
+										<td>Jan 13, 2023 06:28:07 pm</td>
 										<td class='linked' test-id='608'>Show on map feature verification on Incoming job</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
@@ -3434,253 +3834,23 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2023 09:17:04 pm</td>
+										<td>Jan 13, 2023 06:28:27 pm</td>
 										<td class='linked' test-id='627'>Job has been created from so that driver can recive and Return it on Accepted screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2023 09:17:12 pm</td>
+										<td>Jan 13, 2023 06:28:36 pm</td>
 										<td class='linked' test-id='635'>Return job verification on Accepted screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2023 09:17:34 pm</td>
+										<td>Jan 13, 2023 06:29:35 pm</td>
 										<td class='linked' test-id='650'>Job has been created from so that driver can recive and Return it on waiting screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2023 09:17:42 pm</td>
+										<td>Jan 13, 2023 06:29:43 pm</td>
 										<td class='linked' test-id='657'>Return job verification on waiting screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@OnboardingSendSMSRingBack</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:25:48 pm</td>
-										<td class='linked' test-id='943'>Send SMS Ring back verification on Waiting screen</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Onboarding</span>
-						<span class='category-status right'>
-						<span class='label pass'>12</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 12</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:04:47 pm</td>
-										<td class='linked' test-id='3'>Location permission & Splashes Screens movement</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:05:42 pm</td>
-										<td class='linked' test-id='56'>Write Driver code to move to Login Screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:06:03 pm</td>
-										<td class='linked' test-id='80'>Login with Valid Username and Password to DM8</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:06:16 pm</td>
-										<td class='linked' test-id='93'>Disclaimer Screen verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:07:42 pm</td>
-										<td class='linked' test-id='160'>Job Creation from Evop</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:08:09 pm</td>
-										<td class='linked' test-id='186'>To Accept Incoming job as job assigned to driver</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:09:09 pm</td>
-										<td class='linked' test-id='240'>To Move job to the waiting status as driver tab on waiting button</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:10:25 pm</td>
-										<td class='linked' test-id='303'>Waiting Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:11:17 pm</td>
-										<td class='linked' test-id='342'>To Move job to the POB status as driver tab on pob button when driver is on board</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:13:40 pm</td>
-										<td class='linked' test-id='450'>To Move job to the STC status as driver tab on stc button when driver is on board</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:15:50 pm</td>
-										<td class='linked' test-id='552'>To move Job to Feedback screen and Job status become completed as driver click on clear button</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:16:23 pm</td>
-										<td class='linked' test-id='589'>Write and submit a feedback for customer</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@OnboardingJobCreation</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:16:34 pm</td>
-										<td class='linked' test-id='601'>Job has been created from Evop so that driver can receive it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@OnboardingSendSMSRingBackSendNoShow</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:25:40 pm</td>
-										<td class='linked' test-id='935'>Job creation from Evop for verification of Send SMS Ring back and Send No Show on Job Waiting status</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@OnboardingGettinglate</span>
-						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:18:04 pm</td>
-										<td class='linked' test-id='669'>Job creation from Evop for getting late verification on Accepted and waiting screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:18:12 pm</td>
-										<td class='linked' test-id='677'>Getting late verification on Accepted screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:19:06 pm</td>
-										<td class='linked' test-id='717'>Getting late verification on Waiting screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -3712,164 +3882,8 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2023 09:16:55 pm</td>
+										<td>Jan 13, 2023 06:28:19 pm</td>
 										<td class='linked' test-id='619'>Job rejection from DM8</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@OnboardingDriversMessages</span>
-						<span class='category-status right'>
-						<span class='label pass'>10</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:20:13 pm</td>
-										<td class='linked' test-id='759'>Job creation from Evop for Drivers messages verification on All Job Status</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:20:21 pm</td>
-										<td class='linked' test-id='767'>Drivers Messages verification on Accepted screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:21:08 pm</td>
-										<td class='linked' test-id='795'>Drivers Messages verification on Waiting screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:21:53 pm</td>
-										<td class='linked' test-id='823'>Drivers Messages verification on POB screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:22:39 pm</td>
-										<td class='linked' test-id='851'>Drivers Messages verification on STC screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:23:29 pm</td>
-										<td class='linked' test-id='879'>Job creation from Evop for Map Navigation verification on All Job Status</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:23:37 pm</td>
-										<td class='linked' test-id='887'>Map Navigation verification on Accepted screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:24:00 pm</td>
-										<td class='linked' test-id='899'>Map Navigation verification on Waiting screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:24:24 pm</td>
-										<td class='linked' test-id='911'>Map Navigation verification on POB screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:25:13 pm</td>
-										<td class='linked' test-id='923'>Map Navigation verification on STC screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@OnboardingVerification</span>
-						<span class='category-status right'>
-						<span class='label pass'>10</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:05:51 pm</td>
-										<td class='linked' test-id='66'>Verify Login Screen all Text and button fields</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:06:33 pm</td>
-										<td class='linked' test-id='110'>DM8 Home Screen verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:07:49 pm</td>
-										<td class='linked' test-id='167'>Incoming job Screen texts verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:08:13 pm</td>
-										<td class='linked' test-id='193'>Accepted job Screen UI elements verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:09:13 pm</td>
-										<td class='linked' test-id='247'>Meter UI and button clicks verifications on Waiting screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:11:21 pm</td>
-										<td class='linked' test-id='349'>Meter UI and button clicks verifications on POB Screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:12:45 pm</td>
-										<td class='linked' test-id='411'>POB Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:13:45 pm</td>
-										<td class='linked' test-id='457'>Meter UI and button clicks verifications on STC Screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:14:57 pm</td>
-										<td class='linked' test-id='513'>STC Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jan 12, 2023 09:15:55 pm</td>
-										<td class='linked' test-id='559'>Feedback Screens UI and buttons clicks verifications</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -3881,13 +3895,13 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 					<div class='category-heading'>
 						<span class='category-name'>@OnboardingCustomerNoShow</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -3901,9 +3915,9 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2023 09:26:05 pm</td>
-										<td class='linked' test-id='959'>Customer send no show verification on Waiting screen</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Jan 13, 2023 06:38:25 pm</td>
+										<td class='linked' test-id='957'>Customer send no show verification on Waiting screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -3919,188 +3933,7 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:26:43 pm</td>
-										<td class='linked' test-id='966'>And click on Send no show button on Waiting screen</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[AndroidDriver:  on ANDROID (e83b056c-284c-48a3-9f36-056bf34f3073)] -> id: com.infocabs.DM8:id/ll_send_no_show] (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.DM8.Common.Utility.waitForElementToBeVisible(Utility.java:95)
-	at com.DM8.Common.ScreenActions.click(ScreenActions.java:36)
-	at com.DM8.Android.Pages.WaitingJob_Locators.ClickOnSendNoShowutton(WaitingJob_Locators.java:305)
-	at com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_no_show_button_on_waiting_screen(SendSMSRingBackSendNoShow_TestCases.java:133)
-	at ✽.click on Send no show button on Waiting screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/17_SendSMSRingBackSendNoShow.feature:28)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.0', java.version: '18.0.2.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [e83b056c-284c-48a3-9f36-056bf34f3073, findElement {using=id, value=com.infocabs.DM8:id/ll_send_no_show}]
-Capabilities {appium:app: /Users/mac/git/DM8_Automati..., appium:appActivity: com.infosun.infocabs.activi..., appium:appPackage: com.infocabs.DM8, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/mac/git/DM8_Automati..., appActivity: com.infosun.infocabs.activi..., appPackage: com.infocabs.DM8, automationName: UIAutomator2, platformName: android, platformVersion: 11, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy40.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at com.DM8.Common.Utility.waitForElementToBeVisible(Utility.java:95)
-	at com.DM8.Common.ScreenActions.click(ScreenActions.java:36)
-	at com.DM8.Android.Pages.WaitingJob_Locators.ClickOnSendNoShowutton(WaitingJob_Locators.java:305)
-	at com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.click_on_send_no_show_button_on_waiting_screen(SendSMSRingBackSendNoShow_TestCases.java:133)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.junit.ComparisonFailure</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2023 09:26:02 pm</td>
-										<td class='linked' test-id='950'>And check to verify details sendsms "SMS/Ringback Already Sent" text</td>
-										<td>
-											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<SMS/Ringback []Sent> but was:<SMS/Ringback [Already ]Sent>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.SendSMSRingBackSendNoShow_TestCases.check_to_verify_details_sendsms_something_text(SendSMSRingBackSendNoShow_TestCases.java:90)
-	at ✽.check to verify details sendsms "SMS/Ringback Already Sent" text(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/17_SendSMSRingBackSendNoShow.feature:14)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -4108,37 +3941,37 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>17</div>
+					<div class='panel-lead'>18</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>45</div>
+					<div class='panel-lead'>47</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>449</div>
+					<div class='panel-lead'>459</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 12, 2023 09:04:17 pm</div>
+					<div class='panel-lead'>Jan 13, 2023 06:15:44 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 12, 2023 09:28:38 pm</div>
+			 		<div class='panel-lead'>Jan 13, 2023 06:40:47 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 24 21.611</div>
+					<div class='panel-lead'>00 25 03.410</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -4154,71 +3987,8 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@OnboardingShowonMap</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@OnboardingReturnJob</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@OnboardingSendSMSRingBack</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
 							<td>@Onboarding</td>
 							<td>12</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@OnboardingJobCreation</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@OnboardingSendSMSRingBackSendNoShow</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@OnboardingGettinglate</td>
-							<td>3</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@OnboardingRejection</td>
-							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -4244,12 +4014,84 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 							</td>
 						</tr>
 						<tr>
-							<td>@OnboardingCustomerNoShow</td>
-							<td>0</td>
+							<td>@OnboardingSendSMSRingBack</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingGobackChangeDropoffAddextra</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingJobCreation</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingGettinglate</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingSendSMSRingBackSendNoShow</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingShowonMap</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingReturnJob</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingRejection</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@OnboardingCustomerNoShow</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -4263,35 +4105,35 @@ Session ID: e83b056c-284c-48a3-9f36-056bf34f3073
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 17,
-				passParent: 16,
-				failParent: 1,
+                parentCount: 18,
+				passParent: 18,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 45,
-				passChild: 43,
-				failChild: 2,
+				childCount: 47,
+				passChild: 47,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 449,
-				passGrandChild: 435,
-				failGrandChild: 2,
+				grandChildCount: 459,
+				passGrandChild: 459,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 12,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Splashes Screen Movements & Device Permissions Allocation":55.462,"Write Driver Code & Login to Driver Mate8":33.86,"Disclaimer Screen verification":17.041,"DM8 Home Screen verification":68.552,"Job creation From Evop":7.311,"Incoming Job Screen Verification":24.089,"Accepted Screen verification":60.257,"Waiting Screen verification":127.503,"POB Screen UI verification and Complete Testing":143.838,"STC Screen UI verification and Complete Testing":129.734,"Feedback Screen UI verification and Complete Testing":39.583,"Verify Show on Map and Job Rejection on Incoming job screen":30.106,"Verify Return Job functionality on Accepted and Waiting screen":59.625,"Verify Getting late Alert functionality on Accepted and Waiting screen":129.047,"Verify Drivers Messages Alert functionality on All Job Status":196.351,"Verify On Job Map Navigation functionality on All Job Status":130.383,"Verify On Send SMS Ring back and Send No Show on Job Waiting status":178.483
+			        "Splashes Screen Movements & Device Permissions Allocation":55.751,"Write Driver Code & Login to Driver Mate8":33.486,"Disclaimer Screen verification":17.078,"DM8 Home Screen verification":69.107,"Job creation From Evop":6.405,"Incoming Job Screen Verification":24.006,"Accepted Screen verification":59.563,"Waiting Screen verification":130.282,"POB Screen UI verification and Complete Testing":142.577,"STC Screen UI verification and Complete Testing":137.212,"Feedback Screen UI verification and Complete Testing":39.574,"Verify Show on Map and Job Rejection on Incoming job screen":28.934,"Verify Return Job functionality on Accepted and Waiting screen":98.92,"Verify Getting late Alert functionality on Accepted and Waiting screen":123.834,"Verify Drivers Messages Alert functionality on All Job Status":205.081,"Verify On Job Map Navigation functionality on All Job Status":137.714,"Verify On Send SMS Ring back and Send No Show on Job Waiting status":119.317,"Verify Go back and Change dropoff address and Add Extra charges verification on Job flow":54.772
 			};
 		</script>
 		

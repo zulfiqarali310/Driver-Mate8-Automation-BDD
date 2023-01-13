@@ -29,6 +29,7 @@ public class WaitingJob_Locators extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/ll_send_no_show")
 	WebElement SendNoToShowJobButton;
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/rl_go_back")
 	WebElement GobackButton;

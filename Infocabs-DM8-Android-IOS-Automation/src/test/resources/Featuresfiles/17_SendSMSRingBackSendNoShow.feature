@@ -17,8 +17,8 @@ Feature: Verify On Send SMS Ring back and Send No Show on Job Waiting status
     Then Send SmS alert are verified and message are send
 
     Examples: 
-      | alert | sendsmsring               | ok |
-      | Alert | SMS/Ringback Already Sent | Ok |
+      | alert | sendsmsring       | ok |
+      | Alert | SMS/Ringback Sent | Ok |
 
   @OnboardingCustomerNoShow
   Scenario Outline: Customer send no show verification on Waiting screen

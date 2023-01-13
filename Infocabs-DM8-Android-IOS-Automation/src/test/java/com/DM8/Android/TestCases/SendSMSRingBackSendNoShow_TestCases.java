@@ -124,13 +124,14 @@ public class SendSMSRingBackSendNoShow_TestCases extends BaseClass {
 
 	@And("^wait so that Send no show time complete$")
 	public void wait_so_that_send_no_show_time_complete() throws Throwable {
-		Thread.sleep(30000);
+		Thread.sleep(50000);
 	}
 
 	@And("^click on Send no show button on Waiting screen$")
 	public void click_on_send_no_show_button_on_waiting_screen() throws Throwable {
 		Utility.waitForPageLoaded();
-		Waitjob.ClickOnSendNoShowutton();
+		Thread.sleep(2000);
+		Waitjob.ClickOnSendNotoShowJob();
 		Thread.sleep(1000);
 	}
 
