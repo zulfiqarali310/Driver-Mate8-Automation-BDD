@@ -58,10 +58,12 @@ public class ReturnJob_TestCases extends BaseClass {
 		Utility.waitForPageLoaded();
 		Thread.sleep(1000);
 		Injob.ClickOnAccept();
+		Thread.sleep(2000);
 	}
 
 	@When("^move scroll up so that return button visible on Accepted screen$")
 	public void move_scroll_up_so_that_return_button_visible_on_accepted_screen() throws Throwable {
+		Utility.waitForPageLoaded();
 		Thread.sleep(2000);
 		touch.press(point(529, 1750)).waitAction(waitOptions(ofMillis(3000))).moveTo(point(529, 700)).release()
 				.perform();

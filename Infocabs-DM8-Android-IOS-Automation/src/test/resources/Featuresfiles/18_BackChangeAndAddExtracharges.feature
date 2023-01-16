@@ -23,22 +23,46 @@ Feature: Verify Go back and Change dropoff address and Add Extra charges verific
       | clr   | stc   | pob   | wait    |
       | Clear | S.T.C | P.O.B | Waiting |
 
-      
   @OnboardingChangeDropoff
   Scenario Outline: Change dropoff Address functionality verification on Job status
-  Given Job Status should be in POB to check for ChangeDropoff address
-  When Click on Change dropoff address button
-  And check to verify Change Address whole alert
-  And check to verify Change Address title "<titile>" text
-  And check to verify change address Alert messages dialog
-  And check verify cancel "<cnl>" button text on change address dialog
-  And check to verify update "<update>" text on change address dialog
-  And click on first address to change dropoff zone address
-  And click on Update button to update the address on POB status
-  And now move job to STC status to check address change again
-  And click on change address button on STC status
-  And click on address zone on STC status
-  And click on Update button on STC status
-  Then Change address is properly working and address zone can be changed easily
-  
-  
+    Given Job Status should be in POB by verifying stc "<stc>" to check for ChangeDropoff address
+    When Click on Change dropoff address button
+    And check to verify Change Address whole alert
+    And check to verify Change Address title "<titile>" text
+    And check to verify change address Alert messages dialog
+    And check verify cancel "<cnl>" button text on change address dialog
+    And check to verify update "<update>" text on change address dialog
+    And click on first address to change dropoff zone address
+    And click on Update button to update the address on POB status
+    And now move job to STC status to check address change again
+    And click on change address button on STC status
+    And click on address zone on STC status
+    And click on Update button on STC status
+    Then Change address is properly working and address zone can be changed easily
+
+    Examples: 
+      | stc   | titile        | cnl    | update |
+      | S.T.C | Dropoff Zones | CANCEL | UPDATE |
+
+  @OnboardingAddExtra
+  Scenario Outline: Verify Add Extra Charges on Job status
+    Given Job Status should be in POB by verifying stc "<stc>" to check for Adding extra charges
+    When Scroll screen so that Add extra button should be clickable
+    And click on Add Extra button on POB status
+    And check to verify whole Extra Alert on POB status
+    And check to verify title "<extratitle>" text on Add Extra alert
+    And check whole message area on Add Extra alert
+    And check cancle "<cnl>" text on Add extra alert
+    And check ok "<ok>" text on Add extra alert
+    #And click to Enter "<pound>" pound extra value
+    And click on OK button to add Extra charges
+    And move job to STC screen to add Extra charges
+    And click on Add Extra button STC screen
+    #And click to Add "<pound>" more extra pounds on STC screen
+    And agin click on OK button to add more Extra on STC screen
+    And click to Clear and submit feedback of job with Extra value added
+    Then Adding Extra charges can be added easily on both POB and STC Job status
+
+    Examples: 
+      | stc   | extratitle                 | cnl    | ok | pound |
+      | S.T.C | Please enter extra amount: | CANCEL | OK |    10 |

@@ -32,10 +32,16 @@ public class POBJob_Locators extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_menu_extraCharges")
 	WebElement ButtonAddExtraCharges;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/custom")
+	WebElement ExtraFieldsinputarea;
+	
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/rl_change_dropoff")
 	WebElement ButtonChangeDropoffAddress;
-	
+	@FindBy(how = How.ID, using = "android:id/message")
+	WebElement AddExtraAlertTitilemessage;
 	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_change_dropoff")
@@ -93,6 +99,23 @@ public class POBJob_Locators extends ScreenActions {
 
 		return getText(DropoffAdresstext);
 
+	}
+	
+	public String GetExtraAlerttext() {
+
+		return getText(AddExtraAlertTitilemessage);
+
+	}
+	
+	public boolean checkforwholeinputarea() {
+
+		return ExtraFieldsinputarea.isDisplayed();
+
+	}
+	
+	public void Entereuro(String inpteuro) {
+
+		sendKeys(ExtraFieldsinputarea, inpteuro, "enter number value" + inpteuro);
 	}
 
 }
