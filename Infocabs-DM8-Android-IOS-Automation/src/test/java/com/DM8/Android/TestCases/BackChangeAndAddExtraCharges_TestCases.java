@@ -346,13 +346,13 @@ public class BackChangeAndAddExtraCharges_TestCases extends BaseClass {
 		Utility.waitForPageLoaded();
 		Thread.sleep(1000);
 		Acpjob.ClickOnSendButtob();
+		Thread.sleep(2000);
 	}
 
 	@And("^click to Clear and submit feedback of job with Extra value added$")
 	public void click_to_clear_and_submit_feedback_of_job_with_extra_value_added() throws Throwable {
 		Utility.waitForPageLoaded();
-		Thread.sleep(1000);
-		Acpjob.ClickOnSendButtob();
+		Acpjob.ClickOnAccept();
 		Utility.waitForPageLoaded();
 		Thread.sleep(1000);
 		fd.ClickOnSubmit();

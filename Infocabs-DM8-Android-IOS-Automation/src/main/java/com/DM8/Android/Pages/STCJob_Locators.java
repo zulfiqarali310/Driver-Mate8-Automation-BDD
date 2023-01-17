@@ -27,8 +27,35 @@ public class STCJob_Locators extends ScreenActions {
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/rl_sumup_card_payment")
 	WebElement ButtonCardPayment;
 
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/image_ccVisa")
+	WebElement CheckForVisaCard;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/image_ccMastercard")
+	WebElement CheckForMasterCard;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/image_ccAmericanExpress")
+	WebElement CheckForAmericanExpress;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_surcharge")
+	WebElement CheckForSurCharge;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/button_pay")
+	WebElement CheckForPaybuttontext;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/button_cancel")
+	WebElement CheckForCancelbuttontext;
+
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/icon_credit_card")
 	WebElement ButtonQRCodepayment;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_heading")
+	WebElement CheckQRCodetext;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/idIVQrcode")
+	WebElement CheckQRCodeArea;
+
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_close")
+	WebElement CloseButtonandText;
 
 	public void ClickOnAccept() {
 
@@ -54,6 +81,65 @@ public class STCJob_Locators extends ScreenActions {
 
 	public boolean CheckQRCodeIconbutton() {
 		return ButtonQRCodepayment.isDisplayed();
+	}
+
+	public boolean CheckVisaIcon() {
+		return CheckForVisaCard.isDisplayed();
+	}
+
+	public boolean CheckMasterIcon() {
+		return CheckForMasterCard.isDisplayed();
+	}
+
+	public boolean CheckAmericanExpressIcon() {
+		return CheckForAmericanExpress.isDisplayed();
+	}
+
+	public boolean GetForSurchargetext() {
+
+		return CheckForSurCharge.isDisplayed();
+
+	}
+
+	public boolean GetForpaybuttontext() {
+
+	
+		return CheckForPaybuttontext.isDisplayed();
+
+	}
+
+	public String GetForCancelbuttontext() {
+
+		return getText(CheckForCancelbuttontext);
+
+	}
+
+	public void ClickOnCnacleButton() {
+
+		click(CheckForCancelbuttontext, "Click on Card cancel payment Button");
+
+	}
+
+	public String GetForQRCodetext() {
+
+		return getText(CheckQRCodetext);
+
+	}
+
+	public boolean CheckForQRCodeArea() {
+		return CheckQRCodeArea.isDisplayed();
+	}
+
+	public String GetForClosetext() {
+
+		return getText(CloseButtonandText);
+
+	}
+
+	public void ClickOnCloseButton() {
+
+		click(CloseButtonandText, "Click on close Button");
+
 	}
 
 }
