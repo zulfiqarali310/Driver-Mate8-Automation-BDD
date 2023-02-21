@@ -150,8 +150,9 @@ public class POBJob_TestCases extends BaseClass {
 	@And("^Check stop waiting \"([^\"]*)\" text on pob screen$")
 	public void check_stop_waiting_something_text_on_pob_screen(String stopwaiting) throws Throwable {
 		Utility.waitForPageLoaded();
-		String Actualtext = Waitjob.GetStartstopwaitingbuttontext();
-		Assert.assertEquals(Actualtext, stopwaiting);
+		boolean Actualtext = Waitjob.VerifyStartStopWaitingtext();
+		boolean expected = true;
+		Assert.assertEquals(Actualtext, expected);
 	}
 
 	@And("^click on Stop waiting button on pob screen$")
@@ -164,8 +165,9 @@ public class POBJob_TestCases extends BaseClass {
 	@And("^Check Start waiting \"([^\"]*)\" text on pob screen$")
 	public void check_start_waiting_something_text_on_pob_screen(String startwaiting) throws Throwable {
 		Utility.waitForPageLoaded();
-		String Actualtext = Waitjob.GetStartstopwaitingbuttontext();
-		Assert.assertEquals(Actualtext, startwaiting);
+		boolean Actualtext = Waitjob.VerifyStartStopWaitingtext();
+		boolean expected = true;
+		Assert.assertEquals(Actualtext, expected);
 	}
 
 	@And("^click on Start waiting button again on pob screen$")

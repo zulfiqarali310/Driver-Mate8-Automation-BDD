@@ -1,12 +1,12 @@
 Feature: Verify that Driver can be able to pay Job payment using Cards and QR code
 
-  @OnboardingDriverPayment
+  @JobPayments
   Scenario Outline: Create a job from evop to verify Driver can pay the Card and QR code payment
     Given Job request are given for Card and QR code payment
     When Job request are send to the server for or Card and QR code payment
     Then new job has been created in order to check and verify or Card and QR code payment
 
-  @OnboardingDriverPayment
+  @JobPayments
   Scenario Outline: Card Payment Verification
     Given Job has been received on DM8 and Accept and move to STC status to verify Card payment
     When check that Driver are in STC status by verifying clear "<clr>" button text for Card payments
@@ -24,7 +24,7 @@ Feature: Verify that Driver can be able to pay Job payment using Cards and QR co
       | clr   | surcharge                  | paytext    | cnl    |
       | Clear | Inclusive Surcharge = 0.31 | PAY £ 3.43 | CANCEL |
 
-  @OnboardingDriverPayment
+  @JobPayments
   Scenario Outline: QR Code Payment Verification
     Given check that Driver are in STC status by verifying clear "<clr>" button text for QR Code payments
     When Click on QR Code payment button so that QR Code payment alert are opned

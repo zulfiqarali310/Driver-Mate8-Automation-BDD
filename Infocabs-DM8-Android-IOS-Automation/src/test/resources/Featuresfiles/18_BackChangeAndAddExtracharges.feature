@@ -1,12 +1,12 @@
 Feature: Verify Go back and Change dropoff address and Add Extra charges verification on Job flow
 
-  @OnboardingGobackChangeDropoffAddextra
+  @GobackChangeDropoffAddextra
   Scenario Outline: Create a job from evop to verify Goback and change dropoff address and Add extra charges
     Given Job request are given for Goback and change dropoff address and Add extra charges verification
     When Job request are send to the server for Goback and change dropoff address and Add extra charges verification
     Then new job has been created in order to check and verify Goback and Change dropoff and extra charges
 
-  @OnboardingGoback
+  @GobackChangeDropoffAddextra
   Scenario Outline: Go back button functionality verification on Job status
     Given Job has been received on DM8 and Accept and move to STC status to verify Go back in all job status
     When scroll up the screen so that Go back button are visible
@@ -23,7 +23,7 @@ Feature: Verify Go back and Change dropoff address and Add Extra charges verific
       | clr   | stc   | pob   | wait    |
       | Clear | S.T.C | P.O.B | Waiting |
 
-  @OnboardingChangeDropoff
+  @GobackChangeDropoffAddextra
   Scenario Outline: Change dropoff Address functionality verification on Job status
     Given Job Status should be in POB by verifying stc "<stc>" to check for ChangeDropoff address
     When Click on Change dropoff address button
@@ -44,7 +44,7 @@ Feature: Verify Go back and Change dropoff address and Add Extra charges verific
       | stc   | titile        | cnl    | update |
       | S.T.C | Dropoff Zones | CANCEL | UPDATE |
 
-  @OnboardingAddExtra
+  @GobackChangeDropoffAddextra
   Scenario Outline: Verify Add Extra Charges on Job status
     Given Job Status should be in POB by verifying stc "<stc>" to check for Adding extra charges
     When Scroll screen so that Add extra button should be clickable

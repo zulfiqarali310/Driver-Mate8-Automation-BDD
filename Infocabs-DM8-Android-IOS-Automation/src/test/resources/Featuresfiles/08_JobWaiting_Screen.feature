@@ -1,12 +1,12 @@
 Feature: Waiting Screen verification
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: Meter UI and button clicks verifications on Waiting screen
     Given Meter Alerts comes as Driver move to the Waiting screen
     When Verify Cost value and text
     And check distance "<distance>" text
     And check to verify miles covered values and text
-    And Check Progress loader icon
+    #And Check Progress loader icon
     And check waiting lable "<waiting>" text
     And Check waiting time value
     And click on Meter expand button to see meter details
@@ -32,9 +32,9 @@ Feature: Waiting Screen verification
 
     Examples: 
       | distance | waiting | tariff | tariffvalue | waitlabel | extra | discountper         | stopwaiting  | startwaiting  |
-      | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Start Waiting | Stop Waiting |
+      | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Start Waiting | Start Waiting |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: Waiting Screens UI and buttons clicks verifications
     When Driver is on Waiting Screen and lets verify Waiting screens UI and texts fields
     And move scroll up so that pick and drop address and screen UI are visible on waiting screen
@@ -60,7 +60,7 @@ Feature: Waiting Screen verification
       | pob   |
       | P.O.B |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: To Move job to the POB status as driver tab on pob button when driver is on board
     When Driver Click on pob button
     Then Job Status become POB

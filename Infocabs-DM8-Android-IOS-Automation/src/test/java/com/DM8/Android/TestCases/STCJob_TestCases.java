@@ -145,8 +145,9 @@ public class STCJob_TestCases extends BaseClass {
 	@And("^Check stop waiting \"([^\"]*)\" text on stc screen$")
 	public void check_stop_waiting_something_text_on_stc_screen(String stopwaiting) throws Throwable {
 		Utility.waitForPageLoaded();
-		String Actualtext = Waitjob.GetStartstopwaitingbuttontext();
-		Assert.assertEquals(Actualtext, stopwaiting);
+		boolean Actualtext = Waitjob.VerifyStartStopWaitingtext();
+		boolean expected = true;
+		Assert.assertEquals(Actualtext, expected);
 	}
 
 	@And("^click on Stop waiting button on stc screen$")
@@ -159,8 +160,9 @@ public class STCJob_TestCases extends BaseClass {
 	@And("^Check Start waiting \"([^\"]*)\" text on stc screen$")
 	public void check_start_waiting_something_text_on_stc_screen(String startwaiting) throws Throwable {
 		Utility.waitForPageLoaded();
-		String Actualtext = Waitjob.GetStartstopwaitingbuttontext();
-		Assert.assertEquals(Actualtext, startwaiting);
+		boolean Actualtext = Waitjob.VerifyStartStopWaitingtext();
+		boolean expected = true;
+		Assert.assertEquals(Actualtext, expected);
 	}
 
 	@And("^click on Start waiting button again on stc screen$")

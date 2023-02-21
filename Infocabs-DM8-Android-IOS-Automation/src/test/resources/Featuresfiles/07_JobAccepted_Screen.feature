@@ -1,6 +1,6 @@
 Feature: Accepted Screen verification
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: Accepted job Screen UI elements verification
     Given Accepted job screens comes as job accepted by the driver
     When move scroll up so that pick and drop address and screen UI are visible
@@ -30,7 +30,7 @@ Feature: Accepted Screen verification
       | waiting |
       | Waiting |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: To Move job to the waiting status as driver tab on waiting button
     When Driver Click on Waiting button
     Then Job Status become Waiting

@@ -23,15 +23,10 @@ public class BaseClass {
 	public static AppiumDriver driver;
 	
 	// borwserstack Properties
-	 public static String userName1 = "zulfiqarali_Enik9H";
-	  public static String accessKey2 = "uGhgqkKUHhCysnhAgZRk";
-	  
-	  // Pipeline properties
-	  public static String userName = System.getenv("BROWSERSTACK_USERNAME");
-	  public static String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
-	  public static String browserstackLocal = System.getenv("BROWSERSTACK_LOCAL");
-	  public static String browserstackLocalIdentifier = System.getenv("BROWSERSTACK_LOCAL_IDENTIFIER");
-	  public static String app = System.getenv("BROWSERSTACK_APP_ID");
+	 public static String userName = "zulfiqarali_Enik9H";
+	  public static String accessKey = "uGhgqkKUHhCysnhAgZRk";
+	  public static String server = "hub-cloud.browserstack.com";
+	 
 
 	static String UserDir = System.getProperty("user.dir");
 	static String ApplicationPath = UserDir + "/Apps/Latest-DM8.apk";
@@ -69,17 +64,13 @@ public class BaseClass {
 	public static void setAndroidCapabilities() {
 		
 		
-		  DesiredCapabilities caps = new DesiredCapabilities();
-		    caps.setCapability("device", "Samsung Galaxy S8");
-		    caps.setCapability("app", app);
-		    caps.setCapability("browserstack.local", browserstackLocal);
-		    caps.setCapability("browserstack.localIdentifier", browserstackLocalIdentifier);
+	
 
 		
 
 	    // use below when you want to run directly on the Browserstack
-		/*
-	    UiAutomator2Options options = new UiAutomator2Options();
+
+	    /*UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Google Pixel 3");
 		options.setPlatformName("Android");
 		options.setPlatformVersion("9.0");
@@ -89,7 +80,7 @@ public class BaseClass {
 	
 		// use below when you want to run it locally
 
-		/*UiAutomator2Options options = new UiAutomator2Options();
+		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(prop.getProperty("Android_DeviceNames"));
 		options.setPlatformName(prop.getProperty("Device_Type"));
 		options.setUdid(prop.getProperty("Device_UDiD"));
@@ -100,15 +91,16 @@ public class BaseClass {
 		//options.headless();
 		//options.setCapability("isHeadless", true);
 		// options.setAutoGrantPermissions(true);
-		// options.setCapability("autoAcceptAlerts", "true");*/
+		// options.setCapability("autoAcceptAlerts", "true");
 
 		try {
 			
 			
-			driver = new AndroidDriver(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps); // it is used for pipeline
+			//driver = new AndroidDriver(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), caps); // it is used for pipeline
 
-			/*driver = new AndroidDriver(service.getUrl(), options);*/ // this required for local emulator
+			driver = new AndroidDriver(service.getUrl(), options); // this required for local emulator
 			// driver = new AndroidDriver(new URL(prop.getProperty("ServerURL")),options); // this is not required
+			
 			 //driver = new AndroidDriver(new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"), options); // this is required for browserstackckbrowser
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
 			//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));

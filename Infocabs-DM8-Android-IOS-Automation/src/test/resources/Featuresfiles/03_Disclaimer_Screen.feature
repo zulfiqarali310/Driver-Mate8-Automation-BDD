@@ -1,6 +1,6 @@
 Feature: Disclaimer Screen verification
 
-  @Onboarding
+  @Desclaimer
   Scenario Outline: Disclaimer Screen verification
     Given Disclaimer Screen comes as Driver login to Driver Mate8
     When check to verify disclaimer "<diclaimer>" text

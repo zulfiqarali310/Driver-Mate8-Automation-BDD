@@ -1,6 +1,6 @@
 Feature: STC Screen UI verification and Complete Testing
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: Meter UI and button clicks verifications on STC Screen
     Given Meter Alerts comes as Driver move to the STC screen
     When Verify Cost value and text on STC screen
@@ -36,9 +36,9 @@ Feature: STC Screen UI verification and Complete Testing
 
     Examples: 
       | distance | waiting | tariff | tariffvalue | waitlabel | extra | discountper         | stopwaiting   | startwaiting | stopmeter  | startmeter | addextracharges   |
-      | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Stop Waiting | Start Waiting | Start Meter | Start Meter | Add extra charges |
+      | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Start Waiting | Start Waiting | Start Meter | Start Meter | Add extra charges |
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: STC Screens UI and buttons clicks verifications
     When Driver is on STC Screen and lets verify Waiting screens UI and texts fields
     And move scroll up so that pick and drop address and screen UI are visible on stc screen
@@ -64,7 +64,7 @@ Feature: STC Screen UI verification and Complete Testing
       | clear | dropoffaddress |
       | Clear | Change         |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: To move Job to Feedback screen and Job status become completed as driver click on clear button
     When Driver Click on clear button
     Then Driver move to the Feedback screen

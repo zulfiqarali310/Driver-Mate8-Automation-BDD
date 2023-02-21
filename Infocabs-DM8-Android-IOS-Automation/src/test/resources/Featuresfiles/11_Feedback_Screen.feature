@@ -1,6 +1,6 @@
 Feature: Feedback Screen UI verification and Complete Testing
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: Feedback Screens UI and buttons clicks verifications
     Given Feedback screen comes as job cleared
     When Driver is on Feedback Screen and lets verify Feedback screens UI and texts fields
@@ -21,7 +21,7 @@ Feature: Feedback Screen UI verification and Complete Testing
       | jobdetails  | submit |
       | Job Details | Submit |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: Write and submit a feedback for customer
     Given Feedback screen comes so that feedback must be provided
     When Driver click on Customer rating stars

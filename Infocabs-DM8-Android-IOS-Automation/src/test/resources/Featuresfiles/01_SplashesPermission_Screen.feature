@@ -1,6 +1,6 @@
 Feature: Splashes Screen Movements & Device Permissions Allocation
 
-  @Onboarding
+  @Splashes
   Scenario Outline: Location permission & Splashes Screens movement
     Given Device permission Alerts and Splashes screens comes as Driver Mate8 lunched
     When Click to Allow device Location permission

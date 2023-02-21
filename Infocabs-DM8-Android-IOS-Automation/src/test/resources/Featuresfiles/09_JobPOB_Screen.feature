@@ -1,6 +1,6 @@
 Feature: POB Screen UI verification and Complete Testing
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: Meter UI and button clicks verifications on POB Screen
     Given Meter Alerts comes as Driver move to the POB screen
     When Verify Cost value and text on POB screen
@@ -37,7 +37,7 @@ Feature: POB Screen UI verification and Complete Testing
       | distance | waiting | tariff | tariffvalue | waitlabel | extra | discountper         | stopwaiting  | startwaiting  | stopmeter  | startmeter  | addextracharges   |
       | Distance | Waiting | Tariff | T1          | Waiting   | Extra | Discount Percentage | Stop Waiting | Stop Waiting | Stop Meter | Start Meter | Add extra charges |
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: POB Screens UI and buttons clicks verifications
     When Driver is on POB Screen and lets verify Waiting screens UI and texts fields
     And move scroll up so that pick and drop address and screen UI are visible on pob screen
@@ -63,7 +63,7 @@ Feature: POB Screen UI verification and Complete Testing
       | stc   | dropoffaddress |
       | S.T.C | Change         |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: To Move job to the STC status as driver tab on stc button when driver is on board
     When Driver Click on stc button
     Then Job Status become STC

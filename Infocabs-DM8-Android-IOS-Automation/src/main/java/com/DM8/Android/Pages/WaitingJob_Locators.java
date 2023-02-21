@@ -260,6 +260,10 @@ public class WaitingJob_Locators extends ScreenActions {
 		return getText(StartWaitingButton);
 
 	}
+	
+	public boolean VerifyStartStopWaitingtext() {
+		return StartWaitingButton.isDisplayed();
+	}
 
 	public void ClickOnStartstopWaitingButton() {
 

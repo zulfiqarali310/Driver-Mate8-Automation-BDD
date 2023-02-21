@@ -1,12 +1,12 @@
 Feature: Verify On Job Map Navigation functionality on All Job Status
 
-  @OnboardingDriversMessages
+  @StartNavigation
   Scenario Outline: Job creation from Evop for Map Navigation verification on All Job Status
     Given Job request are given for Map Navigation verification
     When Job request are send to the server for Job Map Navigation verification
     Then new job has been created in order to check and verify Map Navigation in throughout job status
 
-  @OnboardingDriversMessages
+  @StartNavigation
   Scenario Outline: Map Navigation verification on Accepted screen
     Given Job has been received on DM8 and Accept it for Map Navigation verifications
     When click on Map navigation button on Accepted screen
@@ -23,7 +23,7 @@ Feature: Verify On Job Map Navigation functionality on All Job Status
       | distance | waiting |
       | Distance | Waiting |
 
-  @OnboardingDriversMessages
+  @StartNavigation
   Scenario Outline: Map Navigation verification on Waiting screen
     Given Job are in waiting status for Map Navigation verifications
     When click on Map navigation button on Waiting screen
@@ -40,7 +40,7 @@ Feature: Verify On Job Map Navigation functionality on All Job Status
       | distance | waiting |
       | Distance | Waiting |
 
-  @OnboardingDriversMessages
+  @StartNavigation
   Scenario Outline: Map Navigation verification on POB screen
     Given Job are in pob status for Map Navigation verifications
     When click on Map navigation button on POB screen
@@ -57,7 +57,7 @@ Feature: Verify On Job Map Navigation functionality on All Job Status
       | distance | waiting |
       | Distance | Waiting |
 
-  @OnboardingDriversMessages
+  @StartNavigation
   Scenario Outline: Map Navigation verification on STC screen
     Given Job are in STC status for Map Navigation verifications
     When click on Map navigation button on STC screen

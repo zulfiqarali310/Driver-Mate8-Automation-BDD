@@ -15,14 +15,19 @@ import io.cucumber.junit.CucumberOptions;
 		glue = { "com/DM8/Android/TestCases" },
 
 		plugin = { "pretty", "html:Reports/HTMLReports/Cucumberplugin.html",
-				
+
 				"json:target/cucumber/cucumber.json",
 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
 
-		monochrome = true, dryRun = false /*tags = "@Onboarding"*/
+		monochrome = true, dryRun = false, tags = "@Splashes or @Login or @Desclaimer or ~@HomeScreen or ~@Jobflow or "
+				+ "~@ShowonMapJobRejection or "
+				+ "~@ReturnJob or ~@Gettinglate or ~@DriversMessages "
+				+ "or ~@StartNavigation or ~@SendSMSRingBackSendNoShow or "
+				+ "~@GobackChangeDropoffAddextra or ~@JobPayments"
 
 )
+
 public class TestRunner {
 
 	@BeforeClass

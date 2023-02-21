@@ -1,12 +1,12 @@
 Feature: Verify Getting late Alert functionality on Accepted and Waiting screen
 
-  @OnboardingGettinglate
+  @Gettinglate
   Scenario Outline: Job creation from Evop for getting late verification on Accepted and waiting screen
     Given Job request are given to for Getting late alert verification
     When Job request are send to the server for Getting late verification
     Then new job has been created in order to check and verify Getting late on Accepted and waiting screen
 
-  @OnboardingGettinglate
+  @Gettinglate
   Scenario Outline: Getting late verification on Accepted screen
     Given Job has been received on DM8 and Accept it for Getting late verification
     When click on getting late button on Accepted screen
@@ -32,7 +32,7 @@ Feature: Verify Getting late Alert functionality on Accepted and Waiting screen
       | headingtext                       | details1                        | details2                                         |
       | You’re getting late for this job! | How long will it take to get to | BRADLEY PARK GOLF COURSEBRADLEY ROADHUDDERSFIELD |
 
-  @OnboardingGettinglate
+  @Gettinglate
   Scenario Outline: Getting late verification on Waiting screen
     Given Job has been received on DM8 and Accept it and then move to waiting screen for Getting late verification
     When click on getting late button on Waiting screen

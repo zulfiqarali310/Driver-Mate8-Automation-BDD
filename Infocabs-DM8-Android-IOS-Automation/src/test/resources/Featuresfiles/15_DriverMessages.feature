@@ -1,12 +1,12 @@
 Feature: Verify Drivers Messages Alert functionality on All Job Status
 
-  @OnboardingDriversMessages
+  @DriversMessages
   Scenario Outline: Job creation from Evop for Drivers messages verification on All Job Status
     Given Job request are given for Drivers Messages alert verification
     When Job request are send to the server for Drivers messages verification
     Then new job has been created in order to check and verify Drivers Messages in throughout job status
 
-  @OnboardingDriversMessages
+  @DriversMessages
   Scenario Outline: Drivers Messages verification on Accepted screen
     Given Job has been received on DM8 and Accept it for Drivers Messages verifications
     When click on message icon chat button on Accepted screen
@@ -26,7 +26,7 @@ Feature: Verify Drivers Messages Alert functionality on All Job Status
       | msg      | cnle   | send |
       | Messages | CANCEL | SEND |
 
-  @OnboardingDriversMessages
+  @DriversMessages
   Scenario Outline: Drivers Messages verification on Waiting screen
     Given Job are in waiting status
     When click on message icon chat button on Waiting screen
@@ -46,7 +46,7 @@ Feature: Verify Drivers Messages Alert functionality on All Job Status
       | msg      | cnle   | send |
       | Messages | CANCEL | SEND |
 
-  @OnboardingDriversMessages
+  @DriversMessages
   Scenario Outline: Drivers Messages verification on POB screen
     Given Job are in pob status
     When click on message icon chat button on POB screen
@@ -66,7 +66,7 @@ Feature: Verify Drivers Messages Alert functionality on All Job Status
       | msg      | cnle   | send |
       | Messages | CANCEL | SEND |
 
-  @OnboardingDriversMessages
+  @DriversMessages
   Scenario Outline: Drivers Messages verification on STC screen
     Given Job are in stc status
     When click on message icon chat button on STC screen
@@ -86,7 +86,7 @@ Feature: Verify Drivers Messages Alert functionality on All Job Status
       | msg      | cnle   | send |
       | Messages | CANCEL | SEND |
 
-  #@OnboardingDriversMessages
+  #@DriversMessages
   #Scenario Outline: Drivers Messages verification on Clear screen
     #Given Job are in clear status
     #When click on message icon chat button on Clear screen

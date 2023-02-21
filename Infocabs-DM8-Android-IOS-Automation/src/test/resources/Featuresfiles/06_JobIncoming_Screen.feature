@@ -1,6 +1,6 @@
 Feature: Incoming Job Screen Verification
 
-  @OnboardingVerification
+  @Jobflow
   Scenario Outline: Incoming job Screen texts verification
     Given Incoming job screens comes as job assigned to the driver
     When Verify Job offer text
@@ -22,7 +22,7 @@ Feature: Incoming Job Screen Verification
       | reject | verifyonmap | accept |
       | Reject | Show on Map | Accept |
 
-  @Onboarding
+  @Jobflow
   Scenario Outline: To Accept Incoming job as job assigned to driver
     When Driver Click on Accept button
     Then Job Status become Accepted
