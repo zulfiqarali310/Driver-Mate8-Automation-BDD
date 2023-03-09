@@ -38,6 +38,8 @@ public class WaitingJob_Locators extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_cost")
 	WebElement Costtext;
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_cost")
+	WebElement MeterFareValue;
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_milesLabel")
 	WebElement Distancemilestext;
@@ -181,6 +183,12 @@ public class WaitingJob_Locators extends ScreenActions {
 
 	public boolean CheckCosttext() {
 		return Costtext.isDisplayed();
+	}
+	
+	public String GetMeterFareValue() {
+
+		return getText(MeterFareValue);
+
 	}
 
 	public String Getdistancetext() {

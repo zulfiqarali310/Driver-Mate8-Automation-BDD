@@ -45,6 +45,9 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
+	
+
+	
 
 	public static  void startAppiumServer() {
 

@@ -24,7 +24,8 @@ import io.cucumber.junit.CucumberOptions;
 				+ "~@ShowonMapJobRejection or "
 				+ "~@ReturnJob or ~@Gettinglate or ~@DriversMessages "
 				+ "or ~@StartNavigation or ~@SendSMSRingBackSendNoShow or "
-				+ "~@GobackChangeDropoffAddextra or ~@JobPayments"
+				+ "~@GobackChangeDropoffAddextra or ~@JobPayments or "
+				+ "@FixedPriceJobs"
 
 )
 

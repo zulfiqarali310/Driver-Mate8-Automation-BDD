@@ -135,6 +135,9 @@ public class AcceptedJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/edt_notes")
 	WebElement GettingDriverNotes;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_jobCost")
+	WebElement JobCost;
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_job_type")
 	WebElement TextJobType;
@@ -395,6 +398,12 @@ public class AcceptedJobPage extends ScreenActions {
 	public void ClickOnStartNvaigationButton() {
 
 		click(Gettingnavigationicon, "Click on Start Navigation Button");
+
+	}
+	
+	public String GetJobCostValue() {
+
+		return getText(JobCost);
 
 	}
 	

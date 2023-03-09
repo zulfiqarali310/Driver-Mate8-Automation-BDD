@@ -206,5 +206,104 @@ public class Utility extends BaseClass {
 		return BodyData;
 
 	}
+	
+	
+	public static JSONObject FixedFare() {
+
+		// Post Request Body Data
+		JSONObject BodyData = new JSONObject();
+
+		// 1st array
+		JSONObject CustData = new JSONObject();
+		
+		CustData.put("custId", prop.getProperty("Customer_ID"));
+		CustData.put("custCallingNo", prop.getProperty("Customer_Calling_Num"));	
+		CustData.put("companyId", prop.getProperty("Company_ID"));
+		// put 1st ArrayData
+		BodyData.put("Customer", CustData);
+
+		// 2nd Array for Dispatch Drivers
+		JSONObject DispatchDvr = new JSONObject();
+		DispatchDvr.put("driverId", prop.getProperty("DriverID"));
+
+		// Array for Driver IDs
+		JSONArray DvrAry1 = new JSONArray();
+		DvrAry1.put(DispatchDvr);
+		// put 2nd ArrayData
+		BodyData.put("lst_JobDispatchInfo", DvrAry1);
+
+		// 3rd Array for FareInfo
+		JSONObject FareInfoData = new JSONObject();
+		FareInfoData.put("surchargeCost", prop.getProperty("SurchargeCost"));
+		FareInfoData.put("surchargePrice", prop.getProperty("SurchargePrice"));
+		FareInfoData.put("companyCommission", prop.getProperty("CompanyComssion"));
+		FareInfoData.put("waitTimeCharge", prop.getProperty("WaitingTimeCharge"));
+		FareInfoData.put("minimumPrice", prop.getProperty("MinimumPrice"));
+		FareInfoData.put("bookingFee", prop.getProperty("BookingFee"));
+		FareInfoData.put("misc", prop.getProperty("Misc"));
+		FareInfoData.put("discount", prop.getProperty("Discount"));
+		FareInfoData.put("jobPrice", prop.getProperty("JobPrice"));
+		FareInfoData.put("totalPrice", prop.getProperty("TotalPrice"));
+		FareInfoData.put("driverCost", prop.getProperty("DriverCost"));
+		FareInfoData.put("fareType", prop.getProperty("FareType"));
+		FareInfoData.put("appliedTariffID", prop.getProperty("TariffID"));
+		FareInfoData.put("appliedTariffName", prop.getProperty("TariffName"));
+		FareInfoData.put("mileage", prop.getProperty("Mileage"));
+		FareInfoData.put("paymentMethod", prop.getProperty("PaymentMethod"));
+		
+		// put 3rd ArrayData
+		BodyData.put("EvoFareInfo", FareInfoData);
+
+		// 4rth Array for Locations
+		JSONObject LocationData = new JSONObject();
+
+		// PickUp Address
+		JSONObject PickUpAddressData = new JSONObject();
+		PickUpAddressData.put("place", prop.getProperty("PickupAddress"));
+		// PickUp Latlong Address
+		JSONObject PickUpLatLong = new JSONObject();
+		PickUpLatLong.put("latitude", prop.getProperty("PickUpLat"));
+		PickUpLatLong.put("longitude", prop.getProperty("PickLong"));
+		// Combine both Address name and lat/long
+		PickUpAddressData.put("LatLong", PickUpLatLong);
+
+		// DropOff Address
+		JSONObject DropOffAddressData = new JSONObject();
+		DropOffAddressData.put("place", prop.getProperty("DropoffAddress"));
+		// Dropoff Latlong Address
+		JSONObject DropoffLatLong = new JSONObject();
+		DropoffLatLong.put("latitude", prop.getProperty("DropoffLat"));
+		DropoffLatLong.put("longitude", prop.getProperty("DropoffLong"));
+		// Combine both Address name and lat/long
+		DropOffAddressData.put("LatLong", DropoffLatLong);
+
+		// Now Add both Pick and Dropoff Data
+		LocationData.put("PickupAddress", PickUpAddressData);
+		LocationData.put("DestinyAddress", DropOffAddressData);
+
+		// Put 4th Array Data
+		BodyData.put("Locations", LocationData);
+		// LocalDateTime time = java.time.LocalDateTime.now();
+		Instant time = Clock.systemUTC().instant();
+		System.out.println(time);
+		BodyData.put("journeyDateTime", time);
+		
+		BodyData.put("totalMiles", prop.getProperty("TotalMiles"));
+		BodyData.put("DivisionMask", prop.getProperty("devisionMask"));
+		BodyData.put("custId", prop.getProperty("Customer_ID"));
+		BodyData.put("isEvoFareEnabled", true);
+		BodyData.put("companyId", prop.getProperty("Company_ID"));
+		BodyData.put("jobType", prop.getProperty("JobType"));
+		BodyData.put("operatorID", prop.getProperty("OperatorID"));
+		BodyData.put("isFeatureEnable", true);
+
+		return BodyData;
+
+	}
+	
+	
+	
+	
+
 
 }

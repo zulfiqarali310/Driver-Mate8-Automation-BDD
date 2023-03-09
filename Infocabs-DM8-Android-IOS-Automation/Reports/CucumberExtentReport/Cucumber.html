@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 21, 2023 07:25:18 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 9, 2023 09:20:40 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,6 +66,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,10 +78,10 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Splashes</a></li>
-					<li><a href='#'>@Login</a></li>
 					<li><a href='#'>@Desclaimer</a></li>
-					<li><a href='#'>@Jobflow</a></li>
+					<li><a href='#'>@Splashes</a></li>
+					<li><a href='#'>@FixedPriceJobs</a></li>
+					<li><a href='#'>@Login</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,12 +123,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>10</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$75%'>
+                    <span class='strong'>3</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -139,12 +141,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>21</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='63%'>
+                    <span class='strong'>7</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='36%'>
+                    4</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -159,14 +161,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>250</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='73%'>
+                    <span class='strong'>62</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
+                    4</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='21%'>
+                    18</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -190,7 +192,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Splashes Screen Movements & Device Permissions Allocation</span>
-						<span class='test-time'>Feb 21, 2023 07:25:30 pm</span>
+						<span class='test-time'>Mar 9, 2023 09:20:55 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -203,7 +205,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 54.854</span>
+	<span class='duration right label'>00 00 55.303</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Location permission & Splashes Screens movement</div>
 	</div>
@@ -329,7 +331,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='54'>
 					<div class='test-heading'>
 						<span class='test-name'>Write Driver Code & Login to Driver Mate8</span>
-						<span class='test-time'>Feb 21, 2023 07:26:25 pm</span>
+						<span class='test-time'>Mar 9, 2023 09:21:51 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -342,7 +344,7 @@
 
 <div class='scenario outline node' test-id='55' status='pass'>
 
-	<span class='duration right label'>00 00 08.767</span>
+	<span class='duration right label'>00 00 08.785</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write Driver code to move to Login Screen</div>
 	</div>
@@ -381,7 +383,7 @@
 </div>
 <div class='scenario outline node' test-id='65' status='pass'>
 
-	<span class='duration right label'>00 00 12.283</span>
+	<span class='duration right label'>00 00 12.292</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Login Screen all Text and button fields</div>
 	</div>
@@ -428,7 +430,7 @@
 </div>
 <div class='scenario outline node' test-id='79' status='pass'>
 
-	<span class='duration right label'>00 00 12.873</span>
+	<span class='duration right label'>00 00 12.843</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with Valid Username and Password to DM8</div>
 	</div>
@@ -474,7 +476,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='91'>
 					<div class='test-heading'>
 						<span class='test-name'>Disclaimer Screen verification</span>
-						<span class='test-time'>Feb 21, 2023 07:26:59 pm</span>
+						<span class='test-time'>Mar 9, 2023 09:22:25 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -487,7 +489,7 @@
 
 <div class='scenario outline node' test-id='92' status='pass'>
 
-	<span class='duration right label'>00 00 16.995</span>
+	<span class='duration right label'>00 00 17.040</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Disclaimer Screen verification</div>
 	</div>
@@ -538,11 +540,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='108'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='108'>
 					<div class='test-heading'>
-						<span class='test-name'>Job creation From Evop</span>
-						<span class='test-time'>Feb 21, 2023 07:27:16 pm</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>Meter Jobs Verifications and Testing</span>
+						<span class='test-time'>Mar 9, 2023 09:22:42 pm</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -554,1241 +556,334 @@
 
 <div class='scenario node' test-id='109' status='pass'>
 
-	<span class='duration right label'>00 00 06.549</span>
+	<span class='duration right label'>00 00 13.373</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Job Creation from Evop</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Create a Fixed Price job from evop Using API Data</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Jobflow</span>
+				<span class='category label'>@FixedPriceJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='110' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.CreatingJobEvop_TestCases.the_valid_api_urls_and_request_data_are_given_and_request_are_send_to_the_server())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given The Valid API urls and request data are given and request are send to the server</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_request_are_given_for_fixed_price_verification_on_dm8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job request are given for Fixed Price Verification on DM8</div>
 
 
 		</li>
-		<li test-id='112' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.CreatingJobEvop_TestCases.new_job_has_been_created())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created</div>
+		<li test-id='112' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_request_are_send_to_the_server_for_fixed_price_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Job request are send to the server for Fixed Price Verification</div>
 
 
 		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='114'>
-					<div class='test-heading'>
-						<span class='test-name'>Incoming Job Screen Verification</span>
-						<span class='test-time'>Feb 21, 2023 07:27:23 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
+		<li test-id='114' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.new_job_has_been_created_with_fixed_price_tariff_value())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created with Fixed Price Tariff value</div>
 
-<div class='scenario outline node' test-id='115' status='pass'>
 
-	<span class='duration right label'>00 00 19.186</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Incoming job Screen texts verification</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>reject</td><td>verifyonmap</td><td>accept</td></tr><tr><td>Reject</td><td>Show on Map</td><td>Accept</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='116' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Incoming job Screen texts verification</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='117' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.incoming_job_screens_comes_as_job_assigned_to_the_driver()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Incoming job screens comes as job assigned to the driver</h6>
-
-				</li>
-				<li test-id='119' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.verify_job_offer_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Verify Job offer text</h6>
-
-				</li>
-				<li test-id='121' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.check_and_verify_reject_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check and verify reject "Reject" text</h6>
-
-				</li>
-				<li test-id='123' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.check_timer_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check timer text</h6>
-
-				</li>
-				<li test-id='125' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.check_pickup_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check pickup address text</h6>
-
-				</li>
-				<li test-id='127' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.check_dropoff_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check dropoff Address text</h6>
-
-				</li>
-				<li test-id='129' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.check_verify_on_map_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check verify on map "Show on Map" text</h6>
-
-				</li>
-				<li test-id='131' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.check_accept_button_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accept button "Accept" text</h6>
-
-				</li>
-				<li test-id='133' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.IncomingJob_TestCases.incoming_job_screen_text_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Incoming Job screen text are verified</h6>
-
-				</li>
-			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='135' status='pass'>
+<div class='scenario node' test-id='116' status='pass'>
 
-	<span class='duration right label'>00 00 04.764</span>
+	<span class='duration right label'>00 00 07.191</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Accept Incoming job as job assigned to driver</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Accept Job To Verify Fixed Price Job</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Jobflow</span>
+				<span class='category label'>@FixedPriceJobs</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='136' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.IncomingJob_TestCases.driver_click_on_accept_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on Accept button</div>
+		<li test-id='117' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_has_been_received_on_dm8_for_fixed_price_verification_and_accept_and_move_to_stc_status_to_verify_card_payment())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job has been received on DM8 For Fixed Price Verification and Accept and move to STC status to verify Card payment</div>
 
 
 		</li>
-		<li test-id='138' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.IncomingJob_TestCases.job_status_become_accepted())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become Accepted</div>
+		<li test-id='119' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.accept_job_to_verify_price_value_on_dm8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Accept job to verify Price Value on DM8</div>
 
 
 		</li>
-	</ul>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='140'>
-					<div class='test-heading'>
-						<span class='test-name'>Accepted Screen verification</span>
-						<span class='test-time'>Feb 21, 2023 07:27:47 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
+		<li test-id='121' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_status_should_be_accepte_to_verify_on_fixed_prices())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job status should be accepte to verify on Fixed Prices</div>
 
-<div class='scenario outline node' test-id='141' status='pass'>
 
-	<span class='duration right label'>00 00 56.604</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Accepted job Screen UI elements verification</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>waiting</td></tr><tr><td>Waiting</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='142' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Accepted job Screen UI elements verification</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='143' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.accepted_job_screens_comes_as_job_accepted_by_the_driver()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Accepted job screens comes as job accepted by the driver</h6>
-
-				</li>
-				<li test-id='145' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.move_scroll_up_pick_and_drop()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When move scroll up so that pick and drop address and screen UI are visible</h6>
-
-				</li>
-				<li test-id='147' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.verify_customer_image()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify customer image</h6>
-
-				</li>
-				<li test-id='149' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.verify_customer_name()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify customer name</h6>
-
-				</li>
-				<li test-id='151' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.getting_late_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And getting late icon</h6>
-
-				</li>
-				<li test-id='153' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.message_chat_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And message chat icon</h6>
-
-				</li>
-				<li test-id='155' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.re_route_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And re route icon</h6>
-
-				</li>
-				<li test-id='157' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.current_location_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And current location icon</h6>
-
-				</li>
-				<li test-id='159' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.verify_start_navigation_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify start navigation icon</h6>
-
-				</li>
-				<li test-id='161' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_pickup_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pickup whole box</h6>
-
-				</li>
-				<li test-id='163' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_dropoff_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check dropoff whole box</h6>
-
-				</li>
-				<li test-id='165' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_pickup_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check accepted screen pickup zone text</h6>
-
-				</li>
-				<li test-id='167' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_pickup_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check accepted screen pickup address text</h6>
-
-				</li>
-				<li test-id='169' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_dropoff_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accepted screen dropoff zone text</h6>
-
-				</li>
-				<li test-id='171' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_dropoff_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accepted screen dropoff Address text</h6>
-
-				</li>
-				<li test-id='173' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_jobtype_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accepted screen jobtype text</h6>
-
-				</li>
-				<li test-id='175' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_payment_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accepted screen payment text</h6>
-
-				</li>
-				<li test-id='177' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_booking_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accepted screen Booking text</h6>
-
-				</li>
-				<li test-id='179' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_tariff_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check accepted screen tariff text</h6>
-
-				</li>
-				<li test-id='181' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_driver_notes_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check driver notes text</h6>
-
-				</li>
-				<li test-id='183' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.check_accept_button_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting button "Waiting" text</h6>
-
-				</li>
-				<li test-id='185' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.scroll_down_pick_and_dropoff()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down so that pick and drop address and screen UI are not visible</h6>
-
-				</li>
-				<li test-id='187' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.AcceptedJob_TestCases.accepted_job_screen_ui_elements_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Accepted Job screen UI elements are verified</h6>
-
-				</li>
-			</ul>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='189' status='pass'>
+<div class='scenario node' test-id='123' status='fail'>
 
-	<span class='duration right label'>00 00 04.326</span>
+	<span class='duration right label'>00 00 14.508</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Move job to the waiting status as driver tab on waiting button</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on Accepted job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Jobflow</span>
+				<span class='category label'>@FixedPriceJobs</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='190' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.AcceptedJob_TestCases.driver_click_on_waiting_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on Waiting button</div>
+		<li test-id='124' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_accepted_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in Accepted status to verify fixed price</div>
 
 
 		</li>
-		<li test-id='192' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.AcceptedJob_TestCases.job_status_become_waiting())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become Waiting</div>
+		<li test-id='126' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_accepted_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When move scroll up so that Fixed Price Cost Value is visible on Accepted Screen</div>
 
 
 		</li>
-	</ul>
-</div>
+		<li test-id='128' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen</div>
+
+
+					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
+	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
+</textarea>
+		</li>
+		<li test-id='129' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Verify Fixed Price on Accepted job screen</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded1.png' src='./screenshots/embedded1.png'>
 					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='194'>
-					<div class='test-heading'>
-						<span class='test-name'>Waiting Screen verification</span>
-						<span class='test-time'>Feb 21, 2023 07:28:48 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
+		</li>
+		<li test-id='130' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_accepted_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on Accepted screen so that Fixed Price Cost can be check on Next screen</div>
 
-<div class='scenario outline node' test-id='195' status='pass'>
 
-	<span class='duration right label'>00 01 05.427</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Meter UI and button clicks verifications on Waiting screen</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>distance</td><td>waiting</td><td>tariff</td><td>tariffvalue</td><td>waitlabel</td><td>extra</td><td>discountper</td><td>stopwaiting</td><td>startwaiting</td></tr><tr><td>Distance</td><td>Waiting</td><td>Tariff</td><td>T1</td><td>Waiting</td><td>Extra</td><td>Discount Percentage</td><td>Start Waiting</td><td>Start Waiting</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='196' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Meter UI and button clicks verifications on Waiting screen</div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='132' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_waiting_button_to_move_job_to_waiting_status_to_check_fixed_price_value_on_it())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on Waiting button to move job to Waiting Status to check Fixed Price value on it</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='197' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.meter_alerts_comes_as_driver_move_to_the_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Meter Alerts comes as Driver move to the Waiting screen</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='134' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_accepted_screen_and_job_status_are_in_waiting())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on Accepted screen and job Status are in Waiting</div>
 
-				</li>
-				<li test-id='199' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_cost_value_and_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Verify Cost value and text</h6>
 
-				</li>
-				<li test-id='201' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_distance_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check distance "Distance" text</h6>
-
-				</li>
-				<li test-id='203' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_to_verify_miles_covered_values_and_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify miles covered values and text</h6>
-
-				</li>
-				<li test-id='205' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_lable_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting lable "Waiting" text</h6>
-
-				</li>
-				<li test-id='207' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_time_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check waiting time value</h6>
-
-				</li>
-				<li test-id='209' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.click_on_meter_expand_button_to_see_meter_details()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Meter expand button to see meter details</h6>
-
-				</li>
-				<li test-id='211' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_tariff_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check tariff "Tariff" text</h6>
-
-				</li>
-				<li test-id='213' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_tariff_value_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check tariff value "T1" text</h6>
-
-				</li>
-				<li test-id='215' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_meter_waiting_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter waiting "Waiting" text</h6>
-
-				</li>
-				<li test-id='217' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_meter_waiting_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter waiting value</h6>
-
-				</li>
-				<li test-id='219' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_meter_extra_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter extra "Extra" text</h6>
-
-				</li>
-				<li test-id='221' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_meter_extra_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter extra value</h6>
-
-				</li>
-				<li test-id='223' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_meter_discount_percentage_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter discount percentage "Discount Percentage" text</h6>
-
-				</li>
-				<li test-id='225' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_meter_discount_percentage_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter discount percentage value</h6>
-
-				</li>
-				<li test-id='227' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_stop_waiting_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check stop waiting "Start Waiting" text</h6>
-
-				</li>
-				<li test-id='229' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.click_on_stop_waiting_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Stop waiting button</h6>
-
-				</li>
-				<li test-id='231' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_start_waiting_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check Start waiting "Start Waiting" text</h6>
-
-				</li>
-				<li test-id='233' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.click_on_start_waiting_button_again()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Start waiting button again</h6>
-
-				</li>
-				<li test-id='235' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_customer_image_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify customer image on Waiting screen</h6>
-
-				</li>
-				<li test-id='237' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_customer_name_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify customer name on Waiting screen</h6>
-
-				</li>
-				<li test-id='239' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_send_sms_ring_back_button_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify Send SMS Ring back button icon</h6>
-
-				</li>
-				<li test-id='241' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.getting_late_icon_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And getting late icon on Waiting screen</h6>
-
-				</li>
-				<li test-id='243' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.message_chat_icon_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And message chat icon on Waiting screen</h6>
-
-				</li>
-				<li test-id='245' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.click_again_on_meter_expand_button_to_close_meter_details_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click again on Meter expand button to close meter details on waiting screen</h6>
-
-				</li>
-				<li test-id='247' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.meter_ui_texts_and_buttons_clicks_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Meter UI texts and buttons clicks are verified</h6>
-
-				</li>
-			</ul>
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='249' status='pass'>
+<div class='scenario node' test-id='136' status='fail'>
 
-	<span class='duration right label'>00 00 49.756</span>
+	<span class='duration right label'>00 00 16.902</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Waiting Screens UI and buttons clicks verifications</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>pob</td></tr><tr><td>P.O.B</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='250' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Waiting Screens UI and buttons clicks verifications</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='251' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.driver_is_on_waiting_screen_and_lets_verify_waiting_screens_ui_and_texts_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver is on Waiting Screen and lets verify Waiting screens UI and texts fields</h6>
-
-				</li>
-				<li test-id='253' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.move_scroll_up_so_that_pick_and_drop_address_and_screen_ui_are_visible_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll up so that pick and drop address and screen UI are visible on waiting screen</h6>
-
-				</li>
-				<li test-id='255' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_waiting_screen_re_route_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify waiting screen re route icon</h6>
-
-				</li>
-				<li test-id='257' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_waiting_screen_current_location_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify waiting screen current location icon</h6>
-
-				</li>
-				<li test-id='259' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_waiting_screen_start_navigation_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify waiting screen start navigation icon</h6>
-
-				</li>
-				<li test-id='261' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_waiting_screen_pickup_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify waiting screen pickup whole box</h6>
-
-				</li>
-				<li test-id='263' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.verify_waiting_screen_dropoff_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify waiting screen dropoff whole box</h6>
-
-				</li>
-				<li test-id='265' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_pickup_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check waiting screen pickup zone text</h6>
-
-				</li>
-				<li test-id='267' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_pickup_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check waiting screen pickup address text</h6>
-
-				</li>
-				<li test-id='269' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_dropoff_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen dropoff zone text</h6>
-
-				</li>
-				<li test-id='271' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_dropoff_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen dropoff Address text</h6>
-
-				</li>
-				<li test-id='273' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_jobtype_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen jobtype text</h6>
-
-				</li>
-				<li test-id='275' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_payment_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen payment text</h6>
-
-				</li>
-				<li test-id='277' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_booking_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen Booking text</h6>
-
-				</li>
-				<li test-id='279' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_tariff_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen tariff text</h6>
-
-				</li>
-				<li test-id='281' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_waiting_screen_driver_notes_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check waiting screen driver notes text</h6>
-
-				</li>
-				<li test-id='283' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.check_pob_button_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob button "P.O.B" text</h6>
-
-				</li>
-				<li test-id='285' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.move_scroll_down_so_that_pick_and_drop_address_and_screen_ui_are_not_visible_on_waiting_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down so that pick and drop address and screen UI are not visible on waiting screen</h6>
-
-				</li>
-				<li test-id='287' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.WaitingJob_TestCases.waiting_job_screen_ui_elements_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Waiting Job screen UI elements are verified</h6>
-
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='289' status='pass'>
-
-	<span class='duration right label'>00 00 05.006</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Move job to the POB status as driver tab on pob button when driver is on board</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on Waiting job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Jobflow</span>
+				<span class='category label'>@FixedPriceJobs</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='290' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.WaitingJob_TestCases.driver_click_on_pob_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on pob button</div>
+		<li test-id='137' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_waiting_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in Waiting status to verify fixed price</div>
 
 
 		</li>
-		<li test-id='292' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.WaitingJob_TestCases.job_status_become_pob())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become POB</div>
+		<li test-id='139' class='node when Fail' status='Fail'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_waiting_status())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on Waiting Status</div>
 
 
+					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ £ 0.00 ]> but was:<[£ 12.00]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_waiting_status(Fixed_Price_Jobs.java:146)
+	at ✽.Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on Waiting Status(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:27)
+</textarea>
 		</li>
-	</ul>
-</div>
+		<li test-id='140' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Verify Fixed Price on Waiting job screen</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded2.png' src='./screenshots/embedded2.png'>
 					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='294'>
-					<div class='test-heading'>
-						<span class='test-name'>POB Screen UI verification and Complete Testing</span>
-						<span class='test-time'>Feb 21, 2023 07:30:48 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
+		</li>
+		<li test-id='141' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_waiting_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll up so that Fixed Price Cost Value is visible on Waiting Screen</div>
 
-<div class='scenario outline node' test-id='295' status='pass'>
 
-	<span class='duration right label'>00 01 21.885</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Meter UI and button clicks verifications on POB Screen</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>distance</td><td>waiting</td><td>tariff</td><td>tariffvalue</td><td>waitlabel</td><td>extra</td><td>discountper</td><td>stopwaiting</td><td>startwaiting</td><td>stopmeter</td><td>startmeter</td><td>addextracharges</td></tr><tr><td>Distance</td><td>Waiting</td><td>Tariff</td><td>T1</td><td>Waiting</td><td>Extra</td><td>Discount Percentage</td><td>Stop Waiting</td><td>Stop Waiting</td><td>Stop Meter</td><td>Start Meter</td><td>Add extra charges</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='296' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Meter UI and button clicks verifications on POB Screen</div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='143' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_waiting_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Waiting Screen</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='297' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.meter_alerts_comes_as_driver_move_to_the_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Meter Alerts comes as Driver move to the POB screen</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='145' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_waiting_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on Waiting screen so that Fixed Price Cost can be check on Next screen</div>
 
-				</li>
-				<li test-id='299' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_cost_value_and_text_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Verify Cost value and text on POB screen</h6>
 
-				</li>
-				<li test-id='301' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_distance_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check distance "Distance" text on POB screen</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='147' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_pob_button_to_move_job_to_pob_status_to_check_fixed_price_value_on_it())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on POB button to move job to POB Status to check Fixed Price value on it</div>
 
-				</li>
-				<li test-id='303' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_to_verify_miles_covered_values_and_text_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify miles covered values and text on POB screen</h6>
 
-				</li>
-				<li test-id='305' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_progress_loader_icon_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check Progress loader icon on POB screen</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='149' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_waiting_screen_and_job_status_are_in_pob())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on Waiting screen and job Status are in POB</div>
 
-				</li>
-				<li test-id='307' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_lable_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob lable "Waiting" text</h6>
 
-				</li>
-				<li test-id='309' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_time_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check pob time value</h6>
-
-				</li>
-				<li test-id='311' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.click_on_meter_expand_button_on_pob_to_see_meter_details()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Meter expand button on pob to see meter details</h6>
-
-				</li>
-				<li test-id='313' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_tariff_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check tariff "Tariff" text on POB screen</h6>
-
-				</li>
-				<li test-id='315' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_tariff_value_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen tariff value "T1" text</h6>
-
-				</li>
-				<li test-id='317' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_meter_pob_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter pob "Waiting" text</h6>
-
-				</li>
-				<li test-id='319' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_meter_pob_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter pob value</h6>
-
-				</li>
-				<li test-id='321' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_meter_extra_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter extra "Extra" text on pob screen</h6>
-
-				</li>
-				<li test-id='323' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_meter_extra_value_on_pob()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter extra value on pob</h6>
-
-				</li>
-				<li test-id='325' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_meter_discount_percentage_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter discount percentage "Discount Percentage" text on pob screen</h6>
-
-				</li>
-				<li test-id='327' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_meter_discount_percentage_value_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter discount percentage value on pob screen</h6>
-
-				</li>
-				<li test-id='329' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_stop_waiting_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check stop waiting "Stop Waiting" text on pob screen</h6>
-
-				</li>
-				<li test-id='331' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.click_on_stop_waiting_button_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Stop waiting button on pob screen</h6>
-
-				</li>
-				<li test-id='333' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_start_waiting_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check Start waiting "Stop Waiting" text on pob screen</h6>
-
-				</li>
-				<li test-id='335' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.click_on_start_waiting_button_again_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Start waiting button again on pob screen</h6>
-
-				</li>
-				<li test-id='337' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_to_verify_stop_meter_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check to verify stop meter "Stop Meter" text on pob screen</h6>
-
-				</li>
-				<li test-id='339' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.click_on_stop_meter_button_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Stop meter button on pob screen</h6>
-
-				</li>
-				<li test-id='341' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_to_verify_start_meter_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify Start meter "Start Meter" text on pob screen</h6>
-
-				</li>
-				<li test-id='343' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.click_on_start_meter_button_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Start meter button on pob screen</h6>
-
-				</li>
-				<li test-id='345' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_to_verify_add_extra_charges_something_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify Add extra charges "Add extra charges" on pob screen</h6>
-
-				</li>
-				<li test-id='347' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_customer_image_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify customer image on pob screen</h6>
-
-				</li>
-				<li test-id='349' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_customer_name_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify customer name on pob screen</h6>
-
-				</li>
-				<li test-id='351' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.message_chat_icon_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And message chat icon on pob screen</h6>
-
-				</li>
-				<li test-id='353' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.click_again_on_meter_expand_button_to_close_meter_details_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click again on Meter expand button to close meter details on pob screen</h6>
-
-				</li>
-				<li test-id='355' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.meter_ui_texts_and_buttons_clicks_are_verified_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Meter UI texts and buttons clicks are verified on pob screen</h6>
-
-				</li>
-			</ul>
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='357' status='pass'>
+<div class='scenario node' test-id='151' status='fail'>
 
-	<span class='duration right label'>00 00 52.813</span>
+	<span class='duration right label'>00 00 08.057</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: POB Screens UI and buttons clicks verifications</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>stc</td><td>dropoffaddress</td></tr><tr><td>S.T.C</td><td>Change</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='358' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>POB Screens UI and buttons clicks verifications</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='359' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.driver_is_on_pob_screen_and_lets_verify_waiting_screens_ui_and_texts_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver is on POB Screen and lets verify Waiting screens UI and texts fields</h6>
-
-				</li>
-				<li test-id='361' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.move_scroll_up_so_that_pick_and_drop_address_and_screen_ui_are_visible_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll up so that pick and drop address and screen UI are visible on pob screen</h6>
-
-				</li>
-				<li test-id='363' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_pob_screen_current_location_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify pob screen current location icon</h6>
-
-				</li>
-				<li test-id='365' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_pob_screen_start_navigation_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify pob screen start navigation icon</h6>
-
-				</li>
-				<li test-id='367' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_pob_screen_pickup_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify pob screen pickup whole box</h6>
-
-				</li>
-				<li test-id='369' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.verify_pob_screen_dropoff_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify pob screen dropoff whole box</h6>
-
-				</li>
-				<li test-id='371' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_pickup_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check pob screen pickup zone text</h6>
-
-				</li>
-				<li test-id='373' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_pickup_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check pob screen pickup address text</h6>
-
-				</li>
-				<li test-id='375' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_dropoff_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen dropoff zone text</h6>
-
-				</li>
-				<li test-id='377' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_dropoff_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen dropoff Address text</h6>
-
-				</li>
-				<li test-id='379' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_change_dropoff_address_something_text_on_pob_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check change dropoff address "Change" text on pob screen</h6>
-
-				</li>
-				<li test-id='381' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_jobtype_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen jobtype text</h6>
-
-				</li>
-				<li test-id='383' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_payment_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen payment text</h6>
-
-				</li>
-				<li test-id='385' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_booking_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen Booking text</h6>
-
-				</li>
-				<li test-id='387' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_tariff_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen tariff text</h6>
-
-				</li>
-				<li test-id='389' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_pob_screen_driver_notes_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pob screen driver notes text</h6>
-
-				</li>
-				<li test-id='391' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.check_stc_button_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc button "S.T.C" text</h6>
-
-				</li>
-				<li test-id='393' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.move_scroll_down_so_that_pick_and_drop_address_and_screen_ui_are_not_visible_on_pob_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down so that pick and drop address and screen UI are not visible on pob screen</h6>
-
-				</li>
-				<li test-id='395' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.POBJob_TestCases.pob_job_screen_ui_elements_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then POB Job screen UI elements are verified</h6>
-
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='397' status='pass'>
-
-	<span class='duration right label'>00 00 04.187</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To Move job to the STC status as driver tab on stc button when driver is on board</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on POB job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Jobflow</span>
+				<span class='category label'>@FixedPriceJobs</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='398' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.POBJob_TestCases.driver_click_on_stc_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on stc button</div>
+		<li test-id='152' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_pob_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in POB status to verify fixed price</div>
 
 
 		</li>
-		<li test-id='400' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.POBJob_TestCases.job_status_become_stc())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job Status become STC</div>
+		<li test-id='154' class='node when Fail' status='Fail'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_pob_status())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on POB Status</div>
 
 
+					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ £ 0.00 ]> but was:<[£ 12.00]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_pob_status(Fixed_Price_Jobs.java:203)
+	at ✽.Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on POB Status(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:37)
+</textarea>
 		</li>
-	</ul>
-</div>
+		<li test-id='155' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Verify Fixed Price on POB job screen</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded3.png' src='./screenshots/embedded3.png'>
 					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='402'>
-					<div class='test-heading'>
-						<span class='test-name'>STC Screen UI verification and Complete Testing</span>
-						<span class='test-time'>Feb 21, 2023 07:33:07 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
+		</li>
+		<li test-id='156' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_pob_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll up so that Fixed Price Cost Value is visible on POB Screen</div>
 
-<div class='scenario outline node' test-id='403' status='pass'>
 
-	<span class='duration right label'>00 01 16.214</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Meter UI and button clicks verifications on STC Screen</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>distance</td><td>waiting</td><td>tariff</td><td>tariffvalue</td><td>waitlabel</td><td>extra</td><td>discountper</td><td>stopwaiting</td><td>startwaiting</td><td>stopmeter</td><td>startmeter</td><td>addextracharges</td></tr><tr><td>Distance</td><td>Waiting</td><td>Tariff</td><td>T1</td><td>Waiting</td><td>Extra</td><td>Discount Percentage</td><td>Start Waiting</td><td>Start Waiting</td><td>Start Meter</td><td>Start Meter</td><td>Add extra charges</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='404' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Meter UI and button clicks verifications on STC Screen</div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='158' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_pob_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on POB Screen</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='405' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.meter_alerts_comes_as_driver_move_to_the_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Meter Alerts comes as Driver move to the STC screen</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='160' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_pob_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on POB screen so that Fixed Price Cost can be check on Next screen</div>
 
-				</li>
-				<li test-id='407' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_cost_value_and_text_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Verify Cost value and text on STC screen</h6>
 
-				</li>
-				<li test-id='409' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_distance_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check distance "Distance" text on STC screen</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='162' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_stc_button_to_move_job_to_stc_status_to_check_fixed_price_value_on_it())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on STC button to move job to STC Status to check Fixed Price value on it</div>
 
-				</li>
-				<li test-id='411' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_to_verify_miles_covered_values_and_text_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify miles covered values and text on STC screen</h6>
 
-				</li>
-				<li test-id='413' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_lable_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc lable "Waiting" text</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='164' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_pob_screen_and_job_status_are_in_stc())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on POB screen and job Status are in STC</div>
 
-				</li>
-				<li test-id='415' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_time_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check stc time value</h6>
 
-				</li>
-				<li test-id='417' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.click_on_meter_expand_button_on_stc_to_see_meter_details()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Meter expand button on stc to see meter details</h6>
-
-				</li>
-				<li test-id='419' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_tariff_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check tariff "Tariff" text on STC screen</h6>
-
-				</li>
-				<li test-id='421' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_tariff_value_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen tariff value "T1" text</h6>
-
-				</li>
-				<li test-id='423' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_meter_stc_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter stc "Waiting" text</h6>
-
-				</li>
-				<li test-id='425' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_meter_stc_value()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter stc value</h6>
-
-				</li>
-				<li test-id='427' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_meter_extra_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter extra "Extra" text on stc screen</h6>
-
-				</li>
-				<li test-id='429' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_meter_extra_value_on_stc()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter extra value on stc</h6>
-
-				</li>
-				<li test-id='431' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_meter_discount_percentage_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check meter discount percentage "Discount Percentage" text on stc screen</h6>
-
-				</li>
-				<li test-id='433' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_meter_discount_percentage_value_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check meter discount percentage value on stc screen</h6>
-
-				</li>
-				<li test-id='435' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stop_waiting_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check stop waiting "Start Waiting" text on stc screen</h6>
-
-				</li>
-				<li test-id='437' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.click_on_stop_waiting_button_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Stop waiting button on stc screen</h6>
-
-				</li>
-				<li test-id='439' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_start_waiting_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check Start waiting "Start Waiting" text on stc screen</h6>
-
-				</li>
-				<li test-id='441' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.click_on_start_waiting_button_again_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Start waiting button again on stc screen</h6>
-
-				</li>
-				<li test-id='443' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_to_verify_add_extra_charges_something_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check to verify Add extra charges "Add extra charges" on stc screen</h6>
-
-				</li>
-				<li test-id='445' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_customer_image_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Verify customer image on stc screen</h6>
-
-				</li>
-				<li test-id='447' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_customer_name_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify customer name on stc screen</h6>
-
-				</li>
-				<li test-id='449' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.message_chat_icon_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And message chat icon on stc screen</h6>
-
-				</li>
-				<li test-id='451' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_card_payemnt_image_icon_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check Card Payemnt image icon on stc screen</h6>
-
-				</li>
-				<li test-id='453' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_qr_code_image_icon_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check QR code image icon on stc screen</h6>
-
-				</li>
-				<li test-id='455' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.click_again_on_meter_expand_button_to_close_meter_details_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click again on Meter expand button to close meter details on stc screen</h6>
-
-				</li>
-				<li test-id='457' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.meter_ui_texts_and_buttons_clicks_are_verified_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Meter UI texts and buttons clicks are verified on stc screen</h6>
-
-				</li>
-			</ul>
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario outline node' test-id='459' status='pass'>
+<div class='scenario node' test-id='166' status='fail'>
 
-	<span class='duration right label'>00 00 56.005</span>
+	<span class='duration right label'>00 00 08.142</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: STC Screens UI and buttons clicks verifications</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>clear</td><td>dropoffaddress</td></tr><tr><td>Clear</td><td>Change</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='460' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>STC Screens UI and buttons clicks verifications</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='461' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.driver_is_on_stc_screen_and_lets_verify_waiting_screens_ui_and_texts_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver is on STC Screen and lets verify Waiting screens UI and texts fields</h6>
-
-				</li>
-				<li test-id='463' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.move_scroll_up_so_that_pick_and_drop_address_and_screen_ui_are_visible_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll up so that pick and drop address and screen UI are visible on stc screen</h6>
-
-				</li>
-				<li test-id='465' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_stc_screen_current_location_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify stc screen current location icon</h6>
-
-				</li>
-				<li test-id='467' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_stc_screen_start_navigation_icon()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify stc screen start navigation icon</h6>
-
-				</li>
-				<li test-id='469' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_stc_screen_pickup_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify stc screen pickup whole box</h6>
-
-				</li>
-				<li test-id='471' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.verify_stc_screen_dropoff_whole_box()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify stc screen dropoff whole box</h6>
-
-				</li>
-				<li test-id='473' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_pickup_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check stc screen pickup zone text</h6>
-
-				</li>
-				<li test-id='475' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_pickup_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check stc screen pickup address text</h6>
-
-				</li>
-				<li test-id='477' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_dropoff_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen dropoff zone text</h6>
-
-				</li>
-				<li test-id='479' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_dropoff_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen dropoff Address text</h6>
-
-				</li>
-				<li test-id='481' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_change_dropoff_address_something_text_on_stc_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check change dropoff address "Change" text on stc screen</h6>
-
-				</li>
-				<li test-id='483' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_jobtype_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen jobtype text</h6>
-
-				</li>
-				<li test-id='485' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_payment_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen payment text</h6>
-
-				</li>
-				<li test-id='487' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_booking_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen Booking text</h6>
-
-				</li>
-				<li test-id='489' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_tariff_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen tariff text</h6>
-
-				</li>
-				<li test-id='491' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_stc_screen_driver_notes_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check stc screen driver notes text</h6>
-
-				</li>
-				<li test-id='493' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.check_clear_button_something_text(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check Clear button "Clear" text</h6>
-
-				</li>
-				<li test-id='495' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.move_scroll_down_so_that_pick_and_drop_address_and_screen_ui_are_not_visible_on_stc_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down so that pick and drop address and screen UI are not visible on stc screen</h6>
-
-				</li>
-				<li test-id='497' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.STCJob_TestCases.stc_job_screen_ui_elements_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then STC Job screen UI elements are verified</h6>
-
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='499' status='pass'>
-
-	<span class='duration right label'>00 00 05.308</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: To move Job to Feedback screen and Job status become completed as driver click on clear button</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on STC job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@Jobflow</span>
+				<span class='category label'>@FixedPriceJobs</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='500' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.STCJob_TestCases.driver_click_on_clear_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver Click on clear button</div>
+		<li test-id='167' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_stc_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in STC status to verify fixed price</div>
 
 
 		</li>
-		<li test-id='502' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.STCJob_TestCases.driver_move_to_the_feedback_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Driver move to the Feedback screen</div>
+		<li test-id='169' class='node when Fail' status='Fail'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_stc_status())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on STC Status</div>
 
 
+					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ £ 0.00 ]> but was:<[£ 12.00]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_stc_status(Fixed_Price_Jobs.java:259)
+	at ✽.Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on STC Status(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:47)
+</textarea>
 		</li>
-	</ul>
-</div>
+		<li test-id='170' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Verify Fixed Price on STC job screen</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded4.png' src='./screenshots/embedded4.png'>
 					</div>
-				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='504'>
-					<div class='test-heading'>
-						<span class='test-name'>Feedback Screen UI verification and Complete Testing</span>
-						<span class='test-time'>Feb 21, 2023 07:35:24 pm</span>
-						<span class='test-status right pass'>Pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class="sr-filters bdd-filters">
-	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
-	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
-	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
-	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
-</div>
-
-<div class='scenario outline node' test-id='505' status='pass'>
-
-	<span class='duration right label'>00 00 28.503</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Feedback Screens UI and buttons clicks verifications</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>jobdetails</td><td>submit</td></tr><tr><td>Job Details</td><td>Submit</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='506' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Feedback Screens UI and buttons clicks verifications</div>
-
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
-
-			<ul class='gc steps'>
-				<li test-id='507' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.feedback_screen_comes_as_job_cleared()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Feedback screen comes as job cleared</h6>
-
-				</li>
-				<li test-id='509' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.driver_is_on_feedback_screen_and_lets_verify_feedback_screens_ui_and_texts_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver is on Feedback Screen and lets verify Feedback screens UI and texts fields</h6>
-
-				</li>
-				<li test-id='511' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_job_details_something_text_on_feedback_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check job details "Job Details" text on feedback screen</h6>
-
-				</li>
-				<li test-id='513' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_job_number_with_text_on_feedback_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check job number with text on feedback screen</h6>
-
-				</li>
-				<li test-id='515' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_pick_address_icon_on_feedback_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check pick address icon on feedback screen</h6>
-
-				</li>
-				<li test-id='517' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_drop_off_address_icon_on_feedback_screen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check drop off address icon on feedback screen</h6>
-
-				</li>
-				<li test-id='519' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_feedback_screen_pickup_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check feedback screen pickup zone text</h6>
-
-				</li>
-				<li test-id='521' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_feedback_screen_pickup_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check feedback screen pickup address text</h6>
-
-				</li>
-				<li test-id='523' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_feedback_screen_dropoff_zone_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check feedback screen dropoff zone text</h6>
-
-				</li>
-				<li test-id='525' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_feedback_screen_dropoff_address_text()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check feedback screen dropoff Address text</h6>
-
-				</li>
-				<li test-id='527' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_feedback_screen_customer_name()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check feedback screen customer name</h6>
-
-				</li>
-				<li test-id='529' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_feedback_screen_customer_rating()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check feedback screen Customer rating</h6>
-
-				</li>
-				<li test-id='531' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.check_submit_button_something_text_on_feedback_screen(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And check submit button "Submit" text on feedback screen</h6>
-
-				</li>
-				<li test-id='533' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.feedback_screen_ui_and_text_fields_are_verified()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Feedback screen UI and text fields are verified</h6>
-
-				</li>
-			</ul>
 		</li>
-	</ul>
-</div>
-<div class='scenario outline node' test-id='535' status='pass'>
+		<li test-id='171' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_stc_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll up so that Fixed Price Cost Value is visible on STC Screen</div>
 
-	<span class='duration right label'>00 00 10.852</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write and submit a feedback for customer</div>
-	</div>
-	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>customerfeedback</td></tr><tr><td>Customer is amazing he pay extra tip for the rid so he need 5 stars</td></tr></table></div>
-	
-	
-	<ul class='steps'>
-		<li test-id='536' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Write and submit a feedback for customer</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Jobflow</span>
-				</div>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='173' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_stc_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on STC Screen</div>
 
-			<ul class='gc steps'>
-				<li test-id='537' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.feedback_screen_comes_so_that_feedback_must_be_provided()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Feedback screen comes so that feedback must be provided</h6>
 
-				</li>
-				<li test-id='539' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.driver_click_on_customer_rating_stars()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Driver click on Customer rating stars</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='175' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_stc_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on STC screen so that Fixed Price Cost can be check on Next screen</div>
 
-				</li>
-				<li test-id='541' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.click_to_enter_feedback_for_customer_something(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click to enter feedback for customer "Customer is amazing he pay extra tip for the rid so he need 5 stars"</h6>
 
-				</li>
-				<li test-id='543' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.click_on_submit_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And click on Submit button</h6>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='177' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_clear_button_and_then_click_submit_button_and_fixed_fare_are_verified())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on Clear button and then click Submit button and Fixed Fare are verified</div>
 
-				</li>
-				<li test-id='545' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="com.DM8.Android.TestCases.FeedbackJob_TestCases.feedback_added_and_job_become_completed()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Feedback added and job become completed</h6>
 
-				</li>
-			</ul>
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='179' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_stc_screen_and_job_are_now_become_completed())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on STC screen and job are now become Completed</div>
+
+
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
@@ -1836,6 +931,39 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
+						<span class='category-name'>@Desclaimer</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 9, 2023 09:22:25 pm</td>
+										<td class='linked' test-id='93'>Disclaimer Screen verification</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
 						<span class='category-name'>@Splashes</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -1858,9 +986,68 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 21, 2023 07:25:30 pm</td>
+										<td>Mar 9, 2023 09:20:55 pm</td>
 										<td class='linked' test-id='3'>Location permission & Splashes Screens movement</td>
 										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@FixedPriceJobs</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						<span class='label fail'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 9, 2023 09:22:42 pm</td>
+										<td class='linked' test-id='109'>Create a Fixed Price job from evop Using API Data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:22:55 pm</td>
+										<td class='linked' test-id='116'>Accept Job To Verify Fixed Price Job</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:02 pm</td>
+										<td class='linked' test-id='123'>Verify Fixed Price on Accepted job screen</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:17 pm</td>
+										<td class='linked' test-id='136'>Verify Fixed Price on Waiting job screen</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:34 pm</td>
+										<td class='linked' test-id='151'>Verify Fixed Price on POB job screen</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:42 pm</td>
+										<td class='linked' test-id='166'>Verify Fixed Price on STC job screen</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1891,159 +1078,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 21, 2023 07:26:25 pm</td>
+										<td>Mar 9, 2023 09:21:51 pm</td>
 										<td class='linked' test-id='56'>Write Driver code to move to Login Screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 21, 2023 07:26:34 pm</td>
+										<td>Mar 9, 2023 09:22:00 pm</td>
 										<td class='linked' test-id='66'>Verify Login Screen all Text and button fields</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 21, 2023 07:26:46 pm</td>
+										<td>Mar 9, 2023 09:22:12 pm</td>
 										<td class='linked' test-id='80'>Login with Valid Username and Password to DM8</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Desclaimer</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 21, 2023 07:26:59 pm</td>
-										<td class='linked' test-id='93'>Disclaimer Screen verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Jobflow</span>
-						<span class='category-status right'>
-						<span class='label pass'>16</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 16</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 21, 2023 07:27:16 pm</td>
-										<td class='linked' test-id='109'>Job Creation from Evop</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:27:23 pm</td>
-										<td class='linked' test-id='116'>Incoming job Screen texts verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:27:42 pm</td>
-										<td class='linked' test-id='135'>To Accept Incoming job as job assigned to driver</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:27:47 pm</td>
-										<td class='linked' test-id='142'>Accepted job Screen UI elements verification</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:28:43 pm</td>
-										<td class='linked' test-id='189'>To Move job to the waiting status as driver tab on waiting button</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:28:48 pm</td>
-										<td class='linked' test-id='196'>Meter UI and button clicks verifications on Waiting screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:29:53 pm</td>
-										<td class='linked' test-id='250'>Waiting Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:30:43 pm</td>
-										<td class='linked' test-id='289'>To Move job to the POB status as driver tab on pob button when driver is on board</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:30:48 pm</td>
-										<td class='linked' test-id='296'>Meter UI and button clicks verifications on POB Screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:32:10 pm</td>
-										<td class='linked' test-id='358'>POB Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:33:03 pm</td>
-										<td class='linked' test-id='397'>To Move job to the STC status as driver tab on stc button when driver is on board</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:33:07 pm</td>
-										<td class='linked' test-id='404'>Meter UI and button clicks verifications on STC Screen</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:34:23 pm</td>
-										<td class='linked' test-id='460'>STC Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:35:19 pm</td>
-										<td class='linked' test-id='499'>To move Job to Feedback screen and Job status become completed as driver click on clear button</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:35:24 pm</td>
-										<td class='linked' test-id='506'>Feedback Screens UI and buttons clicks verifications</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 21, 2023 07:35:53 pm</td>
-										<td class='linked' test-id='536'>Write and submit a feedback for customer</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -2060,7 +1106,103 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.junit.ComparisonFailure</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 9, 2023 09:23:12 pm</td>
+										<td class='linked' test-id='128'>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen</td>
+										<td>
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
+	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:20 pm</td>
+										<td class='linked' test-id='139'>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on Waiting Status</td>
+										<td>
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
+	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:37 pm</td>
+										<td class='linked' test-id='154'>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on POB Status</td>
+										<td>
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
+	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 9, 2023 09:23:45 pm</td>
+										<td class='linked' test-id='169'>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on STC Status</td>
+										<td>
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
+	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -2068,37 +1210,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>21</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>250</div>
+					<div class='panel-lead'>84</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 21, 2023 07:25:18 pm</div>
+					<div class='panel-lead'>Mar 9, 2023 09:20:40 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 21, 2023 07:36:04 pm</div>
+			 		<div class='panel-lead'>Mar 9, 2023 09:23:50 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 10 45.950</div>
+					<div class='panel-lead'>00 03 10.159</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -2114,24 +1256,6 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Splashes</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Login</td>
-							<td>3</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>@Desclaimer</td>
 							<td>1</td>
 							<td>0</td>
@@ -2141,8 +1265,26 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Jobflow</td>
-							<td>16</td>
+							<td>@Splashes</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@FixedPriceJobs</td>
+							<td>2</td>
+							<td>4</td>
+							<td>0</td>
+							<td>
+									33.333%
+							</td>
+						</tr>
+						<tr>
+							<td>@Login</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -2160,35 +1302,35 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 10,
-				passParent: 10,
-				failParent: 0,
+                parentCount: 4,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 21,
-				passChild: 21,
-				failChild: 0,
+				childCount: 11,
+				passChild: 7,
+				failChild: 4,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 250,
-				passGrandChild: 250,
-				failGrandChild: 0,
+				grandChildCount: 84,
+				passGrandChild: 62,
+				failGrandChild: 4,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 18,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Splashes Screen Movements & Device Permissions Allocation":54.857,"Write Driver Code & Login to Driver Mate8":33.94,"Disclaimer Screen verification":16.995,"Job creation From Evop":6.549,"Incoming Job Screen Verification":23.957,"Accepted Screen verification":60.936,"Waiting Screen verification":120.209,"POB Screen UI verification and Complete Testing":138.908,"STC Screen UI verification and Complete Testing":137.548,"Feedback Screen UI verification and Complete Testing":39.363
+			        "Splashes Screen Movements & Device Permissions Allocation":55.311,"Write Driver Code & Login to Driver Mate8":33.95,"Disclaimer Screen verification":17.04,"Meter Jobs Verifications and Testing":68.233
 			};
 		</script>
 		
