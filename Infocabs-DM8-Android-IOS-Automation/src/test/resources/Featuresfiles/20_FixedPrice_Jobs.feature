@@ -1,4 +1,4 @@
-Feature: Meter Jobs Verifications and Testing
+Feature: Fixed Price Jobs Verifications and Testing
 
   @FixedPriceJobs
   Scenario Outline: Create a Fixed Price job from evop Using API Data

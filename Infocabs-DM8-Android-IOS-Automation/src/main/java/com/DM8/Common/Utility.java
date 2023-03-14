@@ -208,7 +208,7 @@ public class Utility extends BaseClass {
 	}
 	
 	
-	public static JSONObject FixedFare() {
+	public static JSONObject FixedFareVerification() {
 
 		// Post Request Body Data
 		JSONObject BodyData = new JSONObject();
@@ -301,6 +301,99 @@ public class Utility extends BaseClass {
 
 	}
 	
+	
+	public static JSONObject PreCalculatedFareVerification() {
+
+		// Post Request Body Data
+		JSONObject BodyData = new JSONObject();
+
+		// 1st array
+		JSONObject CustData = new JSONObject();
+		
+		CustData.put("custId", Datafile.getProperty("Customer_ID"));
+		CustData.put("custCallingNo", Datafile.getProperty("Customer_Calling_Num"));	
+		CustData.put("companyId", Datafile.getProperty("Company_ID"));
+		// put 1st ArrayData
+		BodyData.put("Customer", CustData);
+
+		// 2nd Array for Dispatch Drivers
+		JSONObject DispatchDvr = new JSONObject();
+		DispatchDvr.put("driverId", Datafile.getProperty("DriverID"));
+
+		// Array for Driver IDs
+		JSONArray DvrAry1 = new JSONArray();
+		DvrAry1.put(DispatchDvr);
+		// put 2nd ArrayData
+		BodyData.put("lst_JobDispatchInfo", DvrAry1);
+
+		// 3rd Array for FareInfo
+		JSONObject FareInfoData = new JSONObject();
+		FareInfoData.put("surchargeCost", Datafile.getProperty("PSurchargeCost"));
+		FareInfoData.put("surchargePrice", Datafile.getProperty("PSurchargePrice"));
+		FareInfoData.put("companyCommission", Datafile.getProperty("PCompanyComssion"));
+		FareInfoData.put("waitTimeCharge", Datafile.getProperty("PWaitingTimeCharge"));
+		FareInfoData.put("minimumPrice", Datafile.getProperty("PMinimumPrice"));
+		FareInfoData.put("bookingFee", Datafile.getProperty("PBookingFee"));
+		FareInfoData.put("misc", Datafile.getProperty("PMisc"));
+		FareInfoData.put("discount", Datafile.getProperty("PDiscount"));
+		FareInfoData.put("jobPrice", Datafile.getProperty("PJobPrice"));
+		FareInfoData.put("totalPrice", Datafile.getProperty("PTotalPrice"));
+		FareInfoData.put("driverCost", Datafile.getProperty("PDriverCost"));
+		FareInfoData.put("fareType", Datafile.getProperty("PFareType"));
+		FareInfoData.put("appliedTariffID", Datafile.getProperty("PTariffID"));
+		FareInfoData.put("appliedTariffName", Datafile.getProperty("PTariffName"));
+		FareInfoData.put("mileage", Datafile.getProperty("PMileage"));
+		FareInfoData.put("paymentMethod", Datafile.getProperty("PPaymentMethod"));
+		
+		// put 3rd ArrayData
+		BodyData.put("EvoFareInfo", FareInfoData);
+
+		// 4rth Array for Locations
+		JSONObject LocationData = new JSONObject();
+
+		// PickUp Address
+		JSONObject PickUpAddressData = new JSONObject();
+		PickUpAddressData.put("place", Datafile.getProperty("PPickupAddress"));
+		// PickUp Latlong Address
+		JSONObject PickUpLatLong = new JSONObject();
+		PickUpLatLong.put("latitude", Datafile.getProperty("PPickUpLat"));
+		PickUpLatLong.put("longitude", Datafile.getProperty("PPickLong"));
+		// Combine both Address name and lat/long
+		PickUpAddressData.put("LatLong", PickUpLatLong);
+
+		// DropOff Address
+		JSONObject DropOffAddressData = new JSONObject();
+		DropOffAddressData.put("place", Datafile.getProperty("PDropoffAddress"));
+		// Dropoff Latlong Address
+		JSONObject DropoffLatLong = new JSONObject();
+		DropoffLatLong.put("latitude", Datafile.getProperty("PDropoffLat"));
+		DropoffLatLong.put("longitude", Datafile.getProperty("PDropoffLong"));
+		// Combine both Address name and lat/long
+		DropOffAddressData.put("LatLong", DropoffLatLong);
+
+		// Now Add both Pick and Dropoff Data
+		LocationData.put("PickupAddress", PickUpAddressData);
+		LocationData.put("DestinyAddress", DropOffAddressData);
+
+		// Put 4th Array Data
+		BodyData.put("Locations", LocationData);
+		// LocalDateTime time = java.time.LocalDateTime.now();
+		Instant time = Clock.systemUTC().instant();
+		System.out.println(time);
+		BodyData.put("journeyDateTime", time);
+		
+		BodyData.put("totalMiles", Datafile.getProperty("TotalMiles"));
+		BodyData.put("DivisionMask", Datafile.getProperty("devisionMask"));
+		BodyData.put("custId", Datafile.getProperty("Customer_ID"));
+		BodyData.put("isEvoFareEnabled", true);
+		BodyData.put("companyId", Datafile.getProperty("Company_ID"));
+		BodyData.put("jobType", Datafile.getProperty("JobType"));
+		BodyData.put("operatorID", Datafile.getProperty("OperatorID"));
+		BodyData.put("isFeatureEnable", true);
+
+		return BodyData;
+
+	}
 	
 	
 	

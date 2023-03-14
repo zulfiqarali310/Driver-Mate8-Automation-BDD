@@ -31,7 +31,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 	WaitingJob_Locators Waitjob = new WaitingJob_Locators(driver);
 	FeedbackJob_Locators fd = new FeedbackJob_Locators(driver);
 	TouchAction touch = new TouchAction((PerformsTouchActions) driver);
-	JSONObject BodyData = Utility.FixedFare();
+	JSONObject BodyData = Utility.FixedFareVerification();
 
 	@Given("^Job request are given for Fixed Price Verification on DM8$")
 	public void job_request_are_given_for_fixed_price_verification_on_dm8() throws Throwable {
@@ -46,7 +46,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 
 		Response response3 = given().when().get("http://stage.infocabs.com:98/api/Job/GetJobData?CompanyId="
 				+ (prop.getProperty("Company_ID") + "&Jobnumber" + "=" + JobID));
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		System.out.println(response3.getBody().asString());
 		float DriverCost = response3.path("EvoFareInfo.driverCost");
 		System.out.println("The Driver Cost value is " + DriverCost);
@@ -73,7 +73,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 	@When("^Accept job to verify Price Value on DM8$")
 	public void accept_job_to_verify_price_value_on_dm8() throws Throwable {
 		Utility.waitForPageLoaded();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Injob.ClickOnAccept();
 	}
 
@@ -104,7 +104,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " ₤ " +FixedFareValue);
 	}
 
 	@And("^move scroll down on Accepted screen so that Fixed Price Cost can be check on Next screen$")
@@ -143,7 +143,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Waitjob.GetMeterFareValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " £ " +FixedFareValue + "0 ");
 	}
 
 	@And("^move scroll up so that Fixed Price Cost Value is visible on Waiting Screen$")
@@ -162,7 +162,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " ₤ " +FixedFareValue);
 	}
 
 	@And("^move scroll down on Waiting screen so that Fixed Price Cost can be check on Next screen$")
@@ -200,7 +200,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Waitjob.GetMeterFareValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " £ " +FixedFareValue + "0 ");
 	}
 
 	@And("^move scroll up so that Fixed Price Cost Value is visible on POB Screen$")
@@ -219,7 +219,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " ₤ " +FixedFareValue);
 	}
 
 	@And("^move scroll down on POB screen so that Fixed Price Cost can be check on Next screen$")
@@ -256,7 +256,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Waitjob.GetMeterFareValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " £ " +FixedFareValue + "0 ");
 	}
 
 	@And("^move scroll up so that Fixed Price Cost Value is visible on STC Screen$")
@@ -275,7 +275,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 		String FixedFareValue = prop.getProperty("DriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, "£ " +FixedFareValue);
+		Assert.assertEquals(Actualtext, " ₤ " +FixedFareValue);
 	}
 
 	@And("^move scroll down on STC screen so that Fixed Price Cost can be check on Next screen$")
@@ -299,7 +299,7 @@ public class Fixed_Price_Jobs extends BaseClass {
 	@Then("^Fixed Price Value are verified on STC screen and job are now become Completed$")
 	public void fixed_price_value_are_verified_on_stc_screen_and_job_are_now_become_completed() throws Throwable {
 		Utility.waitForPageLoaded();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 	}
 
 }

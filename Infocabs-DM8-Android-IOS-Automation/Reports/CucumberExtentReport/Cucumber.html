@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 9, 2023 09:20:40 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 14, 2023 08:48:50 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -66,7 +65,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -80,8 +78,8 @@
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Desclaimer</a></li>
 					<li><a href='#'>@Splashes</a></li>
-					<li><a href='#'>@FixedPriceJobs</a></li>
 					<li><a href='#'>@Login</a></li>
+					<li><a href='#'>@Pre-CalculatedJobs</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -123,12 +121,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$75%'>
-                    <span class='strong'>3</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>4</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -141,12 +139,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='63%'>
-                    <span class='strong'>7</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>11</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='36%'>
-                    4</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -161,14 +159,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='73%'>
-                    <span class='strong'>62</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>80</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='4%'>
-                    4</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='21%'>
-                    18</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -192,7 +190,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Splashes Screen Movements & Device Permissions Allocation</span>
-						<span class='test-time'>Mar 9, 2023 09:20:55 pm</span>
+						<span class='test-time'>Mar 14, 2023 08:49:03 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -205,7 +203,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 55.303</span>
+	<span class='duration right label'>00 00 55.251</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Location permission & Splashes Screens movement</div>
 	</div>
@@ -331,7 +329,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='54'>
 					<div class='test-heading'>
 						<span class='test-name'>Write Driver Code & Login to Driver Mate8</span>
-						<span class='test-time'>Mar 9, 2023 09:21:51 pm</span>
+						<span class='test-time'>Mar 14, 2023 08:49:59 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -344,7 +342,7 @@
 
 <div class='scenario outline node' test-id='55' status='pass'>
 
-	<span class='duration right label'>00 00 08.785</span>
+	<span class='duration right label'>00 00 08.751</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write Driver code to move to Login Screen</div>
 	</div>
@@ -383,7 +381,7 @@
 </div>
 <div class='scenario outline node' test-id='65' status='pass'>
 
-	<span class='duration right label'>00 00 12.292</span>
+	<span class='duration right label'>00 00 12.302</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify Login Screen all Text and button fields</div>
 	</div>
@@ -430,7 +428,7 @@
 </div>
 <div class='scenario outline node' test-id='79' status='pass'>
 
-	<span class='duration right label'>00 00 12.843</span>
+	<span class='duration right label'>00 00 12.861</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with Valid Username and Password to DM8</div>
 	</div>
@@ -476,7 +474,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='91'>
 					<div class='test-heading'>
 						<span class='test-name'>Disclaimer Screen verification</span>
-						<span class='test-time'>Mar 9, 2023 09:22:25 pm</span>
+						<span class='test-time'>Mar 14, 2023 08:50:32 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -540,11 +538,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='108'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='108'>
 					<div class='test-heading'>
-						<span class='test-name'>Meter Jobs Verifications and Testing</span>
-						<span class='test-time'>Mar 9, 2023 09:22:42 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-name'>Pre-Calculated Price Jobs Verifications and Testing</span>
+						<span class='test-time'>Mar 14, 2023 08:50:50 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -556,29 +554,29 @@
 
 <div class='scenario node' test-id='109' status='pass'>
 
-	<span class='duration right label'>00 00 13.373</span>
+	<span class='duration right label'>00 00 14.625</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Create a Fixed Price job from evop Using API Data</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Create a Pre Calculated Price job from evop Using API Data</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FixedPriceJobs</span>
+				<span class='category label'>@Pre-CalculatedJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='110' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_request_are_given_for_fixed_price_verification_on_dm8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job request are given for Fixed Price Verification on DM8</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_request_are_given_for_pre_calculated_price_verification_on_dm8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job request are given for Pre Calculated Price Verification on DM8</div>
 
 
 		</li>
 		<li test-id='112' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_request_are_send_to_the_server_for_fixed_price_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Job request are send to the server for Fixed Price Verification</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_request_are_send_to_the_server_for_pre_calculated_price_verification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Job request are send to the server for Pre Calculated Price Verification</div>
 
 
 		</li>
 		<li test-id='114' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.new_job_has_been_created_with_fixed_price_tariff_value())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created with Fixed Price Tariff value</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.new_job_has_been_created_with_pre_calculated_price_tariff_value())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created with Pre Calculated Price Tariff value</div>
 
 
 		</li>
@@ -586,304 +584,226 @@
 </div>
 <div class='scenario node' test-id='116' status='pass'>
 
-	<span class='duration right label'>00 00 07.191</span>
+	<span class='duration right label'>00 00 08.201</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Accept Job To Verify Fixed Price Job</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Accept Job To Verify Pre Calculated Price Job</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FixedPriceJobs</span>
+				<span class='category label'>@Pre-CalculatedJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='117' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_has_been_received_on_dm8_for_fixed_price_verification_and_accept_and_move_to_stc_status_to_verify_card_payment())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job has been received on DM8 For Fixed Price Verification and Accept and move to STC status to verify Card payment</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_has_been_received_on_dm8_for_pre_calculated_price_verification_and_accept_and_move_to_stc_status_to_verify_card_payment())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job has been received on DM8 For Pre Calculated Price Verification and Accept and move to STC status to verify Card payment</div>
 
 
 		</li>
 		<li test-id='119' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.accept_job_to_verify_price_value_on_dm8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Accept job to verify Price Value on DM8</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.accept_job_to_verify_pre_calculated_price_value_on_dm8())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Accept job to verify Pre Calculated Price Value on DM8</div>
 
 
 		</li>
 		<li test-id='121' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_status_should_be_accepte_to_verify_on_fixed_prices())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job status should be accepte to verify on Fixed Prices</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_status_should_be_accepte_to_verify_on_pre_calculated_prices())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job status should be accepte to verify on Pre Calculated Prices</div>
 
 
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='123' status='fail'>
+<div class='scenario node' test-id='123' status='pass'>
 
-	<span class='duration right label'>00 00 14.508</span>
+	<span class='duration right label'>00 00 27.195</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on Accepted job screen</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Pre Calculated Price on Accepted job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FixedPriceJobs</span>
+				<span class='category label'>@Pre-CalculatedJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='124' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_accepted_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in Accepted status to verify fixed price</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_are_in_accepted_status_to_verify_pre_calculated_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in Accepted status to verify Pre Calculated price</div>
 
 
 		</li>
 		<li test-id='126' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_accepted_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When move scroll up so that Fixed Price Cost Value is visible on Accepted Screen</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_up_so_that_pre_calculated_price_cost_value_is_visible_on_accepted_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When move scroll up so that Pre Calculated Price Cost Value is visible on Accepted Screen</div>
 
 
 		</li>
-		<li test-id='128' class='node and Fail' status='Fail'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen</div>
+		<li test-id='128' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_to_verify_the_pre_calculated_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check to Verify The Pre Calculated Price Cost Value should be same as like Job booked from Evop on Accepted Screen</div>
 
 
-					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
-	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
-</textarea>
 		</li>
-		<li test-id='129' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+		<li test-id='130' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_down_on_accepted_screen_so_that_pre_calculated_price_cost_can_be_check_on_next_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down on Accepted screen so that Pre Calculated Price Cost can be check on Next screen</div>
 
 
-					<div class="node-step">Verify Fixed Price on Accepted job screen</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded1.png' src='./screenshots/embedded1.png'>
-					</div>
 		</li>
-		<li test-id='130' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_accepted_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on Accepted screen so that Fixed Price Cost can be check on Next screen</div>
+		<li test-id='132' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.click_on_waiting_button_to_move_job_to_waiting_status_to_check_pre_calculated_price_value_on_it())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on Waiting button to move job to Waiting Status to check Pre Calculated Price value on it</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='132' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_waiting_button_to_move_job_to_waiting_status_to_check_fixed_price_value_on_it())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on Waiting button to move job to Waiting Status to check Fixed Price value on it</div>
+		<li test-id='134' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.pre_calculated_price_value_are_verified_on_accepted_screen_and_job_status_are_in_waiting())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pre Calculated Price Value are verified on Accepted screen and job Status are in Waiting</div>
 
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='134' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_accepted_screen_and_job_status_are_in_waiting())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on Accepted screen and job Status are in Waiting</div>
-
-
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='136' status='fail'>
+<div class='scenario node' test-id='136' status='pass'>
 
-	<span class='duration right label'>00 00 16.902</span>
+	<span class='duration right label'>00 00 31.568</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on Waiting job screen</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Pre Calculated Price on Waiting job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FixedPriceJobs</span>
+				<span class='category label'>@Pre-CalculatedJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='137' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_waiting_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in Waiting status to verify fixed price</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_are_in_waiting_status_to_verify_pre_calculated_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in Waiting status to verify Pre Calculated price</div>
 
 
 		</li>
-		<li test-id='139' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_waiting_status())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on Waiting Status</div>
+		<li test-id='139' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_and_verify_meter_pre_calculated_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_waiting_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Check and Verify Meter Pre Calculated Price Fare value should be same as like job booked from Evop on Waiting Status</div>
 
 
-					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ £ 0.00 ]> but was:<[£ 12.00]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_waiting_status(Fixed_Price_Jobs.java:146)
-	at ✽.Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on Waiting Status(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:27)
-</textarea>
 		</li>
-		<li test-id='140' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+		<li test-id='141' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_up_so_that_pre_calculated_price_cost_value_is_visible_on_waiting_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll up so that Pre Calculated Price Cost Value is visible on Waiting Screen</div>
 
 
-					<div class="node-step">Verify Fixed Price on Waiting job screen</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded2.png' src='./screenshots/embedded2.png'>
-					</div>
 		</li>
-		<li test-id='141' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_waiting_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll up so that Fixed Price Cost Value is visible on Waiting Screen</div>
+		<li test-id='143' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_to_verify_the_pre_calculated_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_waiting_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check to Verify The Pre Calculated Price Cost Value should be same as like Job booked from Evop on Waiting Screen</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='143' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_waiting_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Waiting Screen</div>
+		<li test-id='145' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_down_on_waiting_screen_so_that_pre_calculated_price_cost_can_be_check_on_next_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down on Waiting screen so that Pre Calculated Price Cost can be check on Next screen</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='145' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_waiting_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on Waiting screen so that Fixed Price Cost can be check on Next screen</div>
+		<li test-id='147' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.click_on_pob_button_to_move_job_to_pob_status_to_check_pre_calculated_price_value_on_it())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on POB button to move job to POB Status to check Pre Calculated Price value on it</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='147' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_pob_button_to_move_job_to_pob_status_to_check_fixed_price_value_on_it())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on POB button to move job to POB Status to check Fixed Price value on it</div>
+		<li test-id='149' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.pre_calculated_price_value_are_verified_on_waiting_screen_and_job_status_are_in_pob())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pre Calculated Price Value are verified on Waiting screen and job Status are in POB</div>
 
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='149' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_waiting_screen_and_job_status_are_in_pob())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on Waiting screen and job Status are in POB</div>
-
-
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='151' status='fail'>
+<div class='scenario node' test-id='151' status='pass'>
 
-	<span class='duration right label'>00 00 08.057</span>
+	<span class='duration right label'>00 00 30.721</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on POB job screen</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Pre Calculated Price on POB job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FixedPriceJobs</span>
+				<span class='category label'>@Pre-CalculatedJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='152' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_pob_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in POB status to verify fixed price</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_are_in_pob_status_to_verify_pre_calculated_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in POB status to verify Pre Calculated price</div>
 
 
 		</li>
-		<li test-id='154' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_pob_status())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on POB Status</div>
+		<li test-id='154' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_and_verify_meter_pre_calculated_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_pob_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Check and Verify Meter Pre Calculated Price Fare value should be same as like job booked from Evop on POB Status</div>
 
 
-					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ £ 0.00 ]> but was:<[£ 12.00]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_pob_status(Fixed_Price_Jobs.java:203)
-	at ✽.Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on POB Status(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:37)
-</textarea>
 		</li>
-		<li test-id='155' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+		<li test-id='156' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_up_so_that_pre_calculated_price_cost_value_is_visible_on_pob_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll up so that Pre Calculated Price Cost Value is visible on POB Screen</div>
 
 
-					<div class="node-step">Verify Fixed Price on POB job screen</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded3.png' src='./screenshots/embedded3.png'>
-					</div>
 		</li>
-		<li test-id='156' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_pob_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll up so that Fixed Price Cost Value is visible on POB Screen</div>
+		<li test-id='158' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_to_verify_the_pre_calculated_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_pob_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check to Verify The Pre Calculated Price Cost Value should be same as like Job booked from Evop on POB Screen</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='158' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_pob_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on POB Screen</div>
+		<li test-id='160' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_down_on_pob_screen_so_that_pre_calculated_price_cost_can_be_check_on_next_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down on POB screen so that Pre Calculated Price Cost can be check on Next screen</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='160' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_pob_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on POB screen so that Fixed Price Cost can be check on Next screen</div>
+		<li test-id='162' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.click_on_stc_button_to_move_job_to_stc_status_to_check_pre_calculated_price_value_on_it())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on STC button to move job to STC Status to check Pre Calculated Price value on it</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='162' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_stc_button_to_move_job_to_stc_status_to_check_fixed_price_value_on_it())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on STC button to move job to STC Status to check Fixed Price value on it</div>
+		<li test-id='164' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.pre_calculated_price_value_are_verified_on_pob_screen_and_job_status_are_in_stc())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pre Calculated Price Value are verified on POB screen and job Status are in STC</div>
 
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='164' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_pob_screen_and_job_status_are_in_stc())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on POB screen and job Status are in STC</div>
-
-
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
-<div class='scenario node' test-id='166' status='fail'>
+<div class='scenario node' test-id='166' status='pass'>
 
-	<span class='duration right label'>00 00 08.142</span>
+	<span class='duration right label'>00 00 38.904</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Verify Fixed Price on STC job screen</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Pre Calculated Price on STC job screen</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@FixedPriceJobs</span>
+				<span class='category label'>@Pre-CalculatedJobs</span>
 		</div>
 	
 	<ul class='steps'>
 		<li test-id='167' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.job_are_in_stc_status_to_verify_fixed_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in STC status to verify fixed price</div>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.job_are_in_stc_status_to_verify_pre_calculated_price())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job are in STC status to verify Pre Calculated price</div>
 
 
 		</li>
-		<li test-id='169' class='node when Fail' status='Fail'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_stc_status())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on STC Status</div>
+		<li test-id='169' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_and_verify_meter_pre_calculated_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_stc_status())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Check and Verify Meter Pre Calculated Price Fare value should be same as like job booked from Evop on STC Status</div>
 
 
-					<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ £ 0.00 ]> but was:<[£ 12.00]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_and_verify_meter_fixed_price_fare_value_should_be_same_as_like_job_booked_from_evop_on_stc_status(Fixed_Price_Jobs.java:259)
-	at ✽.Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on STC Status(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:47)
-</textarea>
 		</li>
-		<li test-id='170' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+		<li test-id='171' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_up_so_that_pre_calculated_price_cost_value_is_visible_on_stc_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll up so that Pre Calculated Price Cost Value is visible on STC Screen</div>
 
 
-					<div class="node-step">Verify Fixed Price on STC job screen</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded4.png' src='./screenshots/embedded4.png'>
-					</div>
 		</li>
-		<li test-id='171' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_up_so_that_fixed_price_cost_value_is_visible_on_stc_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll up so that Fixed Price Cost Value is visible on STC Screen</div>
+		<li test-id='173' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.check_to_verify_the_pre_calculated_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_stc_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Check to Verify The Pre Calculated Price Cost Value should be same as like Job booked from Evop on STC Screen</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='173' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_stc_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on STC Screen</div>
+		<li test-id='175' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.move_scroll_down_on_stc_screen_so_that_pre_calculated_price_cost_can_be_check_on_next_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And move scroll down on STC screen so that Pre Calculated Price Cost can be check on Next screen</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='175' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.move_scroll_down_on_stc_screen_so_that_fixed_price_cost_can_be_check_on_next_screen())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And move scroll down on STC screen so that Fixed Price Cost can be check on Next screen</div>
+		<li test-id='177' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.click_on_clear_button_and_then_click_submit_button_and_pre_calculated_fare_are_verified())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click on Clear button and then click Submit button and Pre Calculated Fare are verified</div>
 
 
-					<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='177' class='node and Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.click_on_clear_button_and_then_click_submit_button_and_fixed_fare_are_verified())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And Click on Clear button and then click Submit button and Fixed Fare are verified</div>
+		<li test-id='179' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.Pre_Calculated_Jobs.pre_calculated_price_value_are_verified_on_stc_screen_and_job_are_now_become_completed())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pre Calculated Price Value are verified on STC screen and job are now become Completed</div>
 
 
-					<div class="node-step">Step skipped</div>
-		</li>
-		<li test-id='179' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.Fixed_Price_Jobs.fixed_price_value_are_verified_on_stc_screen_and_job_are_now_become_completed())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Fixed Price Value are verified on STC screen and job are now become Completed</div>
-
-
-					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
@@ -953,7 +873,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 9, 2023 09:22:25 pm</td>
+										<td>Mar 14, 2023 08:50:32 pm</td>
 										<td class='linked' test-id='93'>Disclaimer Screen verification</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
@@ -986,68 +906,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 9, 2023 09:20:55 pm</td>
+										<td>Mar 14, 2023 08:49:03 pm</td>
 										<td class='linked' test-id='3'>Location permission & Splashes Screens movement</td>
 										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@FixedPriceJobs</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						<span class='label fail'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 4</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 9, 2023 09:22:42 pm</td>
-										<td class='linked' test-id='109'>Create a Fixed Price job from evop Using API Data</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:22:55 pm</td>
-										<td class='linked' test-id='116'>Accept Job To Verify Fixed Price Job</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:02 pm</td>
-										<td class='linked' test-id='123'>Verify Fixed Price on Accepted job screen</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:17 pm</td>
-										<td class='linked' test-id='136'>Verify Fixed Price on Waiting job screen</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:34 pm</td>
-										<td class='linked' test-id='151'>Verify Fixed Price on POB job screen</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:42 pm</td>
-										<td class='linked' test-id='166'>Verify Fixed Price on STC job screen</td>
-										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1078,18 +939,76 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 9, 2023 09:21:51 pm</td>
+										<td>Mar 14, 2023 08:49:59 pm</td>
 										<td class='linked' test-id='56'>Write Driver code to move to Login Screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 9, 2023 09:22:00 pm</td>
+										<td>Mar 14, 2023 08:50:07 pm</td>
 										<td class='linked' test-id='66'>Verify Login Screen all Text and button fields</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 9, 2023 09:22:12 pm</td>
+										<td>Mar 14, 2023 08:50:20 pm</td>
 										<td class='linked' test-id='80'>Login with Valid Username and Password to DM8</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Pre-CalculatedJobs</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 14, 2023 08:50:50 pm</td>
+										<td class='linked' test-id='109'>Create a Pre Calculated Price job from evop Using API Data</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 14, 2023 08:51:04 pm</td>
+										<td class='linked' test-id='116'>Accept Job To Verify Pre Calculated Price Job</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 14, 2023 08:51:12 pm</td>
+										<td class='linked' test-id='123'>Verify Pre Calculated Price on Accepted job screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 14, 2023 08:51:40 pm</td>
+										<td class='linked' test-id='136'>Verify Pre Calculated Price on Waiting job screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 14, 2023 08:52:11 pm</td>
+										<td class='linked' test-id='151'>Verify Pre Calculated Price on POB job screen</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 14, 2023 08:52:42 pm</td>
+										<td class='linked' test-id='166'>Verify Pre Calculated Price on STC job screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1106,103 +1025,7 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.junit.ComparisonFailure</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>4</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Mar 9, 2023 09:23:12 pm</td>
-										<td class='linked' test-id='128'>And Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen</td>
-										<td>
-											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
-	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:20 pm</td>
-										<td class='linked' test-id='139'>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on Waiting Status</td>
-										<td>
-											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
-	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:37 pm</td>
-										<td class='linked' test-id='154'>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on POB Status</td>
-										<td>
-											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
-	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Mar 9, 2023 09:23:45 pm</td>
-										<td class='linked' test-id='169'>When Check and Verify Meter Fixed Price Fare value should be same as like job booked from Evop on STC Status</td>
-										<td>
-											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[ ₤ 12.]0> but was:<[£ 12.0]0>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.DM8.Android.TestCases.Fixed_Price_Jobs.check_to_verify_the_fixed_price_cost_value_should_be_same_as_like_job_booked_from_evop_on_accepted_screen(Fixed_Price_Jobs.java:107)
-	at ✽.Check to Verify The Fixed Price Cost Value should be same as like Job booked from Evop on Accepted Screen(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/20_FixedPrice_Jobs.feature:19)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1222,25 +1045,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>84</div>
+					<div class='panel-lead'>80</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 9, 2023 09:20:40 pm</div>
+					<div class='panel-lead'>Mar 14, 2023 08:48:50 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 9, 2023 09:23:50 pm</div>
+			 		<div class='panel-lead'>Mar 14, 2023 08:53:21 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 03 10.159</div>
+					<div class='panel-lead'>00 04 30.725</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1274,17 +1097,17 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@FixedPriceJobs</td>
-							<td>2</td>
-							<td>4</td>
+							<td>@Login</td>
+							<td>3</td>
+							<td>0</td>
 							<td>0</td>
 							<td>
-									33.333%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@Login</td>
-							<td>3</td>
+							<td>@Pre-CalculatedJobs</td>
+							<td>6</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -1303,34 +1126,34 @@
 		<script>
 			var statusGroup = {
                 parentCount: 4,
-				passParent: 3,
-				failParent: 1,
+				passParent: 4,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 11,
-				passChild: 7,
-				failChild: 4,
+				passChild: 11,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 84,
-				passGrandChild: 62,
-				failGrandChild: 4,
+				grandChildCount: 80,
+				passGrandChild: 80,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 18,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Splashes Screen Movements & Device Permissions Allocation":55.311,"Write Driver Code & Login to Driver Mate8":33.95,"Disclaimer Screen verification":17.04,"Meter Jobs Verifications and Testing":68.233
+			        "Splashes Screen Movements & Device Permissions Allocation":55.253,"Write Driver Code & Login to Driver Mate8":33.937,"Disclaimer Screen verification":17.04,"Pre-Calculated Price Jobs Verifications and Testing":151.263
 			};
 		</script>
 		
