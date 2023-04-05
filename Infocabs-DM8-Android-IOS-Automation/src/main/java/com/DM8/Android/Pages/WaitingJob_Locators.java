@@ -40,6 +40,10 @@ public class WaitingJob_Locators extends ScreenActions {
 	WebElement Costtext;
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_cost")
 	WebElement MeterFareValue;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/textisJobPaid")
+	WebElement PrePaidtext;
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_milesLabel")
 	WebElement Distancemilestext;
@@ -242,6 +246,13 @@ public class WaitingJob_Locators extends ScreenActions {
 	public boolean CheckwaitingVlaue() {
 		return WaitingCostsvalue.isDisplayed();
 	}
+	
+	
+	public String GetMeterWaitingCostValue() {
+
+		return getText(WaitingCostsvalue);
+
+	}
 
 	public String GetExtralabeltext() {
 
@@ -342,6 +353,13 @@ public class WaitingJob_Locators extends ScreenActions {
 		return getText(SendYesButtontext);
 
 	}
+	
+	public String GetPrePaidtext() {
+
+		return getText(PrePaidtext);
+
+	}
+	
 
 	public void ClickOnSendNoShowYesButton() {
 

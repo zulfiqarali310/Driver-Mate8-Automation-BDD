@@ -56,6 +56,9 @@ public class STCJob_Locators extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_close")
 	WebElement CloseButtonandText;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/PaymentSuccess")
+	WebElement PaymentTakenAlert;
 
 	public void ClickOnAccept() {
 
@@ -140,6 +143,10 @@ public class STCJob_Locators extends ScreenActions {
 
 		click(CloseButtonandText, "Click on close Button");
 
+	}
+	
+	public boolean CheckForPaymentTaken() {
+		return PaymentTakenAlert.isDisplayed();
 	}
 
 }
