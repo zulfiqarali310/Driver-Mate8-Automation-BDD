@@ -102,6 +102,11 @@ public class SplashesAndAnimation extends ScreenActions {
 
 		return getText(SkipButton);
 	}
+	
+	public void ClickOnSkipButton() {
+
+		click(SkipButton);
+	}
 
 	public String GetDetailsText() {
 
@@ -111,6 +116,11 @@ public class SplashesAndAnimation extends ScreenActions {
 	public String GetAlreadyAccountText() {
 
 		return getText(AlreadAccountTxt);
+	}
+	
+	public void ClickOnAlreadyAccount() {
+
+		click(AlreadAccountTxt);
 	}
 
 	public String GetStartedText() {

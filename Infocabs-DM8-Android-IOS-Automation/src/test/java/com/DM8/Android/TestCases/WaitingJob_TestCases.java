@@ -15,6 +15,7 @@ import com.DM8.Common.Utility;
 
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.options.UiAutomator2Options;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -32,6 +33,13 @@ public class WaitingJob_TestCases extends BaseClass {
 		Utility.waitForPageLoaded();
 		Thread.sleep(2000);
 		log.info("Accepted job screens comes as job accepted by the driver");
+		
+	
+		UiAutomator2Options options = new UiAutomator2Options();
+		options.fullReset();
+		options.noReset();
+
+
 	}
 
 	@When("^Verify Cost value and text$")

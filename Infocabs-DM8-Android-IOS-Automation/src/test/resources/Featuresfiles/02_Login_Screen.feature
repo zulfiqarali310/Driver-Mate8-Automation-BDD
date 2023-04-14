@@ -34,4 +34,4 @@ Feature: Write Driver Code & Login to Driver Mate8
 
     Examples: 
       | Username       | Password |
-      | zulfiqartest79 |     1234 |
+      | zulfiqartest79 |     65122 |

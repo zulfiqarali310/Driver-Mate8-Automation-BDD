@@ -12,6 +12,7 @@ import java.util.Properties;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.InteractsWithApps;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -100,6 +101,10 @@ public class BaseClass {
 		// options.setCapability("isHeadless", true);
 		// options.setAutoGrantPermissions(true);
 		// options.setCapability("autoAcceptAlerts", "true");
+		//UiAutomator2Options options = new UiAutomator2Options();
+		//options.fullReset();
+		
+
 
 		try {
 
@@ -128,6 +133,14 @@ public class BaseClass {
 
 	public static void closeAppium() {
 		service.stop();
+	}
+	
+	public static void closeApp() {
+
+		((InteractsWithApps) driver).terminateApp(prop.getProperty("App_package"));
+    	((InteractsWithApps) driver).activateApp(prop.getProperty("App_package"));
+
+		
 	}
 
 }

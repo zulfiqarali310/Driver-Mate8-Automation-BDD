@@ -23,6 +23,14 @@ public class LoginPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/iv_more")
 	WebElement MoreButton;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/change_code")
+	WebElement ChangeButton;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/forgot_password")
+	WebElement RequestPasswordResetButton;
+	
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_started")
 	WebElement TextStarted;
@@ -35,7 +43,26 @@ public class LoginPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_register")
 	WebElement ButtonRegister;
-
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/dialog_message")
+	WebElement GetErrorMessage;
+	
+	
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text1")
+	WebElement Clickonusernamefiled1;
+	
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_heading1")
+	WebElement ChangePasswordAlertDetails;
+	
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/btn_continue")
+	WebElement ClickOncontineButton;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_negative")
+	WebElement ClickOnOKButton;
+	
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/edt_email")
 	WebElement EnterUsername;
 
@@ -56,6 +83,33 @@ public class LoginPage extends ScreenActions {
 		click(MoreButton, "Click on Login Button");
 
 	}
+	
+	public void ClickOChangeButton() {
+
+		click(ChangeButton, "Click on Login Button");
+
+	}
+	
+	public void ClickOnRequestPasswordButton() {
+
+		click(RequestPasswordResetButton, "Click on Login Button");
+
+	}
+	
+	public void ClickOncontineButton() {
+
+		click(ClickOncontineButton, "Click on contine Button");
+
+	}
+	
+	public void ClickOnUsernamefield() {
+
+		click(Clickonusernamefiled1, "Click on Select username");
+
+	}
+	
+	
+	
 
 	public void WriteCode(String code) {
 
@@ -67,15 +121,27 @@ public class LoginPage extends ScreenActions {
 		click(ButtonRegister, "Click on Login Button");
 
 	}
+	
+	public void ClearDriverCodeArea() {
+		EditCode.clear();
+	}
 
 	public void EnterUsername(String uname) {
 
 		sendKeys(EnterUsername, uname, "Enter Username" + uname);
 	}
+	
+	public void ClearUsernameArea() {
+		EnterUsername.clear();
+	}
 
 	public void EnterPassword(String pwd) {
 
 		sendKeys(EnterPassword, pwd, "Enter Password" + pwd);
+	}
+	
+	public void ClearPasswordArea() {
+		EnterPassword.clear();
 	}
 
 	public void ClickOnLoginrButton() {
@@ -83,10 +149,26 @@ public class LoginPage extends ScreenActions {
 		click(LoginButton, "Click on Login Button");
 
 	}
+	
+	public void ClickOnOKButton() {
 
+		click(ClickOnOKButton, "Click on Alert Ok Button");
+
+	}
+	
 	public String GetStartedText() {
 
 		return getText(TextStarted);
+	}
+
+	public String GetChangePassworddetailsText() {
+
+		return getText(ChangePasswordAlertDetails);
+	}
+	
+	public String GetErrorMessageText() {
+
+		return getText(GetErrorMessage);
 	}
 
 	public String GetInstructionText() {
