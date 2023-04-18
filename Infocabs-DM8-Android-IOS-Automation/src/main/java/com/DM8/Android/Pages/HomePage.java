@@ -29,9 +29,18 @@ public class HomePage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/img_update")
 	WebElement Updatebutton;
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/img_menu")
 	WebElement Menuebutton;
+	
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/logout")
+	WebElement Logoutbutton;
+	
+	@FindBy(how = How.ID, using = "android:id/button1")
+	WebElement LogoutAlertOKbutton1;
+	
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/img_wifi")
 	WebElement wifibutton;
@@ -96,6 +105,25 @@ public class HomePage extends ScreenActions {
 		click(Menuebutton, "Click on Menu button");
 
 	}
+	
+	public void ClickOnLogoutbutton() {
+
+		click(Logoutbutton, "Click on Logout button");
+
+	}
+	
+	public void ClickOnLogoutAlert1button() {
+
+		click(LogoutAlertOKbutton1, "Click on Logout button");
+
+	}
+	
+	
+	public boolean VerifyMenuButtonisPresent() {
+		return Menuebutton.isDisplayed();
+	}
+	
+	
 
 	public String GetAlltext() {
 

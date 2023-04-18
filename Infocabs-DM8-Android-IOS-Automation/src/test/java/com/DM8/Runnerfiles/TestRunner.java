@@ -20,12 +20,13 @@ import io.cucumber.junit.CucumberOptions;
 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
 
-		monochrome = true, dryRun = false, tags = "@Splashes or ~@Login or ~@Desclaimer or ~@HomeScreen or ~@Jobflow or "
+		monochrome = true, dryRun = false, tags = "@Splashes or @Login or @Desclaimer or ~@HomeScreen or ~@Jobflow or "
 				+ "~@ShowonMapJobRejection or "
 				+ "~@ReturnJob or ~@Gettinglate or ~@DriversMessages "
 				+ "or ~@StartNavigation or ~@SendSMSRingBackSendNoShow or "
 				+ "~@GobackChangeDropoffAddextra or ~@JobPayments or "
-				+ "~@FixedPriceJobs or ~@Pre-CalculatedJobs or ~@AccountJobs or ~@WaitingTimeCharges or @SplashesLogintestScenarios"
+				+ "~@FixedPriceJobs or ~@Pre-CalculatedJobs or ~@AccountJobs or "
+				+ "~@WaitingTimeCharges or ~@SplashesLogintestScenarios"
 
 )
 

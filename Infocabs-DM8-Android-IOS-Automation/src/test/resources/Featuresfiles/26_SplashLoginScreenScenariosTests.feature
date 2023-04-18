@@ -1,6 +1,38 @@
 Feature: Splashes Login and Get Started Screen details positive and negative Scenarios
 
   @SplashesLogintestScenarios
+  Scenario Outline: Location permission & Splashes Screens movement
+    Given Device permission Alerts and Splashes screens comes as Driver Mate8 lunched
+    When Click to Allow device Location permission
+    And Click to Allow device Phone Calls permission
+    And Click to Allow device Storage permission
+    And Verify DM8 logo
+    And Verify DM8 onboarding image
+    And Verify welcome "<welcome>" text
+    And Verify details "<details>" text
+    And Verify sign "<sgn>" text
+    And Tab on Get Started button
+    And Verify skip "<skip>" text
+    And Verify acceptdetails "<acceptdetails>" text
+    And Verify Alreadyhaveaccount "<alrdaccount>" text
+    And Tab on Next button
+    And Verify skip2 "<skip>" text
+    And Verify realtimetracking "<realtracking>" text
+    And Verify Alreadyhaveaccount2 "<alrdaccount2>" text
+    And Tab on Next button second time
+    And Verify skip3 "<skip>" text
+    And Verify growearningtxt "<growtxt>" text
+    And Verify Alongsidetxt "<alrdaccount3>" text
+    And Tab on Next button Thrid time
+    And Verify Getstarted "<started>" text
+    And Verify Instructiontxt "<istruction>" text
+    Then User should grant Device permission & User should move to the Register screen after Splashes screen movement Driver Mate8
+
+    Examples: 
+      | welcome    | details                                                                   | sgn     | skip | acceptdetails                   | alrdaccount                                                              | realtracking       | alrdaccount2                                                          | growtxt                               | alrdaccount3                                                                | started     | istruction                                                            |
+      | Welcome to | This app will quickly onboard you & allow you to work as a driver for us. | Sign in | Skip | Working as a driver for Company | As a driver for Company you will be able to accept and manage your work. | Real time tracking | With DriversM8 you will be able to track your work and your earnings. | Grow your earnings and work as a team | Alongside colleagues earn more money while making a contribution to society | Get Started | Please enter the code you received on your mobile number to register. |
+
+  @SplashesLogintestScenarios
   Scenario Outline: make application with full reset so that app can be killed and open again for on splashes screen veriffication
     Given DM8 applications are already lunched
     When App is killed and open again
@@ -54,7 +86,7 @@ Feature: Splashes Login and Get Started Screen details positive and negative Sce
 
     Examples: 
       | entercode             | invalidcode | wrongcode    | validdrivercode |
-      | Please enter the Code |   123456676 | Invalid Code | 6a4a753d        |
+      | Please enter the Code |   123456676 | Invalid Code | 98b1ac5e        |
 
   @SplashesLogintestScenarios
   Scenario Outline: Check to verify the Change Driver code on Login screen
@@ -68,6 +100,19 @@ Feature: Splashes Login and Get Started Screen details positive and negative Sce
     Examples: 
       | login  | started     | newchangecode |
       | Log in | Get Started | 98b1ac5e      |
+
+  @SplashesLogintestScenarios
+  Scenario Outline: Verify Login Screen all Text and button fields
+    Given User is on login Screen to verify login elements
+    When check to verify "<login>" text
+    And check to verify login details "<loginDetails>" text
+    And check to verify rememberme "<rememberme>" text
+    And Check to verify App version
+    Then Login screen screen text and datafields are available and verified
+
+    Examples: 
+      | login  | loginDetails                                                   | rememberme  |
+      | Log in | Please enter your credentials to Log into the Driver Dashboard | Remember me |
 
   @SplashesLogintestScenarios
   Scenario Outline: Check to verify Request Password change feature on Login Screen
@@ -86,5 +131,60 @@ Feature: Splashes Login and Get Started Screen details positive and negative Sce
     Then Change Password feature are verified successfully
 
     Examples: 
-      | usnameforpwdchange | login  | details                                                     | Newpassowrdsend                                                              | started     |
+      | usnameforpwdchange         | login  | details                                                     | Newpassowrdsend                                                              | started     |
       | zulfiqar1010@infosun.co.uk | Log in | You will receive your new password on your registered email | Your New Password has been set successfully and sent to the registered email | Get Started |
+
+  @SplashesLogintestScenarios
+  Scenario Outline: Information Missing when No Vechile assigned and driver should not be logged in scenarios verification
+    Given User should be on Driver Code screen to verify driver Information Missing on login screen
+    When Entered Driver code "<drivercode>" for Information Missing verification
+    And Entered DriverID "<informationDriverID>" which have not Vechile assigned
+    And Enterd Password "<informationpwd>" for Information Missing verification
+    And click Login button for Information Missing verification
+    And verify and get "<informationmissing>" alert message for Information Missing verification
+    And click on OK button for Information Missing verification
+    And go back to Driver code screen to verify more scenarios after Information Missing verification
+    And clear driver code field after Information Missing verification
+    Then Driver Information Missing are properly verified when no vechile are assigned to the driver
+
+    Examples: 
+      | drivercode | informationDriverID | informationpwd | informationmissing                |
+      | 6a4a753d   |               10108 |           9001 | Login failed, Information Missing |
+
+  @SplashesLogintestScenarios
+  Scenario Outline: UserName and Password field Empty and Invalid validations and verification
+    Given User should be move to login screen with valid code so that proper validation and verification can be performed
+    When User Enter valid "<validdrivercode>" code and Tab Register button then user move to the Login Screen
+    And then clear user Name field an click on Login button for Empty UserName validation
+    And verify required Username "<unamerequired>" alert error message and click Ok button
+    And then next time Enter valid Username "<Username>" and click on Login button
+    And verify password required alert error "<pwdrequired>" message and click on OK button
+    And then enter wrong "<wrongpwd>" password and click on OK button
+    And verify invalid password or username error "<InvalidUnamePwd>" message and click on OK Button
+    And then clear the wrong password feild for valid password
+    And Enter valid "<Password>" password for further level of testing
+    Then UserName and Password field Invalid and validation are verified with proper error message
+
+    Examples: 
+      | validdrivercode | unamerequired          | Username       | pwdrequired           | wrongpwd | InvalidUnamePwd              | Password |
+      | 6a4a753d        | Please select Username | zulfiqartest79 | Please enter Password |     1121 | Invalid UserName or Password |    13327 |
+
+  @SplashesLogintestScenarios
+  Scenario Outline: Verify Remember me feature verification on login screen
+    Given User must be on login screen and username and password must be entered
+    When check that Username "<Username>" are entered before login
+    And check that password "<Password>" are entered before login
+    And Tick on remember me tick box
+    And click on Login button for remember me verification
+    And click on disclaimer Accept button for remember me verification
+    And then verify that user should be on Homescreen by verifing side menue icon for remember me verification
+    And then click on Side menu icon button for remember me verification
+    And click on Logout button and logout from DM8 for remember me verification
+    And verify that Username "<Username>" is present and entered after logout
+    And verify that Password "<Password>" is present and entered after logout
+    And again click on Login button to verify that same entered Username and Password are working fine
+    Then Remember me Feature are properly working and verified
+
+    Examples: 
+      | Username       | Password |
+      | zulfiqartest79 |    13327 |

@@ -49,7 +49,7 @@ public class LoginPage extends ScreenActions {
 	
 	
 	
-	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text1")
+	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/listItems")
 	WebElement Clickonusernamefiled1;
 	
 	
@@ -131,6 +131,13 @@ public class LoginPage extends ScreenActions {
 		sendKeys(EnterUsername, uname, "Enter Username" + uname);
 	}
 	
+	public String VerifyGetUsername() {
+
+		return getText(EnterUsername);
+	}
+	
+	
+	
 	public void ClearUsernameArea() {
 		EnterUsername.clear();
 	}
@@ -138,6 +145,10 @@ public class LoginPage extends ScreenActions {
 	public void EnterPassword(String pwd) {
 
 		sendKeys(EnterPassword, pwd, "Enter Password" + pwd);
+	}
+	
+	public boolean VerifyGetPassword() {
+		return EnterPassword.isDisplayed();
 	}
 	
 	public void ClearPasswordArea() {
@@ -179,6 +190,12 @@ public class LoginPage extends ScreenActions {
 	public String GetRemembermeText() {
 
 		return getText(Rememberme);
+	}
+	
+	public void ClickONRemmberMeTickBox() {
+
+		click(Rememberme, "Click on Remmber me Tickbox");
+
 	}
 
 }
