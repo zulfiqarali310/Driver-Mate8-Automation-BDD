@@ -118,7 +118,7 @@ public class WaitingTimeCharges_TestCases extends BaseClass {
 		float TariffCost = id / 100;
 		Thread.sleep(2000);
 		String ActualDM8CostValue = Waitjob.GetMeterWaitingCostValue();
-		Assert.assertEquals(ActualDM8CostValue, "£ " + TariffCost + "0");
+		Assert.assertEquals("£ " + TariffCost + "0", ActualDM8CostValue);
 
 	}
 
@@ -154,7 +154,7 @@ public class WaitingTimeCharges_TestCases extends BaseClass {
 		float totalTwoMinCost = TariffCost + TariffCost;
 		Thread.sleep(2000);
 		String ActualDM8CostValue = Waitjob.GetMeterWaitingCostValue();
-		Assert.assertEquals(ActualDM8CostValue, "£ " + totalTwoMinCost + "0");
+		Assert.assertEquals("£ " + totalTwoMinCost + "0", ActualDM8CostValue);
 	}
 
 	@And("^Stop Waiting Time and Move Job to POB Status so that waiting charges can be verified for POB on single Slab$")
@@ -200,7 +200,7 @@ public class WaitingTimeCharges_TestCases extends BaseClass {
 		float totalTwoMinCost = TariffCost + TariffCost + TariffCost;
 		Thread.sleep(2000);
 		String ActualDM8CostValue = Waitjob.GetMeterWaitingCostValue();
-		Assert.assertEquals(ActualDM8CostValue, "£ " + totalTwoMinCost + "0");
+		Assert.assertEquals("£ " + totalTwoMinCost + "0", ActualDM8CostValue);
 	}
 
 	@And("^Move job to STC aand start waiting for Single slab$")
@@ -241,7 +241,7 @@ public class WaitingTimeCharges_TestCases extends BaseClass {
 		float totalTwoMinCost = TariffCost + TariffCost + TariffCost + TariffCost + TariffCost;
 		Thread.sleep(2000);
 		String ActualDM8CostValue = Waitjob.GetMeterWaitingCostValue();
-		Assert.assertEquals(ActualDM8CostValue, "£ " + totalTwoMinCost + "0");
+		Assert.assertEquals("£ " + totalTwoMinCost + "0", ActualDM8CostValue);
 	}
 
 	@And("^click on Clear and then Submit button so that cleared job with Waiting charges verification$")

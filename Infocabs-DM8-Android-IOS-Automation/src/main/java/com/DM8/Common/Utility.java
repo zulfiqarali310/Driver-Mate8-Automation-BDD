@@ -1,5 +1,6 @@
 package com.DM8.Common;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -11,13 +12,19 @@ import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import javax.imageio.ImageIO;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NotFoundException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +33,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.zxing.BinaryBitmap;
+import com.google.zxing.LuminanceSource;
+import com.google.zxing.MultiFormatReader;
+import com.google.zxing.Result;
+import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
+import com.google.zxing.common.HybridBinarizer;
 
 import io.appium.java_client.AppiumDriver;
 
@@ -133,6 +147,90 @@ public class Utility extends BaseClass {
 		JSONObject CustData = new JSONObject();
 		CustData.put("custId", 526);
 		CustData.put("custCallingNo", 100);
+		CustData.put("companyId", 15);
+		// put 1st ArrayData
+		BodyData.put("Customer", CustData);
+
+		// 2nd Array for Dispatch Drivers
+		JSONObject DispatchDvr = new JSONObject();
+		DispatchDvr.put("driverId", prop.getProperty("DriverID"));
+
+		// Array for Driver IDs
+		JSONArray DvrAry1 = new JSONArray();
+		DvrAry1.put(DispatchDvr);
+		// put 2nd ArrayData
+		BodyData.put("lst_JobDispatchInfo", DvrAry1);
+
+		// 3rd Array for FareInfo
+		JSONObject FareInfoData = new JSONObject();
+		FareInfoData.put("minimumPrice", 300);
+		FareInfoData.put("bookingFee", 2);
+		FareInfoData.put("jobPrice", 15.8);
+		FareInfoData.put("totalPrice", 17.8);
+		FareInfoData.put("driverCost", 15.8);
+		FareInfoData.put("fareType", "Meter");
+		FareInfoData.put("appliedTariffID", 99);
+		FareInfoData.put("appliedTariffName", "Default BF");
+		FareInfoData.put("mileage", 5.23);
+		FareInfoData.put("paymentMethod", "Cash");
+		// put 3rd ArrayData
+		BodyData.put("EvoFareInfo", FareInfoData);
+
+		// 4rth Array for Locations
+		JSONObject LocationData = new JSONObject();
+
+		// PickUp Address
+		JSONObject PickUpAddressData = new JSONObject();
+		PickUpAddressData.put("place", "BRADLEY PARK GOLF COURSEBRADLEY ROADHUDDERSFIELD");
+		// PickUp Latlong Address
+		JSONObject PickUpLatLong = new JSONObject();
+		PickUpLatLong.put("latitude", "53.681745450474500");
+		PickUpLatLong.put("longitude", "-1.760221227131600");
+		// Combine both Address name and lat/long
+		PickUpAddressData.put("LatLong", PickUpLatLong);
+
+		// DropOff Address
+		JSONObject DropOffAddressData = new JSONObject();
+		DropOffAddressData.put("place", "12SCOUT HILL TERRACEDEWSBURY");
+		// Dropoff Latlong Address
+		JSONObject DropoffLatLong = new JSONObject();
+		DropoffLatLong.put("latitude", "53.681725522110900");
+		DropoffLatLong.put("longitude", "-1.649835636900800");
+		// Combine both Address name and lat/long
+		DropOffAddressData.put("LatLong", DropoffLatLong);
+
+		// Now Add both Pick and Dropoff Data
+		LocationData.put("PickupAddress", PickUpAddressData);
+		LocationData.put("DestinyAddress", DropOffAddressData);
+
+		// Put 4th Array Data
+		BodyData.put("Locations", LocationData);
+		// LocalDateTime time = java.time.LocalDateTime.now();
+		Instant time = Clock.systemUTC().instant();
+		System.out.println(time);
+		BodyData.put("journeyDateTime", time);
+		BodyData.put("totalMiles", "5.23");
+		BodyData.put("DivisionMask", 1073741824);
+		BodyData.put("isEvoFareEnabled", true);
+		BodyData.put("companyId", 15);
+		BodyData.put("jobType", 4);
+		BodyData.put("operatorID", 1033);
+		BodyData.put("isFeatureEnable", true);
+
+		return BodyData;
+
+	}
+	
+	
+	public static JSONObject JobCreationforQRCode() {
+
+		// Post Request Body Data
+		JSONObject BodyData = new JSONObject();
+
+		// 1st array
+		JSONObject CustData = new JSONObject();
+		CustData.put("custId", 526);
+		CustData.put("custCallingNo", prop.getProperty("CustomerQRCode_Calling_Num"));
 		CustData.put("companyId", 15);
 		// put 1st ArrayData
 		BodyData.put("Customer", CustData);
@@ -402,11 +500,12 @@ public class Utility extends BaseClass {
 
 		// 1st array
 		JSONObject CustData = new JSONObject();
+		BodyData.put("IsEvoAccountCustomerEnable", true);
 		
-		CustData.put("custId", Datafile.getProperty("CustomID"));
-		CustData.put("custName", Datafile.getProperty("CustomerName"));
-		CustData.put("custEmailId", Datafile.getProperty("Cus_Email"));
-		CustData.put("custCallingNo", Datafile.getProperty("Cus_CallingNum"));	
+		CustData.put("custId", Datafile.getProperty("ACustomID"));
+		CustData.put("custName", Datafile.getProperty("ACustomerName"));
+		CustData.put("custEmailId", Datafile.getProperty("ACus_Email"));
+		CustData.put("custCallingNo", Datafile.getProperty("ACus_CallingNum"));	
 		CustData.put("companyId", Datafile.getProperty("Company_ID"));
 		// put 1st ArrayData
 		BodyData.put("Customer", CustData);
@@ -484,11 +583,14 @@ public class Utility extends BaseClass {
 		BodyData.put("companyId", Datafile.getProperty("Company_ID"));
 		BodyData.put("jobType", Datafile.getProperty("JobType"));
 		BodyData.put("operatorID", Datafile.getProperty("OperatorID"));
+		BodyData.put("accountUser", Datafile.getProperty("AaccountUser"));
+		BodyData.put("acc_UserId", Datafile.getProperty("Aacc_UserId"));
 		BodyData.put("isFeatureEnable", true);
 
 		return BodyData;
 
 	}
+	
 	
 	
 

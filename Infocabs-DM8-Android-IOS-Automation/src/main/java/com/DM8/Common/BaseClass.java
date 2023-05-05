@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
@@ -97,6 +98,7 @@ public class BaseClass {
 		options.setApp(ApplicationPath);
 		options.setAppPackage(prop.getProperty("App_package"));
 		options.setAppActivity(prop.getProperty("App_Activity"));
+		
 		// options.headless();
 		// options.setCapability("isHeadless", true);
 		// options.setAutoGrantPermissions(true);
@@ -126,6 +128,32 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	  public  void launchCameraApp() {
+
+	        
+	        
+	        UiAutomator2Options options = new UiAutomator2Options();
+			options.setDeviceName(prop.getProperty("CamAndroid_DeviceNames"));
+			options.setPlatformName(prop.getProperty("CamDevice_Type"));
+			options.setUdid(prop.getProperty("CamDevice_UDiD"));
+			options.setPlatformVersion(prop.getProperty("CamAndroid_Version"));
+			options.setAppPackage(prop.getProperty("CamApp_package"));
+			options.setAppActivity(prop.getProperty("CamApp_Activity"));
+
+	       
+	        try {
+				driver = new AndroidDriver(new URL(prop.getProperty("CamServerURL")),options);
+				  String id = driver.getSessionId().toString();   
+			        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(80));
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	      
+
+	    }
 
 	public static void stopappium() {
 		driver.quit();
@@ -137,10 +165,13 @@ public class BaseClass {
 	
 	public static void closeApp() {
 
-		((InteractsWithApps) driver).terminateApp(prop.getProperty("App_package"));
-    	((InteractsWithApps) driver).activateApp(prop.getProperty("App_package"));
+		((AndroidDriver) driver).terminateApp(prop.getProperty("App_package"));
+		((AndroidDriver) driver).activateApp(prop.getProperty("App_package"));
+		
 
 		
 	}
+	
+	
 
 }

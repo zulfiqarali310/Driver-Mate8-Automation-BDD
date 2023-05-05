@@ -265,6 +265,30 @@
 			<artifactId>commons-codec</artifactId>
 			<version>1.15</version>
 		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+<dependency>
+    <groupId>com.google.zxing</groupId>
+    <artifactId>core</artifactId>
+    <version>3.5.1</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/com.google.zxing/javase -->
+<dependency>
+    <groupId>com.google.zxing</groupId>
+    <artifactId>javase</artifactId>
+    <version>3.5.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aayushatharva.brotli4j/brotli4j -->
+<dependency>
+    <groupId>com.aayushatharva.brotli4j</groupId>
+    <artifactId>brotli4j</artifactId>
+    <version>1.11.0</version>
+</dependency>
+
 
 
 	</dependencies>

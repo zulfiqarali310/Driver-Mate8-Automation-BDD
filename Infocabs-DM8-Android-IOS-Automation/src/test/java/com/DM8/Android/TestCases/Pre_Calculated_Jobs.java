@@ -103,7 +103,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
 		String PreCalFareValue = Datafile.getProperty("PDriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, " ₤ " + PreCalFareValue);
+		Assert.assertEquals(" ₤ " + PreCalFareValue, Actualtext);
 	}
 
 	@And("^move scroll down on Accepted screen so that Pre Calculated Price Cost can be check on Next screen$")
@@ -147,7 +147,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
 		System.out.println("The Combine Cost value is " + CombinePreBooking);
 		Thread.sleep(1000);
 		String Actualtext = Waitjob.GetMeterFareValue();
-		Assert.assertEquals(Actualtext, " £ " +CombinePreBooking+ "0 ");
+		Assert.assertEquals(" £ " +CombinePreBooking+ "0 ", Actualtext);
     }
 
     @And("^move scroll up so that Pre Calculated Price Cost Value is visible on Waiting Screen$")
@@ -165,7 +165,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
 		String PreCalFareValue = Datafile.getProperty("PDriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, " ₤ " + PreCalFareValue);
+		Assert.assertEquals(" ₤ " + PreCalFareValue, Actualtext);
     }
 
     @And("^move scroll down on Waiting screen so that Pre Calculated Price Cost can be check on Next screen$")
@@ -206,7 +206,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
 		System.out.println("The Combine Cost value is " + CombinePreBooking);
 		Thread.sleep(1000);
 		String Actualtext = Waitjob.GetMeterFareValue();
-		Assert.assertEquals(Actualtext, " £ " +CombinePreBooking+ "0 ");
+		Assert.assertEquals(" £ " +CombinePreBooking+ "0 ", Actualtext);
     }
 
   
@@ -226,7 +226,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
 		String PreCalFareValue = Datafile.getProperty("PDriverCost");
 		Thread.sleep(1000);
 		String Actualtext = Acpjob.GetJobCostValue();
-		Assert.assertEquals(Actualtext, " ₤ " + PreCalFareValue);
+		Assert.assertEquals(" ₤ " + PreCalFareValue,Actualtext);
     }
 
     @And("^move scroll down on POB screen so that Pre Calculated Price Cost can be check on Next screen$")
@@ -267,7 +267,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
 		System.out.println("The Combine Cost value is " + CombinePreBooking);
 		Thread.sleep(1000);
 		String Actualtext = Waitjob.GetMeterFareValue();
-		Assert.assertEquals(Actualtext, " £ " +CombinePreBooking+ "0 ");
+		Assert.assertEquals(" £ " +CombinePreBooking+ "0 ", Actualtext);
     }
 
     @And("^move scroll up so that Pre Calculated Price Cost Value is visible on STC Screen$")
@@ -285,7 +285,7 @@ public class Pre_Calculated_Jobs extends BaseClass {
     		String PreCalFareValue = Datafile.getProperty("PDriverCost");
     		Thread.sleep(1000);
     		String Actualtext = Acpjob.GetJobCostValue();
-    		Assert.assertEquals(Actualtext, " ₤ " + PreCalFareValue);
+    		Assert.assertEquals(" ₤ " + PreCalFareValue, Actualtext);
     }
 
     @And("^move scroll down on STC screen so that Pre Calculated Price Cost can be check on Next screen$")
