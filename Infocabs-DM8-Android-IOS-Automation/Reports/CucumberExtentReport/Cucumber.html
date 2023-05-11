@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 5, 2023 06:51:45 pm</span>
+			<span class='label blue darken-3 suite-start-time'>May 11, 2023 05:47:46 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,6 +66,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,9 +78,9 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@QRCodeScannerPayment</a></li>
 					<li><a href='#'>@Splashes</a></li>
 					<li><a href='#'>@Login</a></li>
-					<li><a href='#'>@BackgroundActionsIncomingAndJobs</a></li>
 					<li><a href='#'>@Desclaimer</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -121,12 +123,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>4</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$75%'>
+                    <span class='strong'>3</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -139,12 +141,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>5</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='85%'>
+                    <span class='strong'>6</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -159,14 +161,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>30</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='91%'>
+                    <span class='strong'>33</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='2%'>
+                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='5%'>
+                    2</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -190,7 +192,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Splashes Screen Movements & Device Permissions Allocation</span>
-						<span class='test-time'>May 5, 2023 06:52:01 pm</span>
+						<span class='test-time'>May 11, 2023 05:48:02 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -203,7 +205,7 @@
 
 <div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 22.204</span>
+	<span class='duration right label'>00 00 21.938</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Location permission & Splashes Screens movement</div>
 	</div>
@@ -265,7 +267,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='22'>
 					<div class='test-heading'>
 						<span class='test-name'>Write Driver Code & Login to Driver Mate8</span>
-						<span class='test-time'>May 5, 2023 06:52:24 pm</span>
+						<span class='test-time'>May 11, 2023 05:48:24 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -278,7 +280,7 @@
 
 <div class='scenario outline node' test-id='23' status='pass'>
 
-	<span class='duration right label'>00 00 08.821</span>
+	<span class='duration right label'>00 00 08.856</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Write Driver code to move to Login Screen</div>
 	</div>
@@ -317,7 +319,7 @@
 </div>
 <div class='scenario outline node' test-id='33' status='pass'>
 
-	<span class='duration right label'>00 00 13.043</span>
+	<span class='duration right label'>00 00 12.896</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Login with Valid Username and Password to DM8</div>
 	</div>
@@ -363,7 +365,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='45'>
 					<div class='test-heading'>
 						<span class='test-name'>Disclaimer Screen verification</span>
-						<span class='test-time'>May 5, 2023 06:52:46 pm</span>
+						<span class='test-time'>May 11, 2023 05:48:46 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -376,7 +378,7 @@
 
 <div class='scenario outline node' test-id='46' status='pass'>
 
-	<span class='duration right label'>00 00 16.575</span>
+	<span class='duration right label'>00 00 16.696</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Disclaimer Screen verification</div>
 	</div>
@@ -427,11 +429,11 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='62'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='62'>
 					<div class='test-heading'>
-						<span class='test-name'>BackGround actions on Incoming jobs and No Answer Job actions on DM8</span>
-						<span class='test-time'>May 5, 2023 06:53:02 pm</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>QR Code Scanner Payment on STC Screen so that payment can be made</span>
+						<span class='test-time'>May 11, 2023 05:49:03 pm</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -441,43 +443,138 @@
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
 
-<div class='scenario node' test-id='63' status='pass'>
+<div class='scenario outline node' test-id='63' status='pass'>
 
-	<span class='duration right label'>00 00 32.268</span>
+	<span class='duration right label'>00 00 09.282</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Kill DM8 App and open it from Notification</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Create a Job from Evop API so that payment can be made on QR Code</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>mobileNum</td></tr><tr><td>447899776901</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='64' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Create a Job from Evop API so that payment can be made on QR Code</div>
+
+				<div class='category-list'>
+						<span class='category label'>@QRCodeScannerPayment</span>
+				</div>
+
+			<ul class='gc steps'>
+				<li test-id='65' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.QRCodePayment_TestCases.job_request_are_given_for_qr_code_payment()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job request are given for QR Code payment</h6>
+
+				</li>
+				<li test-id='67' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.QRCodePayment_TestCases.job_request_are_send_to_the_server_for_qr_code_payment_with_something_mobile_number(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Job request are send to the server for QR Code Payment with "447899776901" mobile number</h6>
+
+				</li>
+				<li test-id='69' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.DM8.Android.TestCases.QRCodePayment_TestCases.new_job_has_been_created_to_verify_qr_code_payment()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then new job has been created to Verify QR Code payment</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='71' status='pass'>
+
+	<span class='duration right label'>00 00 20.329</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Accept Job and move to STC Status for QR Code Payment</div>
 	</div>
 	
 	
 		<div class='category-list'>
-				<span class='category label'>@BackgroundActionsIncomingAndJobs</span>
+				<span class='category label'>@QRCodeScannerPayment</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='64' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.BackgroundActionAndIncomingJobs_TestCases.dm8_application_should_be_lucnhed_and_open())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given DM8 Application should be lucnhed and open</div>
+		<li test-id='72' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.job_has_been_received_on_dm8_and_move_to_stc_status_for_qr_code_payment())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Job has been received on DM8 and move to STC status for QR Code Payment</div>
 
 
 		</li>
-		<li test-id='66' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.BackgroundActionAndIncomingJobs_TestCases.kill_dm8_application())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When kill DM8 application</div>
+		<li test-id='74' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.accept_job_and_move_to_stc_so_that_payment_can_be_made_on_qr_code())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Accept job and move to STC so that payment can be made on QR Code</div>
 
 
 		</li>
-		<li test-id='68' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.BackgroundActionAndIncomingJobs_TestCases.open_application_from_notification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And open application from Notification</div>
+		<li test-id='76' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.job_status_should_be_in_stc_so_that_qr_code_button_should_be_visible())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Job status should be in STC so that QR Code button should be visible</div>
 
 
 		</li>
-		<li test-id='70' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.BackgroundActionAndIncomingJobs_TestCases.verify_that_user_should_be_on_dm8_home_screen_after_click_on_notification())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And verify that user should be on DM8 Home screen after click on Notification</div>
+	</ul>
+</div>
+<div class='scenario node' test-id='78' status='fail'>
+
+	<span class='duration right label'>00 01 56.619</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Click to open QR Code screen and perform required actions</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@QRCodeScannerPayment</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='79' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.qr_code_button_are_avaible_on_stc_screen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given QR Code button are avaible on STC screen</div>
 
 
 		</li>
-		<li test-id='72' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(com.DM8.Android.TestCases.BackgroundActionAndIncomingJobs_TestCases.dm8_application_kill_and_open_from_notification_functionality_are_properly_working())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then DM8 application kill and open from Notification functionality are properly working</div>
+		<li test-id='81' class='node when Fail' status='Fail'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.click_on_qr_code_button_on_for_payment())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>When Click on QR Code button on for payment</div>
 
 
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '18.0.2.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74f12720-da2b-4035-91d5-9289aca6bc0e, findElement {using=id, value=root}]
+Capabilities {appium:app: /Users/mac/git/DM8_Automati..., appium:appActivity: com.infosun.infocabs.activi..., appium:appPackage: com.infocabs.DM8, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/mac/git/DM8_Automati..., appActivity: com.infosun.infocabs.activi..., appPackage: com.infocabs.DM8, automationName: UIAutomator2, platformName: android, platformVersion: 11, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74f12720-da2b-4035-91d5-9289aca6bc0e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.DM8.Android.TestCases.QRCodePayment_TestCases.click_on_qr_code_button_on_for_payment(QRCodePayment_TestCases.java:204)
+	at ✽.Click on QR Code button on for payment(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/27_QRCodeScannerPayment.feature:24)
+</textarea>
+		</li>
+		<li test-id='82' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>com.DM8.Android.TestCases.Hooks.TakeScreesnhotforReport(io.cucumber.java.Scenario)</div>
+
+
+					<div class="node-step">Click to open QR Code screen and perform required actions</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='./screenshots/embedded1.png' src='./screenshots/embedded1.png'>
+					</div>
+		</li>
+		<li test-id='83' class='node and Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.click_on_clear_and_submit_button_so_that_qr_code_payment_successed())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And click on clear and submit button so that QR Code payment successed</div>
+
+
+					<div class="node-step">Step skipped</div>
+		</li>
+		<li test-id='85' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(com.DM8.Android.TestCases.QRCodePayment_TestCases.payment_can_be_made())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then payment can be made</div>
+
+
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
@@ -525,6 +622,50 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
+						<span class='category-name'>@QRCodeScannerPayment</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 11, 2023 05:49:03 pm</td>
+										<td class='linked' test-id='64'>Create a Job from Evop API so that payment can be made on QR Code</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 11, 2023 05:49:12 pm</td>
+										<td class='linked' test-id='71'>Accept Job and move to STC Status for QR Code Payment</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>May 11, 2023 05:49:33 pm</td>
+										<td class='linked' test-id='78'>Click to open QR Code screen and perform required actions</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
 						<span class='category-name'>@Splashes</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -547,7 +688,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 5, 2023 06:52:01 pm</td>
+										<td>May 11, 2023 05:48:02 pm</td>
 										<td class='linked' test-id='3'>Location permission & Splashes Screens movement</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
@@ -580,46 +721,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 5, 2023 06:52:24 pm</td>
+										<td>May 11, 2023 05:48:24 pm</td>
 										<td class='linked' test-id='24'>Write Driver code to move to Login Screen</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>May 5, 2023 06:52:33 pm</td>
+										<td>May 11, 2023 05:48:33 pm</td>
 										<td class='linked' test-id='34'>Login with Valid Username and Password to DM8</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@BackgroundActionsIncomingAndJobs</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 5, 2023 06:53:02 pm</td>
-										<td class='linked' test-id='63'>Kill DM8 App and open it from Notification</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -651,7 +759,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 5, 2023 06:52:46 pm</td>
+										<td>May 11, 2023 05:48:46 pm</td>
 										<td class='linked' test-id='47'>Disclaimer Screen verification</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
@@ -669,7 +777,85 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 11, 2023 05:49:35 pm</td>
+										<td class='linked' test-id='81'>When Click on QR Code button on for payment</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.3.1', java.version: '18.0.2.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74f12720-da2b-4035-91d5-9289aca6bc0e, findElement {using=id, value=root}]
+Capabilities {appium:app: /Users/mac/git/DM8_Automati..., appium:appActivity: com.infosun.infocabs.activi..., appium:appPackage: com.infocabs.DM8, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/mac/git/DM8_Automati..., appActivity: com.infosun.infocabs.activi..., appPackage: com.infocabs.DM8, automationName: UIAutomator2, platformName: android, platformVersion: 11, udid: emulator-5554}, appium:deviceApiLevel: 30, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone_x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 11, appium:statBarHeight: 135, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74f12720-da2b-4035-91d5-9289aca6bc0e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.DM8.Android.TestCases.QRCodePayment_TestCases.click_on_qr_code_button_on_for_payment(QRCodePayment_TestCases.java:204)
+	at ✽.Click on QR Code button on for payment(file:///Users/mac/git/DM8_Automation/Infocabs-DM8-Android-IOS-Automation/src/test/resources/Featuresfiles/27_QRCodeScannerPayment.feature:24)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -683,31 +869,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>30</div>
+					<div class='panel-lead'>36</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 5, 2023 06:51:45 pm</div>
+					<div class='panel-lead'>May 11, 2023 05:47:46 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 5, 2023 06:53:34 pm</div>
+			 		<div class='panel-lead'>May 11, 2023 05:51:29 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 49.683</div>
+					<div class='panel-lead'>00 03 43.254</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -723,6 +909,15 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
+							<td>@QRCodeScannerPayment</td>
+							<td>2</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									66.667%
+							</td>
+						</tr>
+						<tr>
 							<td>@Splashes</td>
 							<td>1</td>
 							<td>0</td>
@@ -734,15 +929,6 @@
 						<tr>
 							<td>@Login</td>
 							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@BackgroundActionsIncomingAndJobs</td>
-							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -770,34 +956,34 @@
 		<script>
 			var statusGroup = {
                 parentCount: 4,
-				passParent: 4,
-				failParent: 0,
+				passParent: 3,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 5,
-				passChild: 5,
-				failChild: 0,
+				childCount: 7,
+				passChild: 6,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 30,
-				passGrandChild: 30,
-				failGrandChild: 0,
+				grandChildCount: 36,
+				passGrandChild: 33,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 2,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Splashes Screen Movements & Device Permissions Allocation":22.207,"Write Driver Code & Login to Driver Mate8":21.887,"Disclaimer Screen verification":16.575,"BackGround actions on Incoming jobs and No Answer Job actions on DM8":32.268
+			        "Splashes Screen Movements & Device Permissions Allocation":21.94,"Write Driver Code & Login to Driver Mate8":21.768,"Disclaimer Screen verification":16.696,"QR Code Scanner Payment on STC Screen so that payment can be made":146.279
 			};
 		</script>
 		

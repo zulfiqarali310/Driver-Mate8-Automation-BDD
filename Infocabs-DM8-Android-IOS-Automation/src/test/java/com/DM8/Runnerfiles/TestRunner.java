@@ -26,8 +26,8 @@ import io.cucumber.junit.CucumberOptions;
 				+ "or ~@StartNavigation or ~@SendSMSRingBackSendNoShow or "
 				+ "~@GobackChangeDropoffAddextra or ~@JobPayments or "
 				+ "~@FixedPriceJobs or ~@Pre-CalculatedJobs or ~@AccountJobs or "
-				+ "~@WaitingTimeCharges or ~@SplashesLogintestScenarios or ~@QRCodeScannerPayment or "
-				+ "@BackgroundActionsIncomingAndJobs"
+				+ "~@WaitingTimeCharges or ~@SplashesLogintestScenarios or @QRCodeScannerPayment or "
+				+ "~@BackgroundActionsIncomingAndJobs"
 
 )
 

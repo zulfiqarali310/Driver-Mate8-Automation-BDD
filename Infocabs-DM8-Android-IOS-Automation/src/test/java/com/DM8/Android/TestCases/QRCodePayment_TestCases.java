@@ -174,56 +174,42 @@ public class QRCodePayment_TestCases extends BaseClass {
 
     @When("^Click on QR Code button on for payment$")
     public void click_on_qr_code_button_on_for_payment() throws Throwable {
+    	
+    	// Open QR Code Alert
     	Utility.waitForPageLoaded();
 		STCjob.ClickOnQRCodeButton();
 		Thread.sleep(3000);
 		
+		// Read QR Code	
 		WebElement qrCodeElement = driver.findElement(By.id("com.infocabs.DM8:id/idIVQrcode"));
-
 	  	   File screenshot = driver.getScreenshotAs(OutputType.FILE);
-
-
-
 	  	   String content = decodeQRCode(generateImage(qrCodeElement, screenshot));
 	  	 System.out.println("content can be visible for action = " + content);
-	  	 Thread.sleep(2000);
-	  	   
-	  	 //UiAutomator2Options options = new UiAutomator2Options();
-	  	//options.setAppActivity("com.android.chrome");
-	  	//options.setAppPackage("com.google.android.apps.chrome.Main");
-	  	//Activity activity = new Activity("com.android.chrome", "com.google.android.apps.chrome.Main");
-	 
-	  	
-		//String appPackage= ("com.uc.browser.en");
+	  	 Thread.sleep(2000);  
+	  	 
+	  	 // Lunch Chrome browser
 		String appPackage= ("com.android.chrome");
-		//String appActivity=("com.uc.browser.ActivityBrowser");
-		String appActivity=("org.chromium.chrome.browser.ChromeTabbedActivity");
-		//driver.startActivity(new Activity(appPackage, appActivity));
-		
+		String appActivity=("org.chromium.chrome.browser.ChromeTabbedActivity");	
 		 ((AndroidDriver) driver).startActivity(new Activity(appPackage, appActivity));
 		 
+		 // Perform Action in Chrome Browser
 		 driver.findElement(By.id("com.android.chrome:id/search_box_text")).click();
-	  	driver.findElement(By.id("com.android.chrome:id/url_bar")).sendKeys(content);
-	  	
-	  	
+	  	driver.findElement(By.id("com.android.chrome:id/url_bar")).sendKeys(content);	
 	  	((PressesKey) driver).pressKey(new KeyEvent(AndroidKey.ENTER));
-	  	//driver.findElement(By.id("com.android.chrome:id/url_bar")).sendKeys(Keys.RETURN);
-
-    
 	  	
-		 
-	     //activity.setWaitAppPackage("app wait package goes here");
-	     //activity.setWaitAppActivity("app wait activity goes here");
-	     //driver.getAppActivity(activity);
+	  	// Perform Card Actions   
+	  	System.out.println("content can be visible for action = " + content); 
+	  	   driver.findElement(By.xpath("//android.view.View[@text='**** **** **** 4242']")).click();
+  
+	  	 WebElement ele = driver.findElement(By.id("root"));
+	  	 Utility.presenceOfElement(ele); 
+	  	 Thread.sleep(3000);
+	  	 ele.sendKeys("123");
+	     //driver.findElement(By.xpath("//*[@id='icon' and (./preceding-sibling::* | ./following-sibling::*)[@class='android.widget.ImageView']]")).click();
+	  	 driver.findElement(By.id("btnPay")).click();
 
-	  	   System.out.println("content can be visible for action = " + content);
-	  	 
-	  	 
-	  	   driver.findElement(By.xpath("//android.view.View[@text='**** **** **** 8710']")).click();
-	  	   //driver.findElement(By.id("Cards"));
-	  	 Utility.waitForPageLoaded();
-	  	 
-		 ((AndroidDriver) driver).activateApp("com.infocabs.DM8");
+	  	 Thread.sleep(2000);
+	  	 ((AndroidDriver) driver).activateApp("com.infocabs.DM8");
 	  	 Utility.waitForPageLoaded();
 			STCjob.ClickOnCloseButton();
 			Thread.sleep(2000);
@@ -233,35 +219,6 @@ public class QRCodePayment_TestCases extends BaseClass {
 			Utility.waitForPageLoaded();
 			Thread.sleep(1000);
 			fd.ClickOnSubmit();
-	  	
-			((AndroidDriver) driver).activateApp("com.android.chrome");
-			Thread.sleep(3000);
-	  	   //driver.findElement(By.id("cardcvv")).sendKeys("123");
-	  	   //driver.findElement(By.cssSelector("#cardcvv")).sendKeys("123");
-	  	   //driver.findElement(By.id("pay-now")).click();
-	  	   //driver.get(content);
-	  	   
-	  	 WebElement ele = driver.findElement(By.id("cardcvv"));
-	  	 Utility.presenceOfElement(ele);
-	  
-	  	Thread.sleep(3000);
-	  	 //WebDriverWait wait = new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfElementLocated(By.id("cardcvv")));
-	  	   ele.sendKeys("123");
-	     
-	        driver.findElement(By.xpath("//*[@id='icon' and (./preceding-sibling::* | ./following-sibling::*)[@class='android.widget.ImageView']]")).click();
-	  	
-
-	  	 Thread.sleep(2000);
-	  	 /*((AndroidDriver) driver).activateApp("com.infocabs.DM8");
-	  	 Utility.waitForPageLoaded();
-			STCjob.ClickOnCloseButton();
-			Thread.sleep(2000);
-			Utility.waitForPageLoaded();
-			Thread.sleep(1000);
-			Acpjob.ClickOnAccept();
-			Utility.waitForPageLoaded();
-			Thread.sleep(1000);
-			fd.ClickOnSubmit();*/
     }
 
  

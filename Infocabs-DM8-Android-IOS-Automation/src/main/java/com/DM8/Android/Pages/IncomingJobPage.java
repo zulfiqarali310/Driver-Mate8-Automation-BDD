@@ -26,9 +26,13 @@ public class IncomingJobPage extends ScreenActions {
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_reject")
 	WebElement TextRejectedAndButton;
+	
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/text_jobTimer")
 	WebElement TextJobTimer;
+	
+	
 
 	@FindBy(how = How.ID, using = "com.infocabs.DM8:id/txt_pickup_zone")
 	WebElement TextPickupZone;

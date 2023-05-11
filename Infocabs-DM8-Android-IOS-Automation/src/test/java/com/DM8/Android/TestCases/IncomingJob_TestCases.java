@@ -31,6 +31,7 @@ public class IncomingJob_TestCases extends BaseClass {
 		Utility.waitForPageLoaded();
 		boolean ImageLogo = driver.findElement(By.id(prop.getProperty("IncomingScreenJobtitle"))).isDisplayed();
 		boolean expected = true;
+		
 		Assert.assertEquals(ImageLogo, expected);
 	}
 
